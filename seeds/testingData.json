@@ -1,0 +1,67 @@
+[
+  {
+    "bar_name": "Bar 1",
+    "patio": true,
+    "website": "www.bar1.com",
+    "address": "123 First Street",
+    "province": "Ontario",
+    "description": "This is bar 1.",
+    "ranks": [
+      { "year": 2021, "rank_position": 10 },
+      { "year": 2022, "rank_position": 12 },
+      { "year": 2023, "rank_position": 8 }
+    ]
+  },
+  {
+    "bar_name": "Bar 2",
+    "patio": false,
+    "website": "www.bar2.com",
+    "address": "456 Second Avenue",
+    "province": "Quebec",
+    "description": "This is bar 2.",
+    "ranks": [
+      { "year": 2021, "rank_position": 20 },
+      { "year": 2022, "rank_position": 18 },
+      { "year": 2023, "rank_position": 22 }
+    ]
+  },
+  {
+    "bar_name": "Bar 3",
+    "patio": true,
+    "website": "www.bar3.com",
+    "address": "789 Third Boulevard",
+    "province": "British Columbia",
+    "description": "This is bar 3.",
+    "ranks": [
+      { "year": 2021, "rank_position": 30 },
+      { "year": 2022, "rank_position": 28 },
+      { "year": 2023, "rank_position": 32 }
+    ]
+  },
+  {
+    "bar_name": "Bar 4",
+    "patio": false,
+    "website": "www.bar4.com",
+    "address": "321 Fourth Street",
+    "province": "Alberta",
+    "description": "This is bar 4.",
+    "ranks": [
+      { "year": 2021, "rank_position": 40 },
+      { "year": 2022, "rank_position": 38 },
+      { "year": 2023, "rank_position": 42 }
+    ]
+  },
+  {
+    "bar_name": "Bar 5",
+    "patio": true,
+    "website": "www.bar5.com",
+    "address": "654 Fifth Avenue",
+    "province": "Manitoba",
+    "description": "This is bar 5.",
+    "ranks": [
+      { "year": 2021, "rank_position": 50 },
+      { "year": 2022, "rank_position": 48 },
+      { "year": 2023, "rank_position": 52 }
+    ]
+  }
+]
