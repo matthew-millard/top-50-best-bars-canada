@@ -1,0 +1,132 @@
+[
+  {
+    "bar_name": "Civil Liberties",
+    "patio": true,
+    "website": "https://civillibertiesbar.com/",
+    "address": "https://goo.gl/maps/oCnESiLQfRpzzJC39",
+    "province": "Ontario",
+    "description": "The neon \"Cocktails & Dreams\" sign hanging in the front window is a great example of truth in advertising. And success has kept Canada's Best Bar — for the second year in a row — honest. One of the very few Canadian bars dedicated to custom cocktail service, Civil isn't fancy. Parts of the floor are painted plywood, its \"copper\" bar is made from pennies, and food comes from a Vietnamese restaurant down the street. The vibe ranges from alcohol-nerd symposium to full-on party bar, depending on the time of night. Since last year's awards (it also cracked the top 10 on North America's 50 Best Bars list), Civil has pushed its drinks program forward with new cocktails on tap, a shelf-stable margarita from its micro-distillation project and an ambitious pop-up program, which has already hosted Mexico City's Hanky Panky. And it will always \"choose kind over cool.\"",
+    "ranks": [
+      { "year": 2023, "rank_position": 1 },
+      { "year": 2022, "rank_position": 1 },
+      { "year": 2020, "rank_position": 8 }
+    ]
+  },
+  {
+    "bar_name": "The Cloakroom",
+    "patio": false,
+    "website": "http://cloakroombar.squarespace.com/",
+    "address": "https://goo.gl/maps/etmaQwnqiM4c4k3D8",
+    "province": "Québec",
+    "description": "Hidden behind Maison Cloakroom, a made-to-measure menswear shop in a striking century-old building on Montreal's Golden Mile, is a chic 25-seat bar that trades in one thing and one thing only — delicious cocktails made with integrity. The Cloakroom Bar is known for its purist approach and unflinching commitment to sourcing only the highest-quality ingredients. If they can't find a decent strawberry liqueur, they make their own. As a result, the bespoke cocktails here are a cut — or two — above your average tailor-made drink experience, especially since the bartenders are known for their uncanny ability to size up a guest and figure out the perfect concoction.",
+    "ranks": [
+      { "year": 2023, "rank_position": 1 },
+      { "year": 2022, "rank_position": 9 },
+      { "year": 2020, "rank_position": 7 }
+    ]
+  },
+  {
+    "bar_name": "Atwater Cocktail Club",
+    "patio": false,
+    "website": "http://atwatercocktailclub.com/",
+    "address": "https://goo.gl/maps/Yq44YpwnLn2GMk2N8",
+    "province": "Québec",
+    "description": "Although it’s become one of Montreal’s top destination bars, ACC got its start in 2016 as a neighbourhood bar — a vibe that is alive and well, thanks to a core group of locals who still hang there, especially on the early shift. No matter what time, though, it’s always a lively room, full of folks taking it easy on glittery couches, huddled around bistro tables or perched at the bar with its stunning collection of rare bottles from around the world. An extensive menu of signature cocktails inspired by modern classics includes the Thunder Gibson, an umami-rich martini riff with a touch of salinity. The inventive drinks beg to be paired with first-rate bar snacks, such as frogs' legs, escargots and chicken liver mousse.",
+    "ranks": [
+      { "year": 2023, "rank_position": 3 },
+      { "year": 2022, "rank_position": 5 },
+      { "year": 2020, "rank_position": 3 }
+    ]
+  },
+  {
+    "bar_name": "Botanist",
+    "patio": false,
+    "website": "http://botanistrestaurant.com/",
+    "address": "https://goo.gl/maps/ehuNZ5Wqwb8kUuFt9",
+    "province": "British Columbia",
+    "description": "It’s only a little slip of a bar, tucked into a quiet corridor at the top of a grand staircase connecting the Fairmont Pacific Rim hotel’s raucous Lobby Lounge and elegant Botanist restaurant. But don’t let the bar’s calm, caught-in-the-middle facade deceive you. The team that won an Exceptional Cocktails Award from Michelin has now garnered Michter’s Art of Hospitality Award 2023. The adjacent glass-encased cocktail lab — avant-garde when the bar opened in 2017 — creates mad-scientist infusions and extractions of uncommon clarity and delicacy. The VIP Cocktail Experience, for which a six-course tasting menu is driven by the high-concept drinks (and served at a private table behind velvet curtains), is one-of-a-kind. And last spring, when an international guest series kicked off with New York’s Katana Kitten, Botanist Bar was at the forefront of a collaboration wave that has become a momentous trend.",
+    "ranks": [
+      { "year": 2023, "rank_position": 4 },
+      { "year": 2022, "rank_position": 2 },
+      { "year": 2020, "rank_position": 6 }
+    ]
+  },
+  {
+    "bar_name": "Bar Pompette",
+    "patio": true,
+    "website": "http://pompette.ca/",
+    "address": "https://goo.gl/maps/ThGn31NQoa3hL3tz5",
+    "province": "Ontario",
+    "description": "Between the French café atmosphere and the uncluttered backbar, a first-time caller would be hard pressed to guess that this casually chic space is home to one of the most impressive cocktail programs in Toronto. With a battery of high-tech kitchen tools, four cocktail taps and an in-house ice program, the bar crystallizes complex flavours and farm-fresh ingredients (think Périgord truffles and Chioggia beets) into deceptively simple-looking drinks that deliver astounding flavour and texture. Enjoy traditional croques monsieurs from sister restaurant Pompette, a charming back patio and live jazz on Sunday nights. It’s all served up with warm hospitality and Gallic joie de vivre.",
+    "ranks": [
+      { "year": 2023, "rank_position": 5 },
+      { "year": 2022, "rank_position": 11 },
+      { "year": 2020, "rank_position": null }
+    ]
+  },
+  {
+    "bar_name": "Bar Raval",
+    "patio": true,
+    "website": "http://thisisbarraval.com/",
+    "address": "https://goo.gl/maps/RGycQix2MrVHvAJn9",
+    "province": "Ontario",
+    "description": "The doors weren’t open for long before it became apparent that Bar Raval would evolve into something more than a great place for tapas. With its decadent interior of sinuous mahogany swirls, delicious pintxos, impeccable wine selection and full-on embrace of daytime drinking, Raval was a winning formula that immediately drew a lively crowd for breakfast sandwiches, midday snacks, late-night tapas and all manner of drinks in between. And Raval still does, partly because it stays true to the original concept of an elevated Spanish snack bar, but also because the bar team keeps its cocktail game tight and relevant, as evidenced by the new focus on fermentation from bar manager Élise Hanson.",
+    "ranks": [
+      { "year": 2023, "rank_position": 6 },
+      { "year": 2022, "rank_position": 8 },
+      { "year": 2020, "rank_position": 1 }
+    ]
+  },
+  {
+    "bar_name": "Mother Cocktail Bar",
+    "patio": true,
+    "website": "http://motherdrinks.co/",
+    "address": "https://goo.gl/maps/atPr3Y4VvGEBS8Yo6",
+    "province": "Ontario",
+    "description": "The only bar in Toronto where you can stumble into a live jazz set, find serious bartenders throwing cocktails and sample fresh tastes from the on-site fermentation room, Mother Cocktail Bar has always offered an entirely unique experience. Smart, dramatic, chiaroscuro-inspired décor and a minimalist modern backbar create a relaxed vibe in which to contemplate an ambitious cocktail menu that pushes boundaries with ingredients such as candy cap mushrooms, lime pickles and iodine. Although the high-concept, perfectly executed drinks steal the show, Mother also has a terrific kitchen that fires up some of the city’s best bar food, including the must-try garlic-and-Parmesan fries with truffle-and-dill aïoli.",
+    "ranks": [
+      { "year": 2023, "rank_position": 7 },
+      { "year": 2022, "rank_position": 17 },
+      { "year": 2020, "rank_position": 16 }
+    ]
+  },
+  {
+    "bar_name": "The Keefer Bar",
+    "patio": true,
+    "website": "http://thekeeferbar.com/",
+    "address": "https://goo.gl/maps/DkNQNfz4SeinPbXp8",
+    "province": "British Columbia",
+    "description": "Cyberpunk only gets better with age and so does The Keefer Bar, a 13-year-old Vancouver institution that looks like it sprang from an early William Gibson sci-fi novel and was jacked into a futuristic metaverse. Dark and gritty, illuminated by clinical anatomical illustrations and hung on an ancient Chinese apothecary theme that leans heavily into bitter botanicals, The Keefer also exudes a vibrancy and warmth that make you feel like you’ve stumbled into the world’s friendliest underground booze can where everyone knows your name. Drinks bubble with smoke and are stirred down to perfection. The music is chill. Although it was sad to see the end of the award-winning Keefer Yard, the inside bar didn’t miss a beat and will always be the city’s coolest cocktail OG.",
+    "ranks": [
+      { "year": 2023, "rank_position": 8 },
+      { "year": 2022, "rank_position": 3 },
+      { "year": 2020, "rank_position": 2 }
+    ]
+  },
+  {
+    "bar_name": "Milky Way",
+    "patio": false,
+    "website": "http://milkywaycocktails.com/",
+    "address": "https://goo.gl/maps/fPEGMaCAgCefNvBs8",
+    "province": "Québec",
+    "description": "The black-light glow party starts at the bottom of Milky Way’s stairwell, guiding you on your journey into a new galaxy. Upstairs is airy and spacious, with a massive skylight, bright neon pink and green décor, and abundant plant life, all dramatically illuminated. It’s an undeniably cool space that borders on the clubby side, especially when the late-night dance party kicks in, but with far better food than your average outer-space-themed bar. Save room for the super-cheesy raclette pizza. Creative cocktails are expertly designed, including the highly popular Island in the Sun. Wine options are brilliant, especially the bubbles. And the spirits selection is world-class, particularly when it comes to interesting expressions of agave and sugarcane spirits.",
+    "ranks": [
+      { "year": 2023, "rank_position": 9 },
+      { "year": 2022, "rank_position": 6 },
+      { "year": 2020, "rank_position": 13 }
+    ]
+  },
+  {
+    "bar_name": "Laowai & Blnd Tger",
+    "patio": false,
+    "website": "http://laowai.ca/",
+    "address": "https://goo.gl/maps/5VzxtFtmmVTbiCcC9",
+    "province": "British Columbia",
+    "description": "To find Laowai bar, swing by the Blnd Tger dumpling shop in Chinatown. Ask for #7 and, if you’re dressed appropriately (ballcaps, sweatpants and flip-flops are verboten), a freezer door will open to a luxe art deco–inspired space shimmering in gold and malachite. Browse bar manager Alex Black’s gorgeously illustrated menu of 12 Asian-inflected cocktails and soak up fascinating stories about the intersex crime lord, the libidinous emperor and other colourful characters that inspired them. Sip some baijiu — Laowai has Canada’s largest selection of the Chinese grain spirit. And be swept away by the illicit extravagance of 1920s-era Shanghai.",
+    "ranks": [
+      { "year": 2023, "rank_position": 10 },
+      { "year": 2022, "rank_position": 4 },
+      { "year": 2020, "rank_position": null }
+    ]
+  }
+]
