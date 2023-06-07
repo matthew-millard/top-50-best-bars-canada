@@ -128,5 +128,200 @@
       { "year": 2022, "rank_position": 4 },
       { "year": 2020, "rank_position": null }
     ]
+  },
+  {
+    "bar_name": "Proof",
+    "patio": true,
+    "website": "http://proofyyc.com/",
+    "address": "https://goo.gl/maps/rFyrQJP3uUUDGsFN6",
+    "province": "Alberta",
+    "description": "Its sky-high backbar signals that Proof is a serious cocktail bar, but the laid-back staff strip away any sense of snobbishness. The oft-updated, book-length drink menu is full of clever surprises and complex flavour combinations. Try Masa Moto and let it take you on a tortilla-infused-mezcal and Cocchi Americano adventure.",
+    "ranks": [
+      { "year": 2023, "rank_position": 11 },
+      { "year": 2022, "rank_position": 12 },
+      { "year": 2020, "rank_position": 5 }
+    ]
+  },
+  {
+    "bar_name": "Cry Baby Gallery",
+    "patio": false,
+    "website": "http://crybabygallery.ca/",
+    "address": "https://goo.gl/maps/XYPGSXN7xAMFYHkXA",
+    "province": "Ontario",
+    "description": "Hidden behind a rough-hewn art gallery in Little Portugal, you’ll find Cry Baby Gallery, a dark, moody cocktail bar at once intimate and industrial, adorned with a single Tiffany lamp at the end of the wood bar. Drinks meticulously crafted with house-made infusions are showy enough to rival the street-style exhibits curated by Mony Zakhour. Nibble on a snack plate with olives (that’s all there is) while sipping the signature Spicy Marg.",
+    "ranks": [
+      { "year": 2023, "rank_position": 12 },
+      { "year": 2022, "rank_position": 29 },
+      { "year": 2020, "rank_position": null }
+    ]
+  },
+  {
+    "bar_name": "Clive's Classic Lounge",
+    "patio": false,
+    "website": "http://clivesclassiclounge.com/",
+    "address": "https://goo.gl/maps/hvBxUNFdZ2UTiEX56",
+    "province": "British Columbia",
+    "description": "The choices are epic at Clive’s Classic Lounge — named Whisky Hotel Bar of 2023 by Whisky Magazine — where legendary West Coast barkeep Shawn Soole began Victoria’s cocktail revolution and returned, in 2020, to elevate it. Start with one of the 250-plus whiskies. Or a wee one-third-sized snacktail. Or perhaps a luxe Tres Vieux Carré, made with Tesseron Lot No. 90 XO. No longer a hometown secret, this dark, subtly glam, armchair-cozy bar at Chateau Victoria is now a destination.",
+    "ranks": [
+      { "year": 2023, "rank_position": 13 },
+      { "year": 2022, "rank_position": 20 },
+      { "year": 2020, "rank_position": null }
+    ]
+  },
+  {
+    "bar_name": "Bar Mordecai",
+    "patio": true,
+    "website": "http://barmordecai.com/",
+    "address": "https://goo.gl/maps/862uKxqozaWrbdsY7",
+    "province": "Ontario",
+    "description": "Choose your own adventure at the Wes Anderson–styled Bar Mordecai, whether it’s belting out tunes in the Dolly Parton–themed karaoke room, tossing back canned spritzes with the cool kids hanging at the Green Room bar, or lounging on a velvet couch in the hotel lobby–like main space. Led by C50B bartender of the year Christina Veira, Mordecai offers tasty tapas, inspired cocktails and, unusual for the late-night neighbourhood, a hopping happy hour.",
+    "ranks": [
+      { "year": 2023, "rank_position": 14 },
+      { "year": 2022, "rank_position": 19 },
+      { "year": 2020, "rank_position": null }
+    ]
+  },
+  {
+    "bar_name": "The Coldroom",
+    "patio": false,
+    "website": "http://thecoldroommtl.com/",
+    "address": "https://goo.gl/maps/k6BTr7fPx3wt7jHYA",
+    "province": "Québec",
+    "description": "There’s no sign, just a small logo of a rubber duck above an unmarked, handle-less door. And, in classic speakeasy style, you’ll have to wait for the bouncer to let you in. But persistence and patience have their rewards. In this case, a cocktail inspired by the owners’ fave Montreal restaurants – perhaps a boozy Gibeau Orange Julep. Or, for the intrepid off-roader, something sur-mesure.",
+    "ranks": [
+      { "year": 2023, "rank_position": 15 },
+      { "year": 2022, "rank_position": 14 },
+      { "year": 2020, "rank_position": 11 }
+    ]
+  },
+  {
+    "bar_name": "Dear Friend Bar",
+    "patio": true,
+    "website": "http://dearfriendbar.com/",
+    "address": "https://goo.gl/maps/6z46JDW7bmt85Gib8",
+    "province": "Nova Scotia",
+    "description": "If Dartmouth is the new Brooklyn, Dear Friend, while not quite a Clover Club, is one of the first proper cocktail bars in the hipster burg across Halifax Harbour. Opened during the pandemic, this downtown snug, with its bentwood bar stools and a European café vibe, has quickly become a destination for creative cocktails, inspired updates on the classics, excellent plant-forward small plates and an epic buck-a-shuck happy hour.",
+    "ranks": [
+      { "year": 2023, "rank_position": 16 },
+      { "year": 2022, "rank_position": 10 },
+      { "year": 2020, "rank_position": null }
+    ]
+  },
+  {
+    "bar_name": "Barchef",
+    "patio": false,
+    "website": "http://barchef.com/",
+    "address": "https://goo.gl/maps/X6jodySQmhXSRhQi7",
+    "province": "Ontario",
+    "description": "People often talk about the “art of the bar,” but BarChef is the only place in Canada where the drinks are veritable installations. Take the Essence of Fall, made with balsam fir and served in a smoking woodlands diorama. The spectacle isn’t limited to the drinks. Owner Frankie Solarik puts on a riveting show, both behind his own bars (he recently opened Prequel) and as a judge on the Netflix series Drink Masters.",
+    "ranks": [
+      { "year": 2023, "rank_position": 17 },
+      { "year": 2022, "rank_position": 18 },
+      { "year": 2020, "rank_position": 26 }
+    ]
+  },
+  {
+    "bar_name": "Gift Shop",
+    "patio": false,
+    "website": "http://barberandco.com/gift-shop",
+    "address": "https://goo.gl/maps/QDmPoiQWMsTgEm2cA",
+    "province": "Ontario",
+    "description": "A notoriously cheeky barman known only as “H” runs the show at this intimate cocktail den, tucked behind a barbershop. You might want to read his house rules first: “Don’t be a dick… I am an asshole to everyone equally.” Or watch a preview @baddrinkstv. Those who brave his salty banter will be rewarded with exquisitely made classics and a singular experience.",
+    "ranks": [
+      { "year": 2023, "rank_position": 18 },
+      { "year": 2022, "rank_position": 16 },
+      { "year": 2020, "rank_position": 9 }
+    ]
+  },
+  {
+    "bar_name": "El Pequeño",
+    "patio": true,
+    "website": "http://elpequenobar.com/",
+    "address": "https://goo.gl/maps/PoNSnMNPBLpPVDZR6",
+    "province": "Québec",
+    "description": "Reimagine an Old Montreal souvenir shop as a grand Havana hotel lobby replete with an ornate glass chandelier and white marble countertops, then stock it with dozens of Caribbean rums and you’ll have what the owners proudly call “Canada’s smallest bar.” True to its name, El Pequeño holds only nine people — ten if you count the chatty bartender who regales visitors with Hemingway anecdotes.",
+    "ranks": [
+      { "year": 2023, "rank_position": 19 },
+      { "year": 2022, "rank_position": 7 },
+      { "year": 2020, "rank_position": 4 }
+    ]
+  },
+  {
+    "bar_name": "Coffee Oysters Champagne",
+    "patio": true,
+    "website": "http://sipshucksip.com/",
+    "address": "https://goo.gl/maps/R1Q8BuComhgjBk9t6",
+    "province": "Ontario",
+    "description": "The pearly pink oyster bar is merely a front for a lavishly embellished speakeasy with layers of secret chambers. Ask to see the Champagne Room and a hidden doorway transports you to a sultry 1920s Parisian hotel lobby bar replete with a period-costumed cigarette girl and a strolling a cappella quartet.",
+    "ranks": [
+      { "year": 2023, "rank_position": 20 },
+      { "year": 2022, "rank_position": 27 },
+      { "year": 2020, "rank_position": 28 }
+    ]
+  },
+  {
+    "bar_name": "XXX",
+    "patio": false,
+    "website": "http://littlesisterto.com/",
+    "address": "https://goo.gl/maps/aCTUYyY7YGApavKT6",
+    "province": "Ontario",
+    "description": "Every cocktail is a mini event at XXX, a tiny subterranean speakeasy decked out in groovy ’70s modern Nederland design. Tucked underneath the Dutch-Indo Little Sister Portland, this impossibly cool, always busy 20-seat space offers show-stopping drinks made with outlier ingredients, such as baijiu and foie gras. There are also tributes to Toronto modern classics, such as the Harbord Room’s Lady Sniper, outstanding fried chicken bites and an awesome rum selection.",
+    "ranks": [
+      { "year": 2023, "rank_position": 21 },
+      { "year": 2022, "rank_position": 46 },
+      { "year": 2020, "rank_position": null }
+    ]
+  },
+  {
+    "bar_name": "Godspeed Brewery",
+    "patio": true,
+    "website": "http://godspeedbrewery.com/",
+    "address": "https://goo.gl/maps/nui7aRHZmvtz6pDj7",
+    "province": "Ontario",
+    "description": "Graceful Japanese minimalism meets boisterous Bavarian beer hall in a hospitable taproom owned by a brewmaster, Luc Lafontaine (of Dieu du Ciel! fame), who is obsessed with perfection. Enjoy some of the most rigorously authentic Czech lagers brewed anywhere in Canada, including Sklepník Plzeň, fermented in pitch-lined barrels. Eclectic ales are made with green tea and yuzu. Sake, highballs and Pearl Morissette wines round out the bar.",
+    "ranks": [
+      { "year": 2023, "rank_position": 22 },
+      { "year": 2022, "rank_position": null },
+      { "year": 2020, "rank_position": null }
+    ]
+  },
+  {
+    "bar_name": "Library Bar",
+    "patio": false,
+    "website": "http://librarybartoronto.com/",
+    "address": "https://goo.gl/maps/kNVQJYNTYtArNpkn7",
+    "province": "Ontario",
+    "description": "The Fairmont Royal York’s fabled cocktail den, tucked in a quiet corner of the hotel, where after-parties from the Imperial Room once spilled, has turned a new chapter with its snazzy art deco redo. This is the place to seal the deal with a Pillet crystal glass of Louis XIII. Or fall in lust over a bubbly Twist of Fate (from the “romance” cocktails inspired by contemporary Canadian authors).",
+    "ranks": [
+      { "year": 2023, "rank_position": 23 },
+      { "year": 2022, "rank_position": null },
+      { "year": 2020, "rank_position": null }
+    ]
+  },
+  {
+    "bar_name": "The Bar At Alo",
+    "patio": false,
+    "website": "http://alorestaurant.com/bar",
+    "address": "https://goo.gl/maps/MgSuUhkYQocJ3df36",
+    "province": "Ontario",
+    "description": "Reminiscent of a swanky London hotel bar, The Bar at Alo is one of the most elegant places in Toronto to lose yourself in a perfectly executed cocktail. Although the drinks program will always be the main event, the sixcourse tasting menu is a draw for foodies. The wine list is unusually deep. Reservations are advised.",
+    "ranks": [
+      { "year": 2023, "rank_position": 24 },
+      { "year": 2022, "rank_position": 13 },
+      { "year": 2020, "rank_position": 15 }
+    ]
+  },
+  {
+    "bar_name": "Clementine",
+    "patio": true,
+    "website": "http://barclementine.ca/",
+    "address": "https://goo.gl/maps/DwusK9pwW9UfCbW16",
+    "province": "Alberta",
+    "description": "All dark wood with art nouveau accents, Clementine echoes a bygone era, complete with a long list of classic cocktails titled Try Before You Die and bolstered by $10 prices on Tuesdays. Modern house cocktails breathe new life into such overlooked spirits as green Chartreuse, shaken with pandan liqueur in the Langkawi sour or, in the Ibarra, mixed with white chocolate mezcal, one of many intriguing infusions.",
+    "ranks": [
+      { "year": 2023, "rank_position": 25 },
+      { "year": 2022, "rank_position": 15 },
+      { "year": 2020, "rank_position": 22 }
+    ]
   }
 ]
