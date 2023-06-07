@@ -323,5 +323,330 @@
       { "year": 2022, "rank_position": 15 },
       { "year": 2020, "rank_position": 22 }
     ]
+  },
+  {
+    "bar_name": "Missy's This That",
+    "patio": false,
+    "website": "https://www.missysthisthat.com/",
+    "address": "https://www.google.com/maps/place/Missy's+This+That/@51.0399178,-114.073779,17z/data=!3m1!4b1!4m14!1m7!4m6!1m4!2m2!1d-79.4141208!2d43.6711247!4e1!1m0!3m5!1s0x537171e0cbc0735d:0xb34014f0199e1afd!8m2!3d51.0399145!4d-114.0712041!16s%2Fg%2F11q4dvdgdg",
+    "province": "Alberta",
+    "description": "Fully lacking in delusions of grandeur, the nascent Missy’s This That, set above a convenience store in Calgary’s Beltline neighbourhood, is a no-frills bar with a serious wine list. More than 170 labels featuring big names (Krug, anyone?) join bottles from less famous wineries that favour rather-obscure grapes. Look for gems by the glass, picked daily by owner Thomas Dahlgren, formerly of Von Der Fels.",
+    "ranks": [
+      { "year": 2023, "rank_position": 26 },
+      { "year": 2022, "rank_position": null },
+      { "year": 2020, "rank_position": null }
+    ]
+  },
+  {
+    "bar_name": "Ship & Anchor Pub",
+    "patio": true,
+    "website": "http://shipandanchor.com/",
+    "address": "https://g.page/shipandanchorpub?share",
+    "province": "Alberta",
+    "description": "With its sticky wooden surfaces and vintage Guinness artwork, Calgary’s beloved “Ship” may look like a standard British pub. But, since opening in 1990 it’s been the go-to hangout for crusty hipsters, soccer fans and urban pint drinkers. Live music showcases, beer-soaked bingo nights and D&D sessions create a punk rock camaraderie and a where-everybody-knows-your-name energy, even if it’s your first time in.",
+    "ranks": [
+      { "year": 2023, "rank_position": 27 },
+      { "year": 2022, "rank_position": 38 },
+      { "year": 2020, "rank_position": null }
+    ]
+  },
+  {
+    "bar_name": "Jjacques",
+    "patio": false,
+    "website": "http://jjacques.ca/",
+    "address": "https://g.page/barjjacques?share",
+    "province": "Québec",
+    "description": "This elegant cocktail, wine and oyster bar, tucked off a quiet side street in the bustling Saint-Roch district, celebrates the golden age of travel. Slip into a secluded velvet-lined booth to enjoy première classe cocktails — perhaps a French 75 with Rémy Martin 1738 — and a magnificent seafood tower from the above-average galley. Bon voyage!",
+    "ranks": [
+      { "year": 2023, "rank_position": 28 },
+      { "year": 2022, "rank_position": 50 },
+      { "year": 2020, "rank_position": null }
+    ]
+  },
+  {
+    "bar_name": "Mount Pleasant Vintage & Provisions",
+    "patio": true,
+    "website": "https://mtpleasant.bar/",
+    "address": "https://www.google.com/maps/place/Mount+Pleasant+Vintage+%26+Provisions/@49.2657801,-123.1086678,17z/data=!3m1!4b1!4m6!3m5!1s0x5486736e469dfa9f:0x9e129fb8389656a!8m2!3d49.2657766!4d-123.1060929!16s%2Fg%2F11sx55djj0",
+    "province": "British Columbia",
+    "description": "It’s That ’70s Show, but with excellent cocktails, crunchy natural wines and wood-grilled skirt steak. Behind the facade of a white-clapboard heritage home, this nostalgic playhouse offers orange-carpeted chill zones with comfy retro sofas; a soaring atrium for the main bar and grill; and, wrapped in bold murals, two patios with a hodgepodge of vintage outdoor chairs, plus mountain views. Two of Canada’s best bartenders, owner Cameron Bogue and Kelsey Ramage, are rocking out fun drinks like Cinnamon Toast Punch and Taco Flavoured Kisses.",
+    "ranks": [
+      { "year": 2023, "rank_position": 29 },
+      { "year": 2022, "rank_position": null },
+      { "year": 2020, "rank_position": null }
+    ]
+  },
+  {
+    "bar_name": "Bar Volo",
+    "patio": true,
+    "website": "https://barvolo.com/",
+    "address": "https://www.google.com/maps/place/Bar+Volo/@43.6655722,-79.3855379,15z/data=!4m6!3m5!1s0x882b35f9c15673cb:0x28ad11ca8cde5312!8m2!3d43.6655722!4d-79.3855379!16s%2Fg%2F11fm485jrp",
+    "province": "Ontario",
+    "description": "Toronto’s preeminent beer bar, the one that first made craft beer cool, is tucked away on a quiet downtown side street, oozing old world charm from its repurposed church pews. Chill and pub-like during the day, it grows boisterous at night and offers something for everyone — an on-site brewery specializing in cask- conditioned ales, the city’s smartest draft selection, a serious selection of low-intervention wines, creative grape-spirit-based cocktails, and tasty red sauce meatballs.",
+    "ranks": [
+      { "year": 2023, "rank_position": 30 },
+      { "year": 2022, "rank_position": 44 },
+      { "year": 2020, "rank_position": null }
+    ]
+  },
+  {
+    "bar_name": "Simpl Things",
+    "patio": true,
+    "website": "https://simplthings.ca/",
+    "address": "https://www.google.com/maps/place/SIMPL+THINGS/@43.6409271,-79.4369676,17.07z/data=!4m6!3m5!1s0x882b35c6838a7e39:0xcf0cbc5230ed6056!8m2!3d43.6408208!4d-79.4342545!16s%2Fg%2F11t6y9lnpt",
+    "province": "Ontario",
+    "description": "This is a bar doing double duty: Italian comfort food by day, Taiwanese street snacks at night. Just a small open kitchen and a homey little bar, all washed in a nostalgic popsicle palette. Simpl Things doesn’t fit into the average bar mould, but it all comes together with Evelyn Chick’s creative cocktails that make the familiar taste new. Think Melon Baller Martinis — with fino sherry and apple-fennel cordial — and strawberry-Campari Americano Spritzes.",
+    "ranks": [
+      { "year": 2023, "rank_position": 31 },
+      { "year": 2022, "rank_position": null },
+      { "year": 2020, "rank_position": null }
+    ]
+  },
+  {
+    "bar_name": "Sidecar",
+    "patio": false,
+    "website": "https://www.instagram.com/sidecarottawa/?hl=en",
+    "address": "https://www.google.com/maps/place/Sidecar/@45.399992,-75.7119635,17z/data=!3m2!4b1!5s0x4cce0433621e5bdd:0xbf5a01fe4c3935d1!4m6!3m5!1s0x4cce05c35bee4c7f:0x52ac2487d1e6f808!8m2!3d45.3999883!4d-75.7093886!16s%2Fg%2F11ts_8nnvf",
+    "province": "Ontario",
+    "description": "Hidden below Mediterranean restaurant Mati, in Little Italy, this swanky 30-seater seduces with green-velvet glamour and some serious talent behind the black marble bar. Bar manager Witek Wojaczek comes from London (Artesian Bar, Beaufort Bar at The Savoy) and is determined to put Canada’s capital on the international cocktail map with sublimely deconstructed classics — think Sidecar with floating lemon sorbet — and new classics-in-the-making.",
+    "ranks": [
+      { "year": 2023, "rank_position": 32 },
+      { "year": 2022, "rank_position": null },
+      { "year": 2020, "rank_position": null }
+    ]
+  },
+  {
+    "bar_name": "The Bar At L'abattoir",
+    "patio": false,
+    "website": "http://labattoir.ca/",
+    "address": "https://g.page/labattoir_van?share",
+    "province": "British Columbia",
+    "description": "Goodbye, Avocado Gimlet. Hello, Meat Hook #2 with marrow-infused whisky. Rob Williams (previously Q at The Empress) made some tough menu edits when he took over the reins at this beloved nine-seat bar, which fronts the eponymously named restaurant. His seasonal cocktails, grounded in the classics, showcase B.C. spirits and are as suave as this high-ceilinged cubbyhole in the heart of historic Gastown.",
+    "ranks": [
+      { "year": 2023, "rank_position": 33 },
+      { "year": 2022, "rank_position": 49 },
+      { "year": 2020, "rank_position": null }
+    ]
+  },
+  {
+    "bar_name": "Sans Soleil",
+    "patio": false,
+    "website": "https://www.sanssoleilmtl.com/",
+    "address": "https://www.google.com/maps/place/Sans+Soleil+Bar/@45.5065616,-73.5630879,17z/data=!3m2!4b1!5s0x4cc91a5050976677:0x10ac2a1fb4d0bfe!4m6!3m5!1s0x4cc91b6a38b3642b:0x77d32a2fdcae1e51!8m2!3d45.5065579!4d-73.560513!16s%2Fg%2F11pzyl_051",
+    "province": "Québec",
+    "description": "The aptly named Sans Soleil might be hidden in a windowless basement, but it’s buzzing with life. The 60-seat, candlelit speakeasy boasts a killer sound system (choice vintage stereo components and made-in-Montreal custom speakers) cocooned in vibration-absorbing cork panelling. DJs spin seven-hour vinyl-only sets every night, but the bar goes full dance party after 10:30 on weekends. Refuel with Japanese-inspired cocktails and soba from the restaurant upstairs.",
+    "ranks": [
+      { "year": 2023, "rank_position": 34 },
+      { "year": 2022, "rank_position": null },
+      { "year": 2020, "rank_position": null }
+    ]
+  },
+  {
+    "bar_name": "Lobby Lounge",
+    "patio": true,
+    "website": "http://lobbyloungerawbar.com/",
+    "address": "https://goo.gl/maps/UNMpXS6gGocoFxZNA",
+    "province": "British Columbia",
+    "description": "South Beach meets Coal Harbour at the Fairmont Pacific Rim’s buzzy Lobby Lounge and RawBar. At night, beautiful people sway to live music within the gleaming expanse of white marble while crushing Japanese-influenced cocktails paired with platters of superb sushi. Earlier on, it’s an impressive spot to meet up for drinks, be it business or a blind date.",
+    "ranks": [
+      { "year": 2023, "rank_position": 35 },
+      { "year": 2022, "rank_position": 39 },
+      { "year": 2020, "rank_position": 30 }
+    ]
+  },
+  {
+    "bar_name": "Betty Lou's Library",
+    "patio": false,
+    "website": "http://bettylouslibrary.com/",
+    "address": "https://g.page/BettyLouslibrary?share",
+    "province": "Alberta",
+    "description": "Whisper the password into the antique telephone for entry to this intimate speakeasy. Then step inside and luxuriate in a swank Prohibition-era library, replete with velvet brocade seating and wisps of smoke escaping domed cocktails. Drinks are named after famous women of the Jazz Age, along with a rotating Great Gatsby cocktail specials.",
+    "ranks": [
+      { "year": 2023, "rank_position": 36 },
+      { "year": 2022, "rank_position": 30 },
+      { "year": 2020, "rank_position": 37 }
+    ]
+  },
+  {
+    "bar_name": "The James Lobby Bar",
+    "patio": false,
+    "website": "https://thejameshotel.ca/the-james-lobby-bar/",
+    "address": "https://www.google.com/maps/place/The+James+Hotel/@52.1271752,-106.6591741,20.13z/data=!3m1!5s0x5304f6d13e46b463:0xb528e261594e0d90!4m18!1m8!3m7!1s0x5304f6d1408cd683:0xc57261a141dff440!2s620+Spadina+Crescent+E,+Saskatoon,+SK+S7K+3G9!3b1!8m2!3d52.1270342!4d-106.6590881!16s%2Fg%2F11c2f5n2s7!3m8!1s0x5304f6d16caf455d:0x607991a40cf088d8!5m2!4m1!1i2!8m2!3d52.1273765!4d-106.6588268!16s%2Fg%2F1tfcbv3s",
+    "province": "Saskatchewan",
+    "description": "A little lounge in the Paris of the Prairies that offers fine wine, good cocktails — with an extensive list of classics and originals — plus spectacular views of beautiful Meewasin Valley. Cozy, yet luxe, with butternut wall panels and an onyx-wrapped fireplace, this is a boutique hotel lobby bar with big-city feel.",
+    "ranks": [
+      { "year": 2023, "rank_position": 37 },
+      { "year": 2022, "rank_position": null },
+      { "year": 2020, "rank_position": null }
+    ]
+  },
+  {
+    "bar_name": "Stillwell Beer Bar",
+    "patio": false,
+    "website": "https://www.barstillwell.com/",
+    "address": "https://www.google.com/maps/place/Stillwell/@44.6468677,-63.5766443,17z/data=!3m1!4b1!4m6!3m5!1s0x4b5a23ccdbf90b0d:0xceb2b971bf2e3409!8m2!3d44.6468639!4d-63.5740694!16s%2Fg%2F1yh9tqd6_",
+    "province": "Nova Scotia",
+    "description": "Halifax’s most thoughtfully selected lineup of beers (including a trio of cask-conditioned ales) is complemented by select ciders, natural wines and a small but impressive food menu featuring a famous trio of burgers — Fancy, Diner and Dirty. It’s all served up in a centrally located warehouse-like space with a warm neighbourhood vibe that’s popular with the after-office-hours crowd.",
+    "ranks": [
+      { "year": 2023, "rank_position": 38 },
+      { "year": 2022, "rank_position": null },
+      { "year": 2020, "rank_position": null }
+    ]
+  },
+  {
+    "bar_name": "Eliza",
+    "patio": true,
+    "website": "https://naramatainn.com/wine-bar/",
+    "address": "https://www.google.com/maps/place/Naramata+Inn/@49.5953761,-119.6168978,14.9z/data=!4m9!3m8!1s0x54827b4a2761da75:0x1bc5a02bc0d0e563!5m2!4m1!1i2!8m2!3d49.5974598!4d-119.6035426!16s%2Fg%2F1tdz934q",
+    "province": "British Columbia",
+    "description": "The Okanagan Valley has many great winery bars, but Eliza is its first serious wine bar — one that confidently showcases the region against benchmark international labels. In a cozy brick-lined cellar underneath the heritage Naramata Inn, small-lot rarities from near and far cozy up with local back vintages poured in Time Capsule Flights. A recent example featured 2013 vintages from CedarCreek, Tightrope and Orofino.",
+    "ranks": [
+      { "year": 2023, "rank_position": 39 },
+      { "year": 2022, "rank_position": null },
+      { "year": 2020, "rank_position": null }
+    ]
+  },
+  {
+    "bar_name": "Bar Susu",
+    "patio": true,
+    "website": "https://thisisbarsusu.com/",
+    "address": "https://www.google.com/maps/place/Bar+Susu/@49.2656011,-123.1027149,17z/data=!3m1!4b1!4m6!3m5!1s0x548671d1285ce50f:0x2d1cafb8a14fcf48!8m2!3d49.2655976!4d-123.10014!16s%2Fg%2F11sqpq7lz7",
+    "province": "British Columbia",
+    "description": "This funky little wine bar is by no means an extension of its more serious big brother, Published on Main. Much more casual, playful and romantically distressed around the scuffed wooden seams of its historic brick building, it is the place to go for low-intervention rarities and oddities, bottle-aged sakes and inventive cocktails that all incorporate some sort of wine-based spirit, including vermouths, herbal liqueurs and house-blended amari.",
+    "ranks": [
+      { "year": 2023, "rank_position": 40 },
+      { "year": 2022, "rank_position": null },
+      { "year": 2020, "rank_position": null }
+    ]
+  },
+  {
+    "bar_name": "Paris Paris",
+    "patio": true,
+    "website": "http://parisparis.ca/",
+    "address": "https://g.page/parisparisbar?share",
+    "province": "Ontario",
+    "description": "Expect a bustling Millennial-bohemian vibe that pairs perfectly with a list of no-to-low-sulphite wines in every colour of the rainbow. Alt-wine curious? Servers are fully indoctrinated and excited to guide you. Cocktails are strong. Very good bar food. The enclosed parking-lot patio sizzles in the sun.",
+    "ranks": [
+      { "year": 2023, "rank_position": 41 },
+      { "year": 2022, "rank_position": 36 },
+      { "year": 2020, "rank_position": 12 }
+    ]
+  },
+  {
+    "bar_name": "Citrus & Cane",
+    "patio": false,
+    "website": "https://www.citrusandcane.com/",
+    "address": "https://www.google.com/maps/place/Citrus+%26+Cane/@48.4314789,-123.3649956,15z/data=!4m6!3m5!1s0x548f756b28d6a4bf:0xf50055033f20d07a!8m2!3d48.4314789!4d-123.3649956!16s%2Fg%2F11jk3nm4hj",
+    "province": "British Columbia",
+    "description": "Citrus & Cane is a lovingly restored retro-’70s tropical lounge with sunken barroom, rattan furniture and brass fixtures galore. On a dodgy stretch of Douglas Street, bartender-owners Tim Siebert and Jessa Gildersleeve aim to modernize tiki cocktails with a list that’s heavy on the rum. Standouts include a Cool Kid Hi-Ball banana liqueur + cane cola and a Boujee Mai Tai with Grand Marnier Cuvée du Centenaire.",
+    "ranks": [
+      { "year": 2023, "rank_position": 42 },
+      { "year": 2022, "rank_position": null },
+      { "year": 2020, "rank_position": null }
+    ]
+  },
+  {
+    "bar_name": "Le Majestique",
+    "patio": true,
+    "website": "https://restobarmajestique.com/",
+    "address": "https://www.google.com/maps/place/Le+Majestique+Montr%C3%A9al/@45.5155946,-73.5826143,17z/data=!4m6!3m5!1s0x4cc91bcd2a9a3d2b:0xdd93d186b41efb04!8m2!3d45.5175202!4d-73.580316!16s%2Fg%2F1q2wfgby9",
+    "province": "Québec",
+    "description": "The tastefully kitschy 60-seat Le Majestique has a genuinely homey vibe, all wood panelling and vintage souvenir felt pennants. Along with quality beer and classic cocktails, this bar has an ever-changing wine list of mainly private imports. The kitchen, open until 2 a.m., is known for its seafood and 12-inch Gaspor pork hot dog.",
+    "ranks": [
+      { "year": 2023, "rank_position": 43 },
+      { "year": 2022, "rank_position": 25 },
+      { "year": 2020, "rank_position": null }
+    ]
+  },
+  {
+    "bar_name": "Amigos Cantina",
+    "patio": true,
+    "website": "http://amigoscantina.com/",
+    "address": "https://g.page/amigossk?share",
+    "province": "Saskatchewan",
+    "description": "Pumping out great Tex-Mex grub and community spirit since 1988, this storied live-music venue is sometimes referred to as the Sneaky Dee’s (née Toronto) of Saskatoon. Musical performances, trivia nights and karaoke fill the main room at night, but this is also the kind of place to take the kids for early dinner. Beer is the main libation. Almond-breaded chicken fingers are the bomb.",
+    "ranks": [
+      { "year": 2023, "rank_position": 44 },
+      { "year": 2022, "rank_position": 47 },
+      { "year": 2020, "rank_position": null }
+    ]
+  },
+  {
+    "bar_name": "Key Party",
+    "patio": false,
+    "website": "https://narrowgroup.ca/project/key-party/",
+    "address": "https://www.google.com/maps/place/Key+Party/@49.2644356,-123.1033224,17z/data=!3m1!4b1!4m6!3m5!1s0x5486716a12ae3895:0x28ec0e0d027bea1e!8m2!3d49.2644356!4d-123.1011337!16s%2Fg%2F11h3nf9vcw",
+    "province": "British Columbia",
+    "description": "You might think you’re entering an ordinary accountant’s office, but step inside and you’ll find yourself in a retro swinger’s den, where shag carpeting and double entendres never went out of style. Key Party is an intimate speakeasy that specializes in twists on classics from the 1960s and ’70s. Think Grasshoppers, Dirty-er Martinis, Slippery Nipple shooters, retro snacks and groovy good times.",
+    "ranks": [
+      { "year": 2023, "rank_position": 45 },
+      { "year": 2022, "rank_position": 42 },
+      { "year": 2020, "rank_position": null }
+    ]
+  },
+  {
+    "bar_name": "Papillon Cocktail Bar",
+    "patio": false,
+    "website": "https://www.instagram.com/_papillon.cocktail.bar/",
+    "address": "https://www.google.com/maps/place/Papillon+Cocktail+Bar/@47.5658288,-52.7078956,17z/data=!3m1!4b1!4m6!3m5!1s0x4b0ca37496b2ceb1:0x4ce98a8668d40857!8m2!3d47.5658288!4d-52.7057069!16s%2Fg%2F11t3wjrr5y",
+    "province": "Newfoundland and Labrador",
+    "description": "With plenty of green ivy cascading from planters mounted high on the walls that are bathed in a hot-pink glow, Papillon Cocktail Bar — a.k.a Papi’s — feels like a tropical escape. Owner Ricky Lopez moved to St. John’s from Honduras to become a mechanical engineer but decided instead to fill the local need for an intimate craft cocktail bar. Enjoy Mediterranean dips while grooving to ’90s hip hop and sipping classic drinks done right.",
+    "ranks": [
+      { "year": 2023, "rank_position": 46 },
+      { "year": 2022, "rank_position": null },
+      { "year": 2020, "rank_position": null }
+    ]
+  },
+  {
+    "bar_name": "Rain Dog Bar",
+    "patio": false,
+    "website": "https://www.raindogbar.com/",
+    "address": "https://www.google.com/maps/place/Rain+Dog+Bar/@51.0420216,-114.0380884,17z/data=!3m1!4b1!4m6!3m5!1s0x53717b6db1f1fed9:0x68b46ef014f240e2!8m2!3d51.0420216!4d-114.0358997!16s%2Fg%2F11j7w97_v2",
+    "province": "Alberta",
+    "description": "Beer and food pairings are the specialty at this homey Inglewood loft, appointed with mismatched chinaware and thrift-store chic. Ask owner Bill Bonar (Alberta’s first Certified Cicerone) for suggestions. Or dive right into the Rain Dog Chocolate Bar, designed for IPA. An exceptionally well-curated collection of bottles includes many rarities, such as Tre Fontane Tripel and (the pricey) Cantillon Rosé de Gambrinus.",
+    "ranks": [
+      { "year": 2023, "rank_position": 47 },
+      { "year": 2022, "rank_position": null },
+      { "year": 2020, "rank_position": null }
+    ]
+  },
+  {
+    "bar_name": "Isle De Garde",
+    "patio": true,
+    "website": "https://www.isledegarde.com/",
+    "address": "https://www.google.com/maps/place/Isle+de+Garde+-+Brasserie/@45.5375747,-73.6042361,17z/data=!3m1!4b1!4m6!3m5!1s0x4cc91968550be741:0xd81bda1605b12c97!8m2!3d45.5375747!4d-73.6020474!16s%2Fg%2F1tghp639",
+    "province": "Québec",
+    "description": "The 23 beers on tap are served at 5 ̊, 8 ̊ or 12 ̊C, depending on the style. Such precise attention to detail is the key to success at this multi-purpose tap room (with an adjoining café, ice cream counter and vinyl record shop) that attracts a hip, young crowd in the heart of La Petite-Patrie. Brewer Olivier Dupras is renowned for his open-ferment weissbier, a style rarely found outside Germany.",
+    "ranks": [
+      { "year": 2023, "rank_position": 48 },
+      { "year": 2022, "rank_position": null },
+      { "year": 2020, "rank_position": null }
+    ]
+  },
+  {
+    "bar_name": "The Narrows Public House",
+    "patio": false,
+    "website": "https://www.instagram.com/thenarrowshalifaxpub/",
+    "address": "https://goo.gl/maps/8kKzkqFbaQ5w235HA",
+    "province": "Nova Scotia",
+    "description": "After an ambitious eight-year renovation, this heritage house in Halifax’s residential North End opened last spring with lineups at the door. The crowds are still piling in for what feels like a true Nova Scotian kitchen party. In wintertime, the antiques-filled rooms are warmed with wood stoves. On weekends, there are live fiddlers. Join a game of cribbage, dig into a traditional boiled dinner, and make yourself right at home.",
+    "ranks": [
+      { "year": 2023, "rank_position": 49 },
+      { "year": 2022, "rank_position": null },
+      { "year": 2020, "rank_position": null }
+    ]
+  },
+  {
+    "bar_name": "Justine",
+    "patio": false,
+    "website": "https://www.instagram.com/justinespeakeasy/",
+    "address": "https://www.google.com/maps/place/Justine/@46.814156,-71.2159002,14.85z/data=!4m6!3m5!1s0x4cb895c9e4d44255:0xd5547594317d7ff0!8m2!3d46.8166725!4d-71.2116864!16s%2Fg%2F11rshbtm6g",
+    "province": "Québec",
+    "description": "Steps away from the historic ramparts of Old Quebec is Justine, a Prohibition-themed speakeasy that fully inhabits her old-time character. Candlelight dances off stone walls and old wooden tables in a hushed low-ceilinged room that is well suited for date nights. Period cocktails are supplemented by a nice selection of single malts and local beer. Quebec cheese and charcuterie are presented au guéridon and served by weight.",
+    "ranks": [
+      { "year": 2023, "rank_position": 50 },
+      { "year": 2022, "rank_position": null },
+      { "year": 2020, "rank_position": null }
+    ]
   }
 ]
