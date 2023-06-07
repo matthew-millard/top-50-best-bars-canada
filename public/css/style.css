@@ -1,9 +1,40 @@
 :root {
   --main-font: 'aktiv-grotesk', sans-serif;
+  --light-shade: #edf2f4;
+}
+
+.flex {
+  display: flex;
+}
+.page-container {
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 body {
+  background: rgb(147, 31, 29);
+  background: radial-gradient(
+    circle,
+    rgba(147, 31, 29, 1) 0%,
+    rgba(24, 31, 37, 1) 100%
+  );
   font-family: var(--main-font);
   font-weight: 400;
   font-style: normal;
+}
+
+h1 {
+  font-size: 48px;
+  text-align: center;
+  color: var(--light-shade);
+  /* background-color: greenyellow; */
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
