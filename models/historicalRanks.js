@@ -20,14 +20,14 @@ HistoricalRanks.init(
     },
     rank_position: {
       type: DataTypes.INTEGER,
-      allowNull: false,
+      allowNull: true,
     },
     year: {
       // Although Sequelize is using DataTypes.INTEGER(4) for the year field,
       // in the database, this field is actually a MySQL YEAR type.
       // MySQL's YEAR type accepts 4-digit years in the range 1901 to 2155, and 0000.
       type: DataTypes.INTEGER(4), // 4 digit year (YYYY format)
-      allowNull: false,
+      allowNull: true,
     },
   },
   {
