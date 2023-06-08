@@ -14,9 +14,6 @@ home.get('/', async (req, res) => {
         {
           model: HistoricalRanks,
           attributes: ['rank_position', 'year'],
-
-
-          
         },
       ],
     });
@@ -33,9 +30,6 @@ home.get('/', async (req, res) => {
     return res.status(500).json({ message: 'Server Error' });
   }
 });
-
-
-
 
 // Exports
 module.exports = home;
