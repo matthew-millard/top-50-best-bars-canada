@@ -38,3 +38,10 @@ main {
   justify-content: center;
   align-items: center;
 }
+
+.comments {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
