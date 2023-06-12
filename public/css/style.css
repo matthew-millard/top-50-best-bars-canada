@@ -32,3 +32,10 @@ p {
 small {
   font-size: 1.4rem;
 }
+
+#main-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
