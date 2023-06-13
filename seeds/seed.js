@@ -1,9 +1,10 @@
 // Imports
 const sequelize = require('../config/connection');
-const { Bars, HistoricalRanks, Provinces } = require('../models');
+const { Bars, HistoricalRanks, Provinces, User } = require('../models');
 
 // Seed data
 const barData = require('./barSeedData.json');
+const userData = require('./userSeedData.json');
 
 // Seed database
 const seedDatabase = async () => {
@@ -36,6 +37,10 @@ const seedDatabase = async () => {
         });
       }
     }
+
+    await User.bulkCreate(userData, {
+      individualHooks: true,
+    });
 
     process.exit(0);
   } catch (err) {

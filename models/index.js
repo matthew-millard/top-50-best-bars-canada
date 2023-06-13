@@ -2,25 +2,26 @@
 const Bars = require('./bars');
 const HistoricalRanks = require('./historicalRanks');
 const Provinces = require('./provinces');
+const User = require('./User');
 
 // Define associations
 Bars.hasMany(HistoricalRanks, {
-    foreignKey: 'bar_id',
-    onDelete: 'CASCADE',
+  foreignKey: 'bar_id',
+  onDelete: 'CASCADE',
 });
 
 HistoricalRanks.belongsTo(Bars, {
-    foreignKey: 'bar_id',
+  foreignKey: 'bar_id',
 });
 
 Provinces.hasMany(Bars, {
-    foreignKey: 'province_id',
-    onDelete: 'CASCADE',
+  foreignKey: 'province_id',
+  onDelete: 'CASCADE',
 });
 
 Bars.belongsTo(Provinces, {
-    foreignKey: 'province_id',
+  foreignKey: 'province_id',
 });
 
 // Exports
-module.exports = { Bars, HistoricalRanks, Provinces };
+module.exports = { Bars, HistoricalRanks, Provinces, User };
