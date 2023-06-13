@@ -39,3 +39,20 @@ small {
   align-items: center;
   border: 1px solid black;
 }
+
+.container {
+  display: flex;
+}
+
+.comments {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.main-view {
+  border: 1px solid black;
+  width: 50%;
+}
