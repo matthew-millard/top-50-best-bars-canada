@@ -1,9 +1,11 @@
 [
   {
+    "username": "MatthewMillard",
     "email": "hello@world.com",
     "password": "password123456"
   },
   {
+    "username": "RussellCaballero",
     "email": "hello2@world.com",
     "password": "password123456222"
   }
