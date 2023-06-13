@@ -9,16 +9,17 @@ const loginFormHandler = async (event) => {
   const email = emailEl.value.trim();
   const password = passwordEl.value.trim();
 
-
-
   if (email && password) {
     const response = await fetch('/users/login', {
       method: 'POST',
       body: JSON.stringify({ email, password }),
       headers: { 'content-type': 'application/json' },
     });
-    if (response === 200) {
-      console.log('Success');
+
+    if (response.status === 200) {
+      return document.location.replace('/');
+    } else {
+      console.error('Not found.');
     }
   }
 };
