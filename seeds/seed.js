@@ -3,7 +3,7 @@ const sequelize = require('../config/connection');
 const { Bars, HistoricalRanks, Provinces } = require('../models');
 
 // Seed data
-const testData = require('./testingData.json');
+const barData = require('./barSeedData.json');
 
 // Seed database
 const seedDatabase = async () => {
@@ -11,7 +11,7 @@ const seedDatabase = async () => {
     await sequelize.sync({ force: true }); // Drop all tables and recreate them
 
     // Iterate over each bar in the array
-    for (const bar of testData) {
+    for (const bar of barData) {
       // first create the province because it is a foreign key in the bars table
       const createdProvince = await Provinces.create({
         province_name: bar.province,

@@ -1,4 +1,4 @@
-  const { Model, DataTypes } = require('sequelize');
+const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
 class Bars extends Model {}
@@ -23,7 +23,7 @@ Bars.init(
       type: DataTypes.STRING,
     },
     address: {
-      type: DataTypes.STRING,
+      type: DataTypes.TEXT,
       allowNull: false,
     },
     province_id: {
@@ -34,7 +34,7 @@ Bars.init(
       },
     },
     description: {
-      type: DataTypes.STRING,
+      type: DataTypes.TEXT,
       allowNull: false,
     },
   },

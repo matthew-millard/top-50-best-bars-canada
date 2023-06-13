@@ -1,9 +1,13 @@
 // Imports
 const sequelize = require('./config/connection');
+const session = require('express-session');
 const express = require('express');
 const path = require('path');
 const routes = require('./controllers/index');
 const exphbs = require('express-handlebars');
+require('dotenv').config();
+
+const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 // Express Application
 const app = express();
@@ -13,6 +17,23 @@ const PORT = process.env.PORT || 3001;
 
 // Create instance of the express handlebars engine
 const hbs = exphbs.create({ helpers: {} });
+
+const sess = {
+  secret: process.env.SESSION_SECRET,
+  cookie: {
+    maxAge: 300000,
+    httpOnly: true,
+    secure: false,
+    sameSite: 'strict',
+  },
+  resave: false,
+  saveUninitialized: true,
+  store: new SequelizeStore({
+    db: sequelize,
+  }),
+};
+
+app.use(session(sess));
 
 // Middleware
 app.engine('handlebars', hbs.engine);
@@ -28,7 +49,7 @@ app.use(routes);
 // Start server
 const startServer = async () => {
   try {
-    await sequelize.sync();
+    await sequelize.sync({ force: false });
     app.listen(PORT, () => {
       console.log(`Application is listening on port: ${PORT}`);
     });
