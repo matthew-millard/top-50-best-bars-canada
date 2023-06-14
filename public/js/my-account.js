@@ -6,7 +6,7 @@ const id = userId.getAttribute('data-id');
 // Delete user account handler
 const deleteAccountHandler = async () => {
   try {
-    const response = await fetch(`users/delete/${id}`, {
+    const response = await fetch(`/api/users/delete/${id}`, {
       method: 'DELETE',
       headers: { 'Content-Type': 'application/json' },
     });
