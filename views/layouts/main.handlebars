@@ -16,6 +16,53 @@
     />
     <title>Top 50 Best Bars Canada</title>
   </head>
+
+  
+  <header>
+    <div class="container-fluid p-5 text-center shadow-1-strong text-white" id="headerSection">
+        
+        <h1 id=''>BarFly</h1>
+    </div>
+    <nav class='navbar navbar-expand-lg bg-body-tertiary'>
+      <div class='container-fluid'>
+        <a class='navbar-brand' href='#'>BarFly</a>
+        <button
+          class='navbar-toggler'
+          type='button'
+          data-bs-toggle='collapse'
+          data-bs-target='#navbarSupportedContent'
+          aria-controls='navbarSupportedContent'
+          aria-expanded='false'
+          aria-label='Toggle navigation'
+        >
+          <span class='navbar-toggler-icon'></span>
+        </button>
+        <div class='collapse navbar-collapse' id='navbarSupportedContent'>
+          <ul class='navbar-nav me-auto mb-2 mb-lg-0'>
+            <li class='nav-item'>
+              <a class='nav-link active' aria-current='page' href='/'>Home</a>
+            </li>
+            <li class='nav-item'>
+              <a class='nav-link login-signup' id='login' href='/login'>Login/Signup</a>
+            </li>
+            <li class='nav-item'>
+              <a class='nav-link' id='account' href='/account'>My Account</a>
+            </li>
+          </ul>
+          <form class='d-flex' role='search'>
+            <input
+              class='form-control me-2'
+              type='search'
+              placeholder='Search'
+              aria-label='Search'
+            />
+            <button class='btn btn-outline-success' type='submit'>Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
   <body>
 
     {{{body}}}
@@ -25,4 +72,12 @@
       crossorigin='anonymous'
     ></script>
   </body>
+
+  <footer>
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+      <button class="btn me-md-2 btn-lg btn-outline-secondary" type="button">About Us</button>
+      <button class="btn btn-lg btn-outline-secondary" type="button">Contact Us</button>
+    </div>
+  </footer>
+
 </html>

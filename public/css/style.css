@@ -37,7 +37,7 @@ small {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid black;
+  color: var(--light-shade);
 }
 
 .container {
@@ -55,4 +55,20 @@ small {
 .main-view {
   border: 1px solid black;
   width: 50%;
+}
+
+#headerSection {
+  background-color: var(--secondary-color);
+}
+
+.info {
+  background-color: #931f1d;
+}
+
+.text {
+  color: var(--light-shade);
+}
+
+.text-sub {
+  color: var(--medium-shade);
 }

@@ -1,58 +1,33 @@
-<h1 id='main-header'>BarFly</h1>
-<nav class='navbar navbar-expand-lg bg-body-tertiary'>
-  <div class='container-fluid'>
-    <a class='navbar-brand' href='#'>BarFly</a>
-    <button
-      class='navbar-toggler'
-      type='button'
-      data-bs-toggle='collapse'
-      data-bs-target='#navbarSupportedContent'
-      aria-controls='navbarSupportedContent'
-      aria-expanded='false'
-      aria-label='Toggle navigation'
-    >
-      <span class='navbar-toggler-icon'></span>
-    </button>
-    <div class='collapse navbar-collapse' id='navbarSupportedContent'>
-      <ul class='navbar-nav me-auto mb-2 mb-lg-0'>
-        <li class='nav-item'>
-          <a class='nav-link active' aria-current='page' href='/'>Home</a>
-        </li>
-        <li class='nav-item'>
-          <a class='nav-link login-signup' id='login' href='/login'>Login/Signup</a>
-        </li>
-        <li class='nav-item'>
-          <a class='nav-link' id='account' href='/account'>My Account</a>
-        </li>
-      </ul>
-      <form class='d-flex' role='search'>
-        <input
-          class='form-control me-2'
-          type='search'
-          placeholder='Search'
-          aria-label='Search'
-        />
-        <button class='btn btn-outline-success' type='submit'>Search</button>
-      </form>
-    </div>
-  </div>
-</nav>
 
-<div class='container'>
-  <div class='comments'>
-    <h3>Review / Comments</h3>
-  </div>
+<div class="container-fluid">
+  <div class="row">
+    <section class="col-md border text-center border-2 rounded shadow-3-strong  ms-1 info">
+      <h2 class="text">Review/Comment</h2>
+      <ul id="review"></ul>
+    </section>
 
-  <div class='main-view'>
-  </div>
-  <div class='bar-list'>
-    <ul class='list-group'>
-      <li class='list-group-item'>Bar 1</li>
-      <li class='list-group-item'>Bar 2</li>
-      <li class='list-group-item'>Bar 3</li>
-      <li class='list-group-item'>Bar 4</li>
-      <li class='list-group-item'>Bar 5</li>
-    </ul>
+    <section class="col-md-6 border border-2 rounded shadow-3-strong  mx-1 b info">
+        <h2 class="text" id="bar-name"></h2>
+      <img src="" alt="" id="main-bar">
+      <div
+        class="bg-image p-5 text-center shadow-1-strong rounded-5 info"
+        style="
+          background-image: url('https://www.servaclean.co.uk/wp-content/uploads/2018/01/bar-image-e1679069064353.jpg');
+          height: 100vh;
+        "
+      >
+      </div>
+      <h2 class="text">Description</h2>
+      <div id="descript">
+        <p class="text-sub">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus cum rem voluptate totam et fuga sapiente sunt quasi! Reprehenderit nam praesentium modi officia aut laborum voluptate molestias consequuntur asperiores id?
+        </p>
+      </div>
+    </section>
+
+    <section class="ranks col-md border text-center border-2 rounded shadow-3-strong me-1 info">
+      <h2 class="text">Bar ranks</h2>
+      <ul></ul>
+    </section>
   </div>
 </div>
-
