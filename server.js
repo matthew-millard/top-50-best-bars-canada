@@ -16,17 +16,20 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 // Create instance of the express handlebars engine
-const hbs = exphbs.create({ helpers: {} });
+const hbs = exphbs.create({
+  helpers: {},
+});
 
 const sess = {
   secret: process.env.SESSION_SECRET,
   cookie: {
-    maxAge: 300000,
+    maxAge: 600000, // 10 mins
     httpOnly: true,
     secure: false,
     sameSite: 'strict',
   },
   resave: false,
+  rolling: true,
   saveUninitialized: true,
   store: new SequelizeStore({
     db: sequelize,

@@ -13,7 +13,6 @@ const signupFormHandler = async (event) => {
   const password = passwordEl.value.trim();
   const passwordRepeat = passwordRepeatEl.value.trim();
 
-  console.log(username, email, password, passwordRepeat);
   if (password !== passwordRepeat) {
     return console.error('Passwords do not match!');
   }
