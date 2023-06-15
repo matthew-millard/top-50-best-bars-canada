@@ -1,46 +1,53 @@
-<form class='loginForm'>
-  <!-- Email input -->
-  <div class='form-outline mb-4'>
-    <input type='email' id='email-input' class='form-control' />
-    <label class='form-label' for='email-input'>Email address</label>
-  </div>
-
-  <!-- Password input -->
-  <div class='form-outline mb-4'>
-    <input type='password' id='password-input' class='form-control' />
-    <label class='form-label' for='password-input'>Password</label>
-  </div>
-
-  <!-- 2 column grid layout for inline styling -->
-  <div class='row mb-4'>
-    <div class='col d-flex justify-content-center'>
-      <!-- Checkbox -->
-      <div class='form-check'>
-        <input
-          class='form-check-input'
-          type='checkbox'
-          value=''
-          id='form2Example31'
-          checked
-        />
-        <label class='form-check-label' for='form2Example31'>
-          Remember me
-        </label>
+<div class='row pt-5 h-100' style='background-color: #931f1d;'>
+  <div class='mx-auto col-10 col-md-8 col-lg-6'>
+    <form class='loginForm w-50'>
+      <!-- Email input -->
+      <div class='form-outline mb-4'>
+        <input type='email' id='email-input' class='form-control' />
+        <label class='form-label text-white' for='email-input'>Email address</label>
       </div>
-    </div>
 
-    <div class='col'>
-      <!-- Simple link -->
-      <a href='#!'>Forgot password?</a>
-    </div>
+      <!-- Password input -->
+      <div class='form-outline mb-4'>
+        <input type='password' id='password-input' class='form-control' />
+        <label
+          class='form-label text-white'
+          for='password-input'
+        >Password</label>
+      </div>
+
+      <!-- 2 column grid layout for inline styling -->
+      <div class='row mb-4'>
+        <div class='col d-flex justify-content-center'>
+          <!-- Checkbox -->
+          <div class='form-check'>
+            <input
+              class='form-check-input'
+              type='checkbox'
+              value=''
+              id='form2Example31'
+              checked
+            />
+            <label class='form-check-label text-white' for='form2Example31'>
+              Remember me
+            </label>
+          </div>
+        </div>
+
+        <div class='col'>
+          <!-- Simple link -->
+          <a href='/change-password'>Forgot password?</a>
+        </div>
+      </div>
+
+      <!-- Submit button -->
+      <button type='submit' class='btn btn-primary btn-block mb-4'>Sign in</button>
+
+      <!-- Register buttons -->
+      <div class='text-center text-white'>
+        <p>Not a member? <a href='/signup'>Register</a></p>
+      </div>
+    </form>
   </div>
-
-  <!-- Submit button -->
-  <button type='submit' class='btn btn-primary btn-block mb-4'>Sign in</button>
-
-  <!-- Register buttons -->
-  <div class='text-center'>
-    <p>Not a member? <a href='/signup'>Register</a></p>
-  </div>
-</form>
+</div>
 <script src='/js/login.js'></script>

@@ -1,62 +1,66 @@
-<h1>Welcome, {{user.username}}!</h1>
+<div class='row pt-5 mx-auto h-100' style='background-color: #931f1d;'>
+  <div class='mx-auto col-10 col-md-8 col-lg-6'>
+    <h1>Welcome, {{user.username}}!</h1>
 
-<h2>Profile Information</h2>
-<p>User ID: {{user.id}}</p>
-<p id='userId' data-id='{{user.id}}'>Username: {{user.username}}</p>
-<p>Email: {{user.email}}</p>
+    <h2>Profile Information</h2>
+    <p>User ID: {{user.id}}</p>
+    <p id='userId' data-id='{{user.id}}'>Username: {{user.username}}</p>
+    <p>Email: {{user.email}}</p>
 
-<button class='btn btn-danger' id='delete-account-btn'>Delete Account</button>
+    <button class='btn btn-danger' id='delete-account-btn'>Delete Account</button>
 
-<button class='btn btn-primary' id='change-password-btn'>Change Password</button>
+    <button class='btn btn-primary' id='change-password-btn'>Change Password</button>
 
-<div class='row'>
-  <div class='col'>
-    <div class='card'>
-      <div class='card-body'>
-        <h2 class='card-title'>Favorites</h2>
-        {{#if user.favorites.length}}
-          <ul class='card-text'>
-            {{#each user.favorites}}
-              <li>{{this}}</li>
-            {{/each}}
-          </ul>
-        {{else}}
-          <p>No favorites found.</p>
-        {{/if}}
+    <div class='row'>
+      <div class='col'>
+        <div class='card'>
+          <div class='card-body'>
+            <h2 class='card-title'>Favorites</h2>
+            {{#if user.favorites.length}}
+              <ul class='card-text'>
+                {{#each user.favorites}}
+                  <li>{{this}}</li>
+                {{/each}}
+              </ul>
+            {{else}}
+              <p>No favorites found.</p>
+            {{/if}}
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
 
-  <div class='col'>
-    <div class='card'>
-      <div class='card-body'>
-        <h2 class='card-title'>Reviews</h2>
-        {{#if user.reviews.length}}
-          <ul class='card-text'>
-            {{#each user.reviews}}
-              <li>{{this}}</li>
-            {{/each}}
-          </ul>
-        {{else}}
-          <p>No reviews found.</p>
-        {{/if}}
+      <div class='col'>
+        <div class='card'>
+          <div class='card-body'>
+            <h2 class='card-title'>Reviews</h2>
+            {{#if user.reviews.length}}
+              <ul class='card-text'>
+                {{#each user.reviews}}
+                  <li>{{this}}</li>
+                {{/each}}
+              </ul>
+            {{else}}
+              <p>No reviews found.</p>
+            {{/if}}
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
 
-  <div class='col'>
-    <div class='card'>
-      <div class='card-body'>
-        <h2 class='card-title'>Search History</h2>
-        {{#if user.history.length}}
-          <ul class='card-text'>
-            {{#each user.history}}
-              <li>{{this}}</li>
-            {{/each}}
-          </ul>
-        {{else}}
-          <p>No search history found.</p>
-        {{/if}}
+      <div class='col'>
+        <div class='card'>
+          <div class='card-body'>
+            <h2 class='card-title'>Search History</h2>
+            {{#if user.history.length}}
+              <ul class='card-text'>
+                {{#each user.history}}
+                  <li>{{this}}</li>
+                {{/each}}
+              </ul>
+            {{else}}
+              <p>No search history found.</p>
+            {{/if}}
+          </div>
+        </div>
       </div>
     </div>
   </div>

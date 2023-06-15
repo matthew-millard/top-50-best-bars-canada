@@ -111,7 +111,7 @@ router.put('/change-password', withAuth, async (req, res) => {
     console.error(err);
     return res
       .status(500)
-      .json({ error: 'An erro occured while changing the password.' });
+      .json({ error: 'An error occured while changing the password.' });
   }
 });
 
