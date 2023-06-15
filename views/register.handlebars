@@ -1,0 +1,28 @@
+<div class='register-container'>
+  <div class='register-title'>
+    <h1>Register an Account</h1>
+    <hr />
+  </div>
+  <form class='registerForm' autocomplete='off'>
+    <div class='form-group'>
+      <label for='username'>Username: </label>
+      <input type='text' id='username' name='username' />
+    </div>
+    <div class='form-group'>
+      <label for='email'>Email: </label>
+      <input type='email' id='email' name='email' />
+    </div>
+    <div class='form-group'>
+      <label for='password'>Password: </label>
+      <input type='password' id='password' name='password' />
+    </div>
+    <div class='form-group form-group-confirm-password'>
+      <label for='confirmPassword'>Confirm Password: </label>
+      <input type='password' id='confirmPassword' name='confirmPassword' />
+    </div>
+    <button class='primary-button' type='submit'>Register</button>
+  </form>
+  <div class='error-message register-error'></div>
+
+</div>
+<script src='/js/register.js'></script>

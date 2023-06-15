@@ -1,24 +1,13 @@
 const router = require('express').Router();
 const { User } = require('../../models');
 const withAuth = require('../../utils/auth');
-const { clearUserSessions } = require('../../utils/sessionUtils');
 
-// Create a new user
-router.post('/', async (req, res) => {
-  try {
-  } catch (err) {
-    console.error(err);
-    return res.status(500).json({ message: 'Server Error' });
-  }
-});
-
+// User login
 router.post('/login', async (req, res) => {
-  const { email, password } = req.body;
+  const { username, password } = req.body;
   try {
-    // Clear user sessions
-    await clearUserSessions(email, req.sessionStore);
-    // Check if email and password exists
-    const userData = await User.findOne({ where: { email } });
+    // Check if username and password exists
+    const userData = await User.findOne({ where: { username } });
 
     if (!userData) {
       return res
@@ -35,8 +24,10 @@ router.post('/login', async (req, res) => {
     req.session.save(() => {
       req.session.user_id = userData.id;
       req.session.logged_in = true;
-
-      return res.status(200).json({ message: 'You are now logged in!' });
+      console.log(req.session);
+      return res
+        .status(200)
+        .json({ user: userData, message: 'You are now logged in!' });
     });
   } catch (err) {
     console.error(err);
@@ -44,26 +35,30 @@ router.post('/login', async (req, res) => {
   }
 });
 
-// Post Sign up
-router.post('/signup', async (req, res) => {
+// Register a new user
+router.post('/register', async (req, res) => {
+  const { username, email, password } = req.body;
   try {
-    const { username, email, password } = req.body;
+    const userData = await User.create({ username, email, password });
 
-    await User.create({
-      username,
-      email,
-      password,
+    if (!userData) {
+      return res
+        .status(400)
+        .json({ message: 'Something went wrong, please try again.' });
+    }
+
+    req.session.save(() => {
+      req.session.user_id = userData.id;
+      req.session.logged_in = true;
+      return res
+        .status(200)
+        .json({ user: userData, message: 'You are now logged in!' });
     });
-    return res
-      .status(200)
-      .json({ message: 'You have successfully created an account.' });
   } catch (err) {
     console.error(err);
-    return res.status(500).json({ message: 'Server Error' });
+    return res.status(500).json({ message: 'Server Error', err });
   }
 });
-
-router.post('/logout', (req, res) => {});
 
 // Delete user account
 router.delete('/delete/:id', withAuth, async (req, res) => {

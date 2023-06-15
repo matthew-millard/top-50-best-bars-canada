@@ -1,45 +1,12 @@
-<div class='container-fluid'>
-  <div class='row'>
-    <section
-      class='col-md border text-center border-2 rounded shadow-3-strong ms-1 info'
-    >
-      <h2 class='text'>Review/Comment</h2>
-      <ul id='review'></ul>
-    </section>
+<div class='welcome-message'>
+  <h1>Welcome to BARFLY</h1>
+  <h3>A barflies guide to
+    <span class='red-hightlight'>Canada's</span>
+    top 50 best bars.</h3>
 
-    <section
-      class='col-md-6 border border-2 rounded shadow-3-strong mx-1 b info'
-    >
-      <h2 class='text' id='bar-name'></h2>
-      <img src='' alt='' id='main-bar' />
-      <div
-        class='bg-image p-5 text-center shadow-1-strong rounded-5 info'
-        style="
-          background-image: url('https://www.servaclean.co.uk/wp-content/uploads/2018/01/bar-image-e1679069064353.jpg');
-          height: 100vh;
-        "
-      >
-      </div>
-      <h2 class='text'>Description</h2>
-      <div id='descript'>
-        <p class='text-sub'>
-
-        </p>
-      </div>
-    </section>
-
-    <section
-      class='ranks col-md border border-2 rounded shadow-3-strong me-1 info'
-    >
-      <h2 class='text'>Bar ranks</h2>
-      <ul id='bars-list'>
-        {{#each bars}}
-          <a href='#' class='bar-link' data-id='{{this.id}}'>
-            <li>{{this.id}} - {{this.bar_name}}</li>
-          </a>
-        {{/each}}
-      </ul>
-    </section>
-  </div>
+  <p>Explore the the country's finest drinking establishments, as
+    determined by an expert panel of over 60 judges from across the country.
+  </p>
+  <button class='primary-button welcome-cta'>THE LIST</button>
 </div>
-<script src='/js/bars.js'></script>
+<script src='/js/welcome-page.js'></script>

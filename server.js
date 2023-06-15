@@ -7,6 +7,10 @@ const routes = require('./controllers/index');
 const exphbs = require('express-handlebars');
 require('dotenv').config();
 
+// Helper functions
+const removeProtocol = require('./utils/removeProtocol');
+const formatDate = require('./utils/formatDate');
+
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 // Express Application
@@ -17,13 +21,19 @@ const PORT = process.env.PORT || 3001;
 
 // Create instance of the express handlebars engine
 const hbs = exphbs.create({
-  helpers: {},
+  helpers: {
+    removeProtocol: removeProtocol,
+    formatDate: formatDate,
+    eq: function (a, b) {
+      return a === b;
+    },
+  },
 });
 
 const sess = {
   secret: process.env.SESSION_SECRET,
   cookie: {
-    maxAge: 600000, // 10 mins
+    maxAge: 300000, // 5 mins
     httpOnly: true,
     secure: false,
     sameSite: 'strict',

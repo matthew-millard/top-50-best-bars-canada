@@ -1,0 +1,28 @@
+<div class='the-list-container'>
+  <div class='the-list-title flex'>
+    <h1>The List</h1><span class='the-list-title--year'>2023</span>
+  </div>
+  <hr />
+
+  <div class='the-list-item'>
+    {{#each bars}}
+      <div class='bar-card'>
+        <div class='bar-card-image'>
+          <img src='{{this.image}}' alt='{{this.name}}' />
+        </div>
+        <div class='bar-card-content'>
+          <h2><span class='the-list--rank-number'>{{this.id}}.
+            </span>{{this.bar_name}}</h2>
+          <h3>{{this.Province.province_name}}</h3>
+          <p>{{this.description}}</p>
+          <button
+            class='primary-button more-info-btn'
+            data-id='{{this.id}}'
+          >MORE INFO</button>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+</div>
+
+<script src='/js/the-list.js'></script>

@@ -1,10 +1,11 @@
 // Imports
 const sequelize = require('../config/connection');
-const { Bars, HistoricalRanks, Provinces, User } = require('../models');
+const { Bars, HistoricalRanks, Provinces, User, Review } = require('../models');
 
 // Seed data
 const barData = require('./barSeedData.json');
 const userData = require('./userSeedData.json');
+const reviewData = require('./reviewSeedData.json');
 
 // Seed database
 const seedDatabase = async () => {
@@ -42,6 +43,7 @@ const seedDatabase = async () => {
       individualHooks: true,
     });
 
+    await Review.bulkCreate(reviewData);
     process.exit(0);
   } catch (err) {
     console.error(err);
