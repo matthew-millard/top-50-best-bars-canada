@@ -21,7 +21,6 @@ router.get('/', async (req, res) => {
 
     // Serialize data so the template can read it
     const bars = barData.map((bar) => bar.get({ plain: true }));
-    console.table(bars);
     // Pass serialized data and session flag into template
     res.render('homepage', {
       bars,
