@@ -1,0 +1,37 @@
+const router = require('express').Router();
+const { Bars, HistoricalRanks, Provinces, Review } = require('../../models');
+const withAuth = require('../../utils/auth');
+
+// Create a new review
+router.post('/', withAuth, async (req, res) => {
+  try {
+    // Collect author id from session
+    const author_id = req.session.user_id;
+
+    // Collect review body and review id from request body
+    const { review_body, review_id } = req.body;
+
+    console.log(review_id);
+
+    // Create the comment in the database
+    const newReview = await Review.create({
+      review_body,
+      author_id,
+      review_id,
+    });
+
+    // If unsuccessful, return error
+    if (!newReview) {
+      return res.status(400).json({ message: 'Unable to create review' });
+    }
+
+    // If successful, return status 200 and success message
+    return res.status(200).json({ message: 'Review posted successfully' });
+  } catch (err) {
+    console.error(err);
+    return res.status(500).json({ message: 'Server Error' });
+  }
+});
+
+// Exports
+module.exports = router;

@@ -24,6 +24,7 @@ router.get('/', async (req, res) => {
     // Pass serialized data and session flag into template
     res.render('homepage', {
       bars,
+      logged_in: req.session.logged_in,
     });
   } catch (err) {
     console.error(err);
@@ -35,7 +36,21 @@ router.get('/', async (req, res) => {
 
 router.get('/login', async (req, res) => {
   try {
-    return res.status(200).render('login');
+    return res
+      .status(200)
+      .render('login', { logged_in: req.session.logged_in });
+  } catch (err) {
+    console.error(err);
+    return res.status(500).json({ message: 'Server Error' });
+  }
+});
+
+// GET Logout
+router.get('/logout', async (req, res) => {
+  try {
+    req.session.destroy(() => {
+      res.status(204).redirect('/');
+    });
   } catch (err) {
     console.error(err);
     return res.status(500).json({ message: 'Server Error' });
@@ -43,9 +58,22 @@ router.get('/login', async (req, res) => {
 });
 
 // GET Sign-up
-router.get('/signup', async (req, res) => {
+router.get('/register', async (req, res) => {
   try {
-    return res.status(200).render('signup');
+    return res
+      .status(200)
+      .render('register', { logged_in: req.session.logged_in });
+  } catch (err) {
+    console.error(err);
+    return res.status(500).json({ message: 'Server Error' });
+  }
+});
+
+// GET Home
+router.get('/home', withAuth, async (req, res) => {
+  try {
+    return res.status(200).render('home', { logged_in: req.session.logged_in });
+    ``;
   } catch (err) {
     console.error(err);
     return res.status(500).json({ message: 'Server Error' });
@@ -53,7 +81,7 @@ router.get('/signup', async (req, res) => {
 });
 
 // GET My account
-router.get('/account', withAuth, async (req, res) => {
+router.get('/my-account', withAuth, async (req, res) => {
   try {
     // Get user id from session
     const user_id = req.session.user_id;
@@ -77,7 +105,39 @@ router.get('/account', withAuth, async (req, res) => {
 // Change Password page
 router.get('/change-password', withAuth, async (req, res) => {
   try {
-    return res.status(200).render('change-password');
+    return res
+      .status(200)
+      .render('change-password', { logged_in: req.session.logged_in });
+  } catch (err) {
+    console.error(err);
+    return res.status(500).json({ message: 'Server Error' });
+  }
+});
+
+// The List Page
+router.get('/the-list', async (req, res) => {
+  try {
+    const barData = await Bars.findAll({
+      include: [
+        {
+          model: Provinces,
+          attributes: ['province_name'],
+        },
+        {
+          model: HistoricalRanks,
+          attributes: ['rank_position', 'year'],
+        },
+      ],
+    });
+
+    // Serialize data so the template can read it
+    const bars = barData.map((bar) => bar.get({ plain: true }));
+    // Pass serialized data and session flag into template
+    console.log(bars);
+    res.render('the-list', {
+      bars,
+      logged_in: req.session.logged_in,
+    });
   } catch (err) {
     console.error(err);
     return res.status(500).json({ message: 'Server Error' });

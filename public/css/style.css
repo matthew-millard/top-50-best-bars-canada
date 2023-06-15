@@ -2,11 +2,10 @@
   font-size: 62.5%; /* Set the base font to 10px*/
 
   /* Colors */
-  --primary-color: #931f1d;
-  --secondary-color: #2b2d42;
-  --light-shade: #edf2f4;
-  --medium-shade: #8d99ae;
-  --dark-shade: #0c0f12;
+  --primary-color: black;
+  --secondary-color: white;
+  --light-grey: #efefef;
+  --canada-color: #d80621;
 }
 
 body {
@@ -24,57 +23,283 @@ h2 {
 h3 {
   font-size: 3rem;
 }
-
-p {
-  font-size: 1.8rem;
-  color: var(--light-shade);
+h4 {
+  font-size: 2.2rem;
 }
 
-li {
+p,
+li,
+input,
+label,
+textarea,
+option,
+select,
+span {
   font-size: 1.8rem;
-  color: var(--light-shade);
+  color: var(--primary-color);
+}
+
+a:visited,
+a:active {
+  color: var(--primary-color);
 }
 
 small {
   font-size: 1.4rem;
 }
 
-#main-header {
+textarea {
+  padding: 1rem;
+}
+
+/* Error Messages */
+.login-error,
+.register-error,
+.delete-account-error {
+  height: 3rem;
+}
+.error-message {
+  font-size: 1.4rem;
+  color: red;
+}
+
+/* Bold Font */
+.bold {
+  font-weight: bold;
+}
+
+.larger-text {
+  font-size: 2.2rem;
+}
+
+/* icons */
+.fa-solid {
+  font-size: 3rem;
+}
+
+/* Primary Button */
+.primary-button {
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  border: none;
+}
+
+.red-hightlight {
+  color: var(--canada-color);
+}
+
+.flex {
   display: flex;
+}
+
+/* Navigation Bar */
+.nav__links-container {
+  justify-content: end;
+  width: 90%;
+}
+
+.nav__links-item {
+  padding: 2rem;
+}
+
+/* Page Container */
+.page-container {
   justify-content: center;
   align-items: center;
-  color: var(--light-shade);
-}
-
-.container {
-  display: flex;
-}
-
-.comments {
-  display: flex;
   flex-direction: column;
-  justify-content: center;
+  min-height: 100vh;
+}
+
+.welcome-message {
+  width: 90%;
+  max-width: 1100px;
+  padding: 4rem;
+}
+
+.welcome-message > * {
+  padding: 1rem 0;
+}
+
+.welcome-cta {
+  padding: 1rem 2rem;
+}
+
+/* The List */
+.the-list-title {
+  justify-content: space-between;
+}
+
+.the-list-title--year {
+  font-size: 4.8rem;
+  font-weight: bold;
+}
+
+.the-list-container {
+  width: 90%;
+  max-width: 1100px;
+}
+
+.the-list-item {
+  padding: 4rem;
+}
+
+.the-list--rank-number {
+  font-size: 4.8rem;
+}
+
+.bar-card {
+  margin-bottom: 4rem;
+}
+
+.bar-card-content h3,
+.bar-card-content p {
+  padding-bottom: 1rem;
+}
+
+/* Register */
+.register-container {
+  width: 90%;
+  max-width: 500px;
+}
+
+.register-title {
+  padding-bottom: 4rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: row;
   align-items: center;
-  border: 1px solid black;
+  margin-bottom: 10px;
 }
 
-.main-view {
-  border: 1px solid black;
-  width: 50%;
+.form-group label {
+  width: 200px;
 }
 
-#headerSection {
-  background-color: var(--secondary-color);
+.form-group input {
+  flex-grow: 1;
+  padding: 5px;
 }
 
-.info {
-  background-color: #931f1d;
+.form-group-confirm-password {
+  padding-bottom: 2rem;
 }
 
-.text {
-  color: var(--light-shade);
+/* Login */
+.login-container {
+  width: 90%;
+  max-width: 500px;
 }
 
-.text-sub {
-  color: var(--light-shade);
+/* More Info */
+.more-info-container {
+  width: 90%;
+  max-width: 1100px;
+}
+
+.more-info-container > * {
+  padding-bottom: 1rem;
+}
+
+.more-info-rank-number {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  text-align: center;
+  font-size: 7.2rem;
+  width: 10rem;
+  height: 10rem;
+  border: 2px solid var(--primary-color);
+}
+
+.more-info-title {
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.left-items {
+  display: flex;
+  align-items: baseline;
+}
+
+.left-items h1,
+.left-items h2 {
+  margin-right: 1rem;
+}
+
+.right-item {
+  margin-left: auto;
+}
+
+.fa-heart {
+  color: var(--canada-color);
+}
+
+.address-group h3 {
+  padding-right: 2rem;
+}
+
+.patio-group {
+  height: 6rem;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.patio-group i {
+  font-size: 2.2rem;
+  padding-left: 1rem;
+}
+
+/* Review Form */
+.prev-reviews-container h3 {
+  padding: 2rem 0;
+}
+
+.review-container {
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.review-textarea {
+  height: 8rem;
+}
+
+.review-button {
+  align-self: flex-start;
+}
+
+.prev-reviews-content {
+  border: 1px solid var(--primary-color);
+  border-radius: 1rem;
+  background-color: var(--light-grey);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Home */
+.search-container {
+  width: 90%;
+  max-width: 900px;
+}
+
+.search-form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.search-form label {
+  width: 200px;
+}
+
+.search-form select {
+  flex-grow: 1;
+  padding: 5px;
+}
+
+/* My Account */
+.my-account-container {
+  width: 90%;
+  max-width: 900px;
 }

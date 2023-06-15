@@ -1,26 +1,43 @@
 const loginForm = document.querySelector('.loginForm');
-const emailEl = loginForm.querySelector('[type="email"]');
-const passwordEl = loginForm.querySelector('[type="password"]');
+const usernameEl = loginForm.querySelector('#username');
+const passwordEl = loginForm.querySelector('#password');
+
+// Show Error Messages Function
+function displayErrorMessage(errorMessage) {
+  const errorMessageContainer = document.querySelector('.login-error');
+  errorMessageContainer.innerHTML = '';
+  const errorMessageElement = document.createElement('p');
+
+  errorMessageElement.textContent = errorMessage;
+  errorMessageElement.classList.add('error-message');
+
+  errorMessageContainer.appendChild(errorMessageElement);
+}
 
 const loginFormHandler = async (event) => {
   event.preventDefault();
 
   // Collect email and password values
-  const email = emailEl.value.trim();
+  const username = usernameEl.value.trim();
   const password = passwordEl.value.trim();
 
-  if (email && password) {
-    const response = await fetch('/api/users/login', {
-      method: 'POST',
-      body: JSON.stringify({ email, password }),
-      headers: { 'content-type': 'application/json' },
-    });
+  try {
+    if (username && password) {
+      const response = await fetch('/api/users/login', {
+        method: 'POST',
+        body: JSON.stringify({ username, password }),
+        headers: { 'content-type': 'application/json' },
+      });
 
-    if (response.status === 200) {
-      return document.location.replace('/');
-    } else {
-      console.error('Not found.');
+      if (!response.ok) {
+        const data = await response.json();
+        displayErrorMessage(data.message);
+      } else {
+        document.location.replace('/home');
+      }
     }
+  } catch (err) {
+    console.log(err);
   }
 };
 

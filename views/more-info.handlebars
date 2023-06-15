@@ -1,0 +1,66 @@
+<div class='more-info-container'>
+  <div class="more-info-title flex">
+  <div class="left-items flex">
+    <h1 class="more-info-rank-number">{{bar.id}}.</h1>
+    <h2>{{bar.bar_name}}</h2>
+  </div>
+  <div class="right-item">
+    <i data-id="{{bar.id}}" title="Add to Favorites" class="fa-solid fa-heart"></i>
+  </div>
+</div>
+
+  <div class="address-group flex">
+      <h3>{{bar.Province.province_name}}</h3>
+      <a href='{{bar.address}}' target='_blank' title="Map location"><i
+          class='fa-solid fa-location-dot'
+        ></i>
+  </div></a>
+  <p>{{bar.description}}</p>
+  <div class="patio-group flex">
+      <p class="bold larger-text">Patio: </p>
+      {{#if bar.patio}}
+        <i class="fa-solid fa-thumbs-up"></i>
+        {{else}}
+        <i class="fa-solid fa-thumbs-down"></i>
+        {{/if}}
+  </div>
+  <p class="bold larger-text">Website: <a href="{{bar.website}}">{{removeProtocol bar.website}}</a></p>
+    <h4>Previous Rankings</h4>
+  {{#each bar.HistoricalRanks}}
+  {{#unless (eq this.year 2023)}}
+    <div class="rank-group flex">
+      <p class="bold">{{this.year}} - {{this.rank_position}} place</p>
+    </div>
+  {{/unless}}
+{{/each}}
+
+{{!-- Reviews --}}
+ {{#if bar.reviews}}
+    <div class='prev-reviews-container'>
+      <hr />
+      <h3>Reviews</h3>
+      {{#each bar.reviews}}
+        <div class='prev-reviews-content'>
+          <p>{{this.review_body}}</p>
+          <small>Posted by: {{this.User.username}}</small>
+          <small>{{formatDate this.createdAt}}</small>
+        </div>
+      {{/each}}
+    </div>
+  {{else}}
+    <div class='prev-reviews-container'>
+      <hr />
+      <h3>Reviews</h3>
+      <div class='prev-reviews-content'>
+        <p>No reviews yet!</p>
+      </div>
+    </div>
+  {{/if}}
+
+  <form class='review-container review-form flex' data-id={{bar.id}}>
+    <textarea class='review-textarea' name='review_body' required></textarea>
+    <div class='error-message-container'></div>
+    <button class='primary-button review-button' type='submit'>Leave Review</button>
+  </form>
+</div>
+<script src="/js/reviews.js"></script>
