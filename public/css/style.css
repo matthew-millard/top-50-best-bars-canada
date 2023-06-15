@@ -27,6 +27,12 @@ h3 {
 
 p {
   font-size: 1.8rem;
+  color: var(--light-shade);
+}
+
+li {
+  font-size: 1.8rem;
+  color: var(--light-shade);
 }
 
 small {
@@ -70,5 +76,5 @@ small {
 }
 
 .text-sub {
-  color: var(--medium-shade);
+  color: var(--light-shade);
 }
