@@ -5,6 +5,7 @@ const {
   Provinces,
   Review,
   User,
+  Image,
 } = require('../../models');
 const withAuth = require('../../utils/auth');
 
@@ -21,6 +22,10 @@ router.get('/:id', withAuth, async (req, res) => {
         {
           model: HistoricalRanks,
           attributes: ['rank_position', 'year'],
+        },
+        {
+          model: Image,
+          attributes: ['url'],
         },
       ],
     });
