@@ -2,7 +2,7 @@
   <div class='the-list-title flex'>
     <h1>The List</h1><span class='the-list-title--year'>2023</span>
   </div>
-  <hr />
+    <hr />
 
   <div class='the-list-item'>
     {{#each bars}}
@@ -11,10 +11,9 @@
           <img src='{{this.image.url}}' alt='{{this.bar_name}}' />
         </div>
         <div class='bar-card-content'>
-          <h2><span class='the-list--rank-number'>{{this.id}}.
+          <h2 class="the-list-bar-name"><span class='the-list--rank-number text-white'>{{this.id}}.
             </span>{{this.bar_name}}</h2>
-          <h3>{{this.city_name}}, {{this.Province.province_name}}</h3>
-          <p>{{this.description}}</p>
+          <h3 class="the-list-city-province">{{this.city_name}}, {{this.Province.province_name}}</h3>
           <button
             class='primary-button more-info-btn'
             data-id='{{this.id}}'
