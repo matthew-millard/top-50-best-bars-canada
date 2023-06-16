@@ -8,7 +8,8 @@
     "start": "nodemon",
     "lint": "eslint .",
     "format": "prettier -w .",
-    "seed": "node seeds/seed.js"
+    "seed": "node seeds/seed.js",
+    "upload-images": "node scripts/uploadImagesToS3.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,7 @@
   },
   "homepage": "https://github.com/matthew-millard/top-50-best-bars-canada#readme",
   "dependencies": {
+    "aws-sdk": "^2.1398.0",
     "bcrypt": "^5.1.0",
     "connect-session-sequelize": "^7.1.7",
     "dotenv": "^16.1.3",

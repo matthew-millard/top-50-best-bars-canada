@@ -1,31 +1,40 @@
 // Imports
 const sequelize = require('../config/connection');
-const { Bars, HistoricalRanks, Provinces, User, Review } = require('../models');
+const {
+  Bars,
+  HistoricalRanks,
+  Provinces,
+  User,
+  Review,
+  City,
+  Image,
+} = require('../models');
 
 // Seed data
 const barData = require('./barSeedData.json');
 const userData = require('./userSeedData.json');
 const reviewData = require('./reviewSeedData.json');
+const provinceData = require('./provinceSeedData.json');
+const imageData = require('./imageSeedData.json');
 
 // Seed database
 const seedDatabase = async () => {
   try {
     await sequelize.sync({ force: true }); // Drop all tables and recreate them
 
-    // Iterate over each bar in the array
-    for (const bar of barData) {
-      // first create the province because it is a foreign key in the bars table
-      const createdProvince = await Provinces.create({
-        province_name: bar.province,
-      });
+    await Provinces.bulkCreate(provinceData);
 
-      // then create a bar, with the province_id set to the id of the created province
+    // iterate over the barData array and create a new bar for each entry
+    for (const bar of barData) {
+      // create bar and save the created instance to use its id in the ranks creation
       const createdBar = await Bars.create({
         bar_name: bar.bar_name,
-        province_id: createdProvince.id,
         address: bar.address,
-        patio: bar.patio,
+        city_name: bar.city,
+        province_id: bar.province_id,
+        province_name: bar.province,
         website: bar.website,
+        patio: bar.patio,
         description: bar.description,
       });
 
@@ -38,18 +47,19 @@ const seedDatabase = async () => {
         });
       }
     }
-
     await User.bulkCreate(userData, {
       individualHooks: true,
     });
 
     await Review.bulkCreate(reviewData);
-    process.exit(0);
-  } catch (err) {
-    console.error(err);
-    process.exit(1); // Exit with an error code
+  } catch (error) {
+    console.error(error);
   }
+
+  await Image.bulkCreate(imageData);
+
+  process.exit(0);
 };
 
-// Run the seed file
+// Call seedDatabase function
 seedDatabase();

@@ -1,9 +1,9 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Provinces extends Model {}
+class Image extends Model {}
 
-Provinces.init(
+Image.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -11,10 +11,16 @@ Provinces.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    province_name: {
+    url: {
       type: DataTypes.STRING,
       allowNull: false,
-      unique: true,
+    },
+    bar_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'Bars',
+        key: 'id',
+      },
     },
   },
   {
@@ -22,9 +28,8 @@ Provinces.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'Provinces',
+    modelName: 'image',
   }
 );
 
-// Export
-module.exports = Provinces;
+module.exports = Image;

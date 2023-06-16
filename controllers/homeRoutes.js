@@ -1,6 +1,6 @@
 // Imports
 const router = require('express').Router();
-const { Bars, HistoricalRanks, Provinces, User } = require('../models');
+const { Bars, HistoricalRanks, Provinces, User, Image } = require('../models');
 const withAuth = require('../utils/auth');
 
 // GET Homepage
@@ -126,6 +126,10 @@ router.get('/the-list', async (req, res) => {
         {
           model: HistoricalRanks,
           attributes: ['rank_position', 'year'],
+        },
+        {
+          model: Image,
+          attributes: ['url'],
         },
       ],
     });
