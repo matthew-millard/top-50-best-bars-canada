@@ -254,6 +254,10 @@ textarea {
   padding-left: 1rem;
 }
 
+.added {
+  font-size: 1.5rem;
+}
+
 /* Review Form */
 .prev-reviews-container h3 {
   padding: 2rem 0;

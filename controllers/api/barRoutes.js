@@ -48,7 +48,7 @@ router.get('/:id', withAuth, async (req, res) => {
     });
     const reviewsData = reviews.map((review) => review.get({ plain: true }));
     bar.reviews = reviewsData;
-    console.log(bar);
+    // console.log(bar);
     res.render('more-info', { bar, logged_in: req.session.logged_in });
   } catch (err) {
     console.error(err);

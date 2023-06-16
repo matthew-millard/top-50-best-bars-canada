@@ -1,6 +1,14 @@
 // Imports
 const router = require('express').Router();
-const { Bars, HistoricalRanks, Provinces, User, Image } = require('../models');
+const {
+  Bars,
+  HistoricalRanks,
+  Provinces,
+  User,
+  Image,
+  Favourite,
+  Review,
+} = require('../models');
 const withAuth = require('../utils/auth');
 
 // GET Homepage
@@ -91,11 +99,28 @@ router.get('/my-account', withAuth, async (req, res) => {
       },
     });
 
+    const favsData = await Favourite.findAll({
+      where: { user_id: user_id },
+    });
+
+    const favs = favsData.map((fav) => fav.get({ plain: true }));
+
+    const reviewsData = await Review.findAll({
+      where: { author_id: user_id },
+    });
+
+    const reviews = reviewsData.map((rev) => rev.get({ plain: true }));
+
     const user = userData.get({ plain: true });
 
     return res
       .status(200)
-      .render('my-account', { user, logged_in: req.session.logged_in });
+      .render('my-account', {
+        user,
+        favs,
+        reviews,
+        logged_in: req.session.logged_in,
+      });
   } catch (err) {
     console.error(err);
     return res.status(500).json({ message: 'Server Error' });

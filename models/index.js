@@ -6,6 +6,7 @@ const User = require('./User');
 const Review = require('./reviews');
 const City = require('./city');
 const Image = require('./image');
+const Favourite = require('./favourites');
 // Define associations
 Bars.hasMany(HistoricalRanks, {
   foreignKey: 'bar_id',
@@ -43,6 +44,27 @@ Review.belongsTo(Bars, {
   foreignKey: 'review_id',
 });
 
+//Favourites
+User.hasMany(Favourite, {
+  foreignKey: 'user_id',
+  onDelete: 'CASCADE',
+});
+
+Favourite.belongsTo(User, {
+  foreignKey: 'user_id',
+});
+
+Bars.hasMany(Favourite, {
+  foreignKey: 'bar_id',
+  onDelete: 'CASCADE',
+});
+
+Favourite.belongsTo(Bars, {
+  foreignKey: 'bar_id',
+});
+
+// /favs
+
 Provinces.hasMany(City, {
   foreignKey: 'province_id',
 });
@@ -60,4 +82,13 @@ Image.belongsTo(Bars, {
 });
 
 // Exports
-module.exports = { Bars, HistoricalRanks, Provinces, User, Review, City, Image };
+module.exports = {
+  Bars,
+  HistoricalRanks,
+  Provinces,
+  User,
+  Review,
+  City,
+  Image,
+  Favourite,
+};

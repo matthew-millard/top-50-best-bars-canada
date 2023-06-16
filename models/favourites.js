@@ -4,9 +4,9 @@ const sequelize = require('../config/connection');
 const User = require('./User');
 const Bar = require('./bars.js');
 
-class Review extends Model {}
+class Favourite extends Model {}
 
-Review.init(
+Favourite.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -14,32 +14,34 @@ Review.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    review_body: {
-      type: DataTypes.TEXT,
-      allowNull: false,
-      defaultValue: '',
+    bar_id: {
+      type: DataTypes.INTEGER,
+      unique: true,
+      references: {
+        model: Bar,
+        key: 'id',
+      },
     },
-    author_id: {
+    user_id: {
       type: DataTypes.INTEGER,
       references: {
         model: User,
         key: 'id',
       },
     },
-    review_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: Bar,
-        key: 'id',
-      },
-    },
     bar_name: {
       type: DataTypes.STRING,
+      allowNull: false,
+      unique: true,
+    },
+    website: {
+      type: DataTypes.STRING,
+      allowNull: false,
     },
   },
   {
     sequelize,
-    modelName: 'Review',
+    modelName: 'Favourite',
     timestamps: true,
     freezeTableName: true,
     underscored: true,
@@ -47,4 +49,4 @@ Review.init(
 );
 
 // Exports
-module.exports = Review;
+module.exports = Favourite;
