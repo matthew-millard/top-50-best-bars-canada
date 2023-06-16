@@ -8,12 +8,12 @@
     {{#each bars}}
       <div class='bar-card'>
         <div class='bar-card-image'>
-          <img src='{{this.image}}' alt='{{this.name}}' />
+          <img src='{{this.image.url}}' alt='{{this.bar_name}}' />
         </div>
         <div class='bar-card-content'>
           <h2><span class='the-list--rank-number'>{{this.id}}.
             </span>{{this.bar_name}}</h2>
-          <h3>{{this.Province.province_name}}</h3>
+          <h3>{{this.city_name}}, {{this.Province.province_name}}</h3>
           <p>{{this.description}}</p>
           <button
             class='primary-button more-info-btn'

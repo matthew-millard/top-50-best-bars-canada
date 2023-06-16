@@ -26,6 +26,10 @@ Bars.init(
       type: DataTypes.TEXT,
       allowNull: false,
     },
+    city_name: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
     province_id: {
       type: DataTypes.INTEGER,
       references: {

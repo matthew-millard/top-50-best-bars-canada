@@ -5,6 +5,8 @@
     "website": "https://civillibertiesbar.com/",
     "address": "https://goo.gl/maps/oCnESiLQfRpzzJC39",
     "province": "Ontario",
+    "province_id": 1,
+    "city": "Toronto",
     "description": "The neon \"Cocktails & Dreams\" sign hanging in the front window is a great example of truth in advertising. And success has kept Canada's Best Bar — for the second year in a row — honest. One of the very few Canadian bars dedicated to custom cocktail service, Civil isn't fancy. Parts of the floor are painted plywood, its \"copper\" bar is made from pennies, and food comes from a Vietnamese restaurant down the street. The vibe ranges from alcohol-nerd symposium to full-on party bar, depending on the time of night. Since last year's awards (it also cracked the top 10 on North America's 50 Best Bars list), Civil has pushed its drinks program forward with new cocktails on tap, a shelf-stable margarita from its micro-distillation project and an ambitious pop-up program, which has already hosted Mexico City's Hanky Panky. And it will always \"choose kind over cool.\"",
     "ranks": [
       { "year": 2023, "rank_position": 1 },
@@ -18,6 +20,8 @@
     "website": "http://cloakroombar.squarespace.com/",
     "address": "https://goo.gl/maps/etmaQwnqiM4c4k3D8",
     "province": "Québec",
+    "province_id": 2,
+    "city": "Montréal",
     "description": "Hidden behind Maison Cloakroom, a made-to-measure menswear shop in a striking century-old building on Montreal's Golden Mile, is a chic 25-seat bar that trades in one thing and one thing only — delicious cocktails made with integrity. The Cloakroom Bar is known for its purist approach and unflinching commitment to sourcing only the highest-quality ingredients. If they can't find a decent strawberry liqueur, they make their own. As a result, the bespoke cocktails here are a cut — or two — above your average tailor-made drink experience, especially since the bartenders are known for their uncanny ability to size up a guest and figure out the perfect concoction.",
     "ranks": [
       { "year": 2023, "rank_position": 1 },
@@ -31,6 +35,8 @@
     "website": "http://atwatercocktailclub.com/",
     "address": "https://goo.gl/maps/Yq44YpwnLn2GMk2N8",
     "province": "Québec",
+    "province_id": 2,
+    "city": "Montréal",
     "description": "Although it’s become one of Montreal’s top destination bars, ACC got its start in 2016 as a neighbourhood bar — a vibe that is alive and well, thanks to a core group of locals who still hang there, especially on the early shift. No matter what time, though, it’s always a lively room, full of folks taking it easy on glittery couches, huddled around bistro tables or perched at the bar with its stunning collection of rare bottles from around the world. An extensive menu of signature cocktails inspired by modern classics includes the Thunder Gibson, an umami-rich martini riff with a touch of salinity. The inventive drinks beg to be paired with first-rate bar snacks, such as frogs' legs, escargots and chicken liver mousse.",
     "ranks": [
       { "year": 2023, "rank_position": 3 },
@@ -44,6 +50,8 @@
     "website": "http://botanistrestaurant.com/",
     "address": "https://goo.gl/maps/ehuNZ5Wqwb8kUuFt9",
     "province": "British Columbia",
+    "province_id": 6,
+    "city": "Vancouver",
     "description": "It’s only a little slip of a bar, tucked into a quiet corridor at the top of a grand staircase connecting the Fairmont Pacific Rim hotel’s raucous Lobby Lounge and elegant Botanist restaurant. But don’t let the bar’s calm, caught-in-the-middle facade deceive you. The team that won an Exceptional Cocktails Award from Michelin has now garnered Michter’s Art of Hospitality Award 2023. The adjacent glass-encased cocktail lab — avant-garde when the bar opened in 2017 — creates mad-scientist infusions and extractions of uncommon clarity and delicacy. The VIP Cocktail Experience, for which a six-course tasting menu is driven by the high-concept drinks (and served at a private table behind velvet curtains), is one-of-a-kind. And last spring, when an international guest series kicked off with New York’s Katana Kitten, Botanist Bar was at the forefront of a collaboration wave that has become a momentous trend.",
     "ranks": [
       { "year": 2023, "rank_position": 4 },
@@ -57,6 +65,8 @@
     "website": "http://pompette.ca/",
     "address": "https://goo.gl/maps/ThGn31NQoa3hL3tz5",
     "province": "Ontario",
+    "province_id": 1,
+    "city": "Toronto",
     "description": "Between the French café atmosphere and the uncluttered backbar, a first-time caller would be hard pressed to guess that this casually chic space is home to one of the most impressive cocktail programs in Toronto. With a battery of high-tech kitchen tools, four cocktail taps and an in-house ice program, the bar crystallizes complex flavours and farm-fresh ingredients (think Périgord truffles and Chioggia beets) into deceptively simple-looking drinks that deliver astounding flavour and texture. Enjoy traditional croques monsieurs from sister restaurant Pompette, a charming back patio and live jazz on Sunday nights. It’s all served up with warm hospitality and Gallic joie de vivre.",
     "ranks": [
       { "year": 2023, "rank_position": 5 },
@@ -70,6 +80,8 @@
     "website": "http://thisisbarraval.com/",
     "address": "https://goo.gl/maps/RGycQix2MrVHvAJn9",
     "province": "Ontario",
+    "province_id": 1,
+    "city": "Toronto",
     "description": "The doors weren’t open for long before it became apparent that Bar Raval would evolve into something more than a great place for tapas. With its decadent interior of sinuous mahogany swirls, delicious pintxos, impeccable wine selection and full-on embrace of daytime drinking, Raval was a winning formula that immediately drew a lively crowd for breakfast sandwiches, midday snacks, late-night tapas and all manner of drinks in between. And Raval still does, partly because it stays true to the original concept of an elevated Spanish snack bar, but also because the bar team keeps its cocktail game tight and relevant, as evidenced by the new focus on fermentation from bar manager Élise Hanson.",
     "ranks": [
       { "year": 2023, "rank_position": 6 },
@@ -83,6 +95,8 @@
     "website": "http://motherdrinks.co/",
     "address": "https://goo.gl/maps/atPr3Y4VvGEBS8Yo6",
     "province": "Ontario",
+    "province_id": 1,
+    "city": "Toronto",
     "description": "The only bar in Toronto where you can stumble into a live jazz set, find serious bartenders throwing cocktails and sample fresh tastes from the on-site fermentation room, Mother Cocktail Bar has always offered an entirely unique experience. Smart, dramatic, chiaroscuro-inspired décor and a minimalist modern backbar create a relaxed vibe in which to contemplate an ambitious cocktail menu that pushes boundaries with ingredients such as candy cap mushrooms, lime pickles and iodine. Although the high-concept, perfectly executed drinks steal the show, Mother also has a terrific kitchen that fires up some of the city’s best bar food, including the must-try garlic-and-Parmesan fries with truffle-and-dill aïoli.",
     "ranks": [
       { "year": 2023, "rank_position": 7 },
@@ -96,6 +110,8 @@
     "website": "http://thekeeferbar.com/",
     "address": "https://goo.gl/maps/DkNQNfz4SeinPbXp8",
     "province": "British Columbia",
+    "province_id": 6,
+    "city": "Vancouver",
     "description": "Cyberpunk only gets better with age and so does The Keefer Bar, a 13-year-old Vancouver institution that looks like it sprang from an early William Gibson sci-fi novel and was jacked into a futuristic metaverse. Dark and gritty, illuminated by clinical anatomical illustrations and hung on an ancient Chinese apothecary theme that leans heavily into bitter botanicals, The Keefer also exudes a vibrancy and warmth that make you feel like you’ve stumbled into the world’s friendliest underground booze can where everyone knows your name. Drinks bubble with smoke and are stirred down to perfection. The music is chill. Although it was sad to see the end of the award-winning Keefer Yard, the inside bar didn’t miss a beat and will always be the city’s coolest cocktail OG.",
     "ranks": [
       { "year": 2023, "rank_position": 8 },
@@ -109,6 +125,8 @@
     "website": "http://milkywaycocktails.com/",
     "address": "https://goo.gl/maps/fPEGMaCAgCefNvBs8",
     "province": "Québec",
+    "province_id": 2,
+    "city": "Montréal",
     "description": "The black-light glow party starts at the bottom of Milky Way’s stairwell, guiding you on your journey into a new galaxy. Upstairs is airy and spacious, with a massive skylight, bright neon pink and green décor, and abundant plant life, all dramatically illuminated. It’s an undeniably cool space that borders on the clubby side, especially when the late-night dance party kicks in, but with far better food than your average outer-space-themed bar. Save room for the super-cheesy raclette pizza. Creative cocktails are expertly designed, including the highly popular Island in the Sun. Wine options are brilliant, especially the bubbles. And the spirits selection is world-class, particularly when it comes to interesting expressions of agave and sugarcane spirits.",
     "ranks": [
       { "year": 2023, "rank_position": 9 },
@@ -122,6 +140,8 @@
     "website": "http://laowai.ca/",
     "address": "https://goo.gl/maps/5VzxtFtmmVTbiCcC9",
     "province": "British Columbia",
+    "province_id": 6,
+    "city": "Vancouver",
     "description": "To find Laowai bar, swing by the Blnd Tger dumpling shop in Chinatown. Ask for #7 and, if you’re dressed appropriately (ballcaps, sweatpants and flip-flops are verboten), a freezer door will open to a luxe art deco–inspired space shimmering in gold and malachite. Browse bar manager Alex Black’s gorgeously illustrated menu of 12 Asian-inflected cocktails and soak up fascinating stories about the intersex crime lord, the libidinous emperor and other colourful characters that inspired them. Sip some baijiu — Laowai has Canada’s largest selection of the Chinese grain spirit. And be swept away by the illicit extravagance of 1920s-era Shanghai.",
     "ranks": [
       { "year": 2023, "rank_position": 10 },
@@ -135,6 +155,8 @@
     "website": "http://proofyyc.com/",
     "address": "https://goo.gl/maps/rFyrQJP3uUUDGsFN6",
     "province": "Alberta",
+    "province_id": 9,
+    "city": "Calgary",
     "description": "Its sky-high backbar signals that Proof is a serious cocktail bar, but the laid-back staff strip away any sense of snobbishness. The oft-updated, book-length drink menu is full of clever surprises and complex flavour combinations. Try Masa Moto and let it take you on a tortilla-infused-mezcal and Cocchi Americano adventure.",
     "ranks": [
       { "year": 2023, "rank_position": 11 },
@@ -148,6 +170,8 @@
     "website": "http://crybabygallery.ca/",
     "address": "https://goo.gl/maps/XYPGSXN7xAMFYHkXA",
     "province": "Ontario",
+    "province_id": 1,
+    "city": "Toronto",
     "description": "Hidden behind a rough-hewn art gallery in Little Portugal, you’ll find Cry Baby Gallery, a dark, moody cocktail bar at once intimate and industrial, adorned with a single Tiffany lamp at the end of the wood bar. Drinks meticulously crafted with house-made infusions are showy enough to rival the street-style exhibits curated by Mony Zakhour. Nibble on a snack plate with olives (that’s all there is) while sipping the signature Spicy Marg.",
     "ranks": [
       { "year": 2023, "rank_position": 12 },
@@ -161,6 +185,8 @@
     "website": "http://clivesclassiclounge.com/",
     "address": "https://goo.gl/maps/hvBxUNFdZ2UTiEX56",
     "province": "British Columbia",
+    "province_id": 6,
+    "city": "Victoria",
     "description": "The choices are epic at Clive’s Classic Lounge — named Whisky Hotel Bar of 2023 by Whisky Magazine — where legendary West Coast barkeep Shawn Soole began Victoria’s cocktail revolution and returned, in 2020, to elevate it. Start with one of the 250-plus whiskies. Or a wee one-third-sized snacktail. Or perhaps a luxe Tres Vieux Carré, made with Tesseron Lot No. 90 XO. No longer a hometown secret, this dark, subtly glam, armchair-cozy bar at Chateau Victoria is now a destination.",
     "ranks": [
       { "year": 2023, "rank_position": 13 },
@@ -174,6 +200,8 @@
     "website": "http://barmordecai.com/",
     "address": "https://goo.gl/maps/862uKxqozaWrbdsY7",
     "province": "Ontario",
+    "province_id": 1,
+    "city": "Toronto",
     "description": "Choose your own adventure at the Wes Anderson–styled Bar Mordecai, whether it’s belting out tunes in the Dolly Parton–themed karaoke room, tossing back canned spritzes with the cool kids hanging at the Green Room bar, or lounging on a velvet couch in the hotel lobby–like main space. Led by C50B bartender of the year Christina Veira, Mordecai offers tasty tapas, inspired cocktails and, unusual for the late-night neighbourhood, a hopping happy hour.",
     "ranks": [
       { "year": 2023, "rank_position": 14 },
@@ -187,6 +215,8 @@
     "website": "http://thecoldroommtl.com/",
     "address": "https://goo.gl/maps/k6BTr7fPx3wt7jHYA",
     "province": "Québec",
+    "province_id": 2,
+    "city": "Montreal",
     "description": "There’s no sign, just a small logo of a rubber duck above an unmarked, handle-less door. And, in classic speakeasy style, you’ll have to wait for the bouncer to let you in. But persistence and patience have their rewards. In this case, a cocktail inspired by the owners’ fave Montreal restaurants – perhaps a boozy Gibeau Orange Julep. Or, for the intrepid off-roader, something sur-mesure.",
     "ranks": [
       { "year": 2023, "rank_position": 15 },
@@ -200,6 +230,8 @@
     "website": "http://dearfriendbar.com/",
     "address": "https://goo.gl/maps/6z46JDW7bmt85Gib8",
     "province": "Nova Scotia",
+    "province_id": 3,
+    "city": "Halifax",
     "description": "If Dartmouth is the new Brooklyn, Dear Friend, while not quite a Clover Club, is one of the first proper cocktail bars in the hipster burg across Halifax Harbour. Opened during the pandemic, this downtown snug, with its bentwood bar stools and a European café vibe, has quickly become a destination for creative cocktails, inspired updates on the classics, excellent plant-forward small plates and an epic buck-a-shuck happy hour.",
     "ranks": [
       { "year": 2023, "rank_position": 16 },
@@ -213,6 +245,8 @@
     "website": "http://barchef.com/",
     "address": "https://goo.gl/maps/X6jodySQmhXSRhQi7",
     "province": "Ontario",
+    "province_id": 1,
+    "city": "Toronto",
     "description": "People often talk about the “art of the bar,” but BarChef is the only place in Canada where the drinks are veritable installations. Take the Essence of Fall, made with balsam fir and served in a smoking woodlands diorama. The spectacle isn’t limited to the drinks. Owner Frankie Solarik puts on a riveting show, both behind his own bars (he recently opened Prequel) and as a judge on the Netflix series Drink Masters.",
     "ranks": [
       { "year": 2023, "rank_position": 17 },
@@ -226,6 +260,8 @@
     "website": "http://barberandco.com/gift-shop",
     "address": "https://goo.gl/maps/QDmPoiQWMsTgEm2cA",
     "province": "Ontario",
+    "province_id": 1,
+    "city": "Toronto",
     "description": "A notoriously cheeky barman known only as “H” runs the show at this intimate cocktail den, tucked behind a barbershop. You might want to read his house rules first: “Don’t be a dick… I am an asshole to everyone equally.” Or watch a preview @baddrinkstv. Those who brave his salty banter will be rewarded with exquisitely made classics and a singular experience.",
     "ranks": [
       { "year": 2023, "rank_position": 18 },
@@ -239,6 +275,8 @@
     "website": "http://elpequenobar.com/",
     "address": "https://goo.gl/maps/PoNSnMNPBLpPVDZR6",
     "province": "Québec",
+    "province_id": 2,
+    "city": "Montreal",
     "description": "Reimagine an Old Montreal souvenir shop as a grand Havana hotel lobby replete with an ornate glass chandelier and white marble countertops, then stock it with dozens of Caribbean rums and you’ll have what the owners proudly call “Canada’s smallest bar.” True to its name, El Pequeño holds only nine people — ten if you count the chatty bartender who regales visitors with Hemingway anecdotes.",
     "ranks": [
       { "year": 2023, "rank_position": 19 },
@@ -252,6 +290,8 @@
     "website": "http://sipshucksip.com/",
     "address": "https://goo.gl/maps/R1Q8BuComhgjBk9t6",
     "province": "Ontario",
+    "province_id": 1,
+    "city": "Toronto",
     "description": "The pearly pink oyster bar is merely a front for a lavishly embellished speakeasy with layers of secret chambers. Ask to see the Champagne Room and a hidden doorway transports you to a sultry 1920s Parisian hotel lobby bar replete with a period-costumed cigarette girl and a strolling a cappella quartet.",
     "ranks": [
       { "year": 2023, "rank_position": 20 },
@@ -265,6 +305,8 @@
     "website": "http://littlesisterto.com/",
     "address": "https://goo.gl/maps/aCTUYyY7YGApavKT6",
     "province": "Ontario",
+    "province_id": 1,
+    "city": "Toronto",
     "description": "Every cocktail is a mini event at XXX, a tiny subterranean speakeasy decked out in groovy ’70s modern Nederland design. Tucked underneath the Dutch-Indo Little Sister Portland, this impossibly cool, always busy 20-seat space offers show-stopping drinks made with outlier ingredients, such as baijiu and foie gras. There are also tributes to Toronto modern classics, such as the Harbord Room’s Lady Sniper, outstanding fried chicken bites and an awesome rum selection.",
     "ranks": [
       { "year": 2023, "rank_position": 21 },
@@ -278,6 +320,8 @@
     "website": "http://godspeedbrewery.com/",
     "address": "https://goo.gl/maps/nui7aRHZmvtz6pDj7",
     "province": "Ontario",
+    "province_id": 1,
+    "city": "Toronto",
     "description": "Graceful Japanese minimalism meets boisterous Bavarian beer hall in a hospitable taproom owned by a brewmaster, Luc Lafontaine (of Dieu du Ciel! fame), who is obsessed with perfection. Enjoy some of the most rigorously authentic Czech lagers brewed anywhere in Canada, including Sklepník Plzeň, fermented in pitch-lined barrels. Eclectic ales are made with green tea and yuzu. Sake, highballs and Pearl Morissette wines round out the bar.",
     "ranks": [
       { "year": 2023, "rank_position": 22 },
@@ -291,6 +335,8 @@
     "website": "http://librarybartoronto.com/",
     "address": "https://goo.gl/maps/kNVQJYNTYtArNpkn7",
     "province": "Ontario",
+    "province_id": 1,
+    "city": "Toronto",
     "description": "The Fairmont Royal York’s fabled cocktail den, tucked in a quiet corner of the hotel, where after-parties from the Imperial Room once spilled, has turned a new chapter with its snazzy art deco redo. This is the place to seal the deal with a Pillet crystal glass of Louis XIII. Or fall in lust over a bubbly Twist of Fate (from the “romance” cocktails inspired by contemporary Canadian authors).",
     "ranks": [
       { "year": 2023, "rank_position": 23 },
@@ -304,6 +350,8 @@
     "website": "http://alorestaurant.com/bar",
     "address": "https://goo.gl/maps/MgSuUhkYQocJ3df36",
     "province": "Ontario",
+    "province_id": 1,
+    "city": "Toronto",
     "description": "Reminiscent of a swanky London hotel bar, The Bar at Alo is one of the most elegant places in Toronto to lose yourself in a perfectly executed cocktail. Although the drinks program will always be the main event, the sixcourse tasting menu is a draw for foodies. The wine list is unusually deep. Reservations are advised.",
     "ranks": [
       { "year": 2023, "rank_position": 24 },
@@ -317,6 +365,8 @@
     "website": "http://barclementine.ca/",
     "address": "https://goo.gl/maps/DwusK9pwW9UfCbW16",
     "province": "Alberta",
+    "province_id": 9,
+    "city": "Edmonton",
     "description": "All dark wood with art nouveau accents, Clementine echoes a bygone era, complete with a long list of classic cocktails titled Try Before You Die and bolstered by $10 prices on Tuesdays. Modern house cocktails breathe new life into such overlooked spirits as green Chartreuse, shaken with pandan liqueur in the Langkawi sour or, in the Ibarra, mixed with white chocolate mezcal, one of many intriguing infusions.",
     "ranks": [
       { "year": 2023, "rank_position": 25 },
@@ -330,6 +380,8 @@
     "website": "https://www.missysthisthat.com/",
     "address": "https://www.google.com/maps/place/Missy's+This+That/@51.0399178,-114.073779,17z/data=!3m1!4b1!4m14!1m7!4m6!1m4!2m2!1d-79.4141208!2d43.6711247!4e1!1m0!3m5!1s0x537171e0cbc0735d:0xb34014f0199e1afd!8m2!3d51.0399145!4d-114.0712041!16s%2Fg%2F11q4dvdgdg",
     "province": "Alberta",
+    "province_id": 9,
+    "city": "Calgary",
     "description": "Fully lacking in delusions of grandeur, the nascent Missy’s This That, set above a convenience store in Calgary’s Beltline neighbourhood, is a no-frills bar with a serious wine list. More than 170 labels featuring big names (Krug, anyone?) join bottles from less famous wineries that favour rather-obscure grapes. Look for gems by the glass, picked daily by owner Thomas Dahlgren, formerly of Von Der Fels.",
     "ranks": [
       { "year": 2023, "rank_position": 26 },
@@ -343,6 +395,8 @@
     "website": "http://shipandanchor.com/",
     "address": "https://g.page/shipandanchorpub?share",
     "province": "Alberta",
+    "province_id": 9,
+    "city": "Calgary",
     "description": "With its sticky wooden surfaces and vintage Guinness artwork, Calgary’s beloved “Ship” may look like a standard British pub. But, since opening in 1990 it’s been the go-to hangout for crusty hipsters, soccer fans and urban pint drinkers. Live music showcases, beer-soaked bingo nights and D&D sessions create a punk rock camaraderie and a where-everybody-knows-your-name energy, even if it’s your first time in.",
     "ranks": [
       { "year": 2023, "rank_position": 27 },
@@ -356,6 +410,8 @@
     "website": "http://jjacques.ca/",
     "address": "https://g.page/barjjacques?share",
     "province": "Québec",
+    "province_id": 2,
+    "city": "Québec City",
     "description": "This elegant cocktail, wine and oyster bar, tucked off a quiet side street in the bustling Saint-Roch district, celebrates the golden age of travel. Slip into a secluded velvet-lined booth to enjoy première classe cocktails — perhaps a French 75 with Rémy Martin 1738 — and a magnificent seafood tower from the above-average galley. Bon voyage!",
     "ranks": [
       { "year": 2023, "rank_position": 28 },
@@ -369,6 +425,8 @@
     "website": "https://mtpleasant.bar/",
     "address": "https://www.google.com/maps/place/Mount+Pleasant+Vintage+%26+Provisions/@49.2657801,-123.1086678,17z/data=!3m1!4b1!4m6!3m5!1s0x5486736e469dfa9f:0x9e129fb8389656a!8m2!3d49.2657766!4d-123.1060929!16s%2Fg%2F11sx55djj0",
     "province": "British Columbia",
+    "city": "Vancouver",
+    "province_id": 6,
     "description": "It’s That ’70s Show, but with excellent cocktails, crunchy natural wines and wood-grilled skirt steak. Behind the facade of a white-clapboard heritage home, this nostalgic playhouse offers orange-carpeted chill zones with comfy retro sofas; a soaring atrium for the main bar and grill; and, wrapped in bold murals, two patios with a hodgepodge of vintage outdoor chairs, plus mountain views. Two of Canada’s best bartenders, owner Cameron Bogue and Kelsey Ramage, are rocking out fun drinks like Cinnamon Toast Punch and Taco Flavoured Kisses.",
     "ranks": [
       { "year": 2023, "rank_position": 29 },
@@ -382,6 +440,8 @@
     "website": "https://barvolo.com/",
     "address": "https://www.google.com/maps/place/Bar+Volo/@43.6655722,-79.3855379,15z/data=!4m6!3m5!1s0x882b35f9c15673cb:0x28ad11ca8cde5312!8m2!3d43.6655722!4d-79.3855379!16s%2Fg%2F11fm485jrp",
     "province": "Ontario",
+    "province_id": 1,
+    "city": "Toronto",
     "description": "Toronto’s preeminent beer bar, the one that first made craft beer cool, is tucked away on a quiet downtown side street, oozing old world charm from its repurposed church pews. Chill and pub-like during the day, it grows boisterous at night and offers something for everyone — an on-site brewery specializing in cask- conditioned ales, the city’s smartest draft selection, a serious selection of low-intervention wines, creative grape-spirit-based cocktails, and tasty red sauce meatballs.",
     "ranks": [
       { "year": 2023, "rank_position": 30 },
@@ -395,6 +455,8 @@
     "website": "https://simplthings.ca/",
     "address": "https://www.google.com/maps/place/SIMPL+THINGS/@43.6409271,-79.4369676,17.07z/data=!4m6!3m5!1s0x882b35c6838a7e39:0xcf0cbc5230ed6056!8m2!3d43.6408208!4d-79.4342545!16s%2Fg%2F11t6y9lnpt",
     "province": "Ontario",
+    "province_id": 1,
+    "city": "Toronto",
     "description": "This is a bar doing double duty: Italian comfort food by day, Taiwanese street snacks at night. Just a small open kitchen and a homey little bar, all washed in a nostalgic popsicle palette. Simpl Things doesn’t fit into the average bar mould, but it all comes together with Evelyn Chick’s creative cocktails that make the familiar taste new. Think Melon Baller Martinis — with fino sherry and apple-fennel cordial — and strawberry-Campari Americano Spritzes.",
     "ranks": [
       { "year": 2023, "rank_position": 31 },
@@ -408,6 +470,8 @@
     "website": "https://www.instagram.com/sidecarottawa/?hl=en",
     "address": "https://www.google.com/maps/place/Sidecar/@45.399992,-75.7119635,17z/data=!3m2!4b1!5s0x4cce0433621e5bdd:0xbf5a01fe4c3935d1!4m6!3m5!1s0x4cce05c35bee4c7f:0x52ac2487d1e6f808!8m2!3d45.3999883!4d-75.7093886!16s%2Fg%2F11ts_8nnvf",
     "province": "Ontario",
+    "province_id": 1,
+    "city": "Ottawa",
     "description": "Hidden below Mediterranean restaurant Mati, in Little Italy, this swanky 30-seater seduces with green-velvet glamour and some serious talent behind the black marble bar. Bar manager Witek Wojaczek comes from London (Artesian Bar, Beaufort Bar at The Savoy) and is determined to put Canada’s capital on the international cocktail map with sublimely deconstructed classics — think Sidecar with floating lemon sorbet — and new classics-in-the-making.",
     "ranks": [
       { "year": 2023, "rank_position": 32 },
@@ -421,6 +485,8 @@
     "website": "http://labattoir.ca/",
     "address": "https://g.page/labattoir_van?share",
     "province": "British Columbia",
+    "province_id": 6,
+    "city": "Vancouver",
     "description": "Goodbye, Avocado Gimlet. Hello, Meat Hook #2 with marrow-infused whisky. Rob Williams (previously Q at The Empress) made some tough menu edits when he took over the reins at this beloved nine-seat bar, which fronts the eponymously named restaurant. His seasonal cocktails, grounded in the classics, showcase B.C. spirits and are as suave as this high-ceilinged cubbyhole in the heart of historic Gastown.",
     "ranks": [
       { "year": 2023, "rank_position": 33 },
@@ -434,6 +500,8 @@
     "website": "https://www.sanssoleilmtl.com/",
     "address": "https://www.google.com/maps/place/Sans+Soleil+Bar/@45.5065616,-73.5630879,17z/data=!3m2!4b1!5s0x4cc91a5050976677:0x10ac2a1fb4d0bfe!4m6!3m5!1s0x4cc91b6a38b3642b:0x77d32a2fdcae1e51!8m2!3d45.5065579!4d-73.560513!16s%2Fg%2F11pzyl_051",
     "province": "Québec",
+    "province_id": 2,
+    "city": "Montreal",
     "description": "The aptly named Sans Soleil might be hidden in a windowless basement, but it’s buzzing with life. The 60-seat, candlelit speakeasy boasts a killer sound system (choice vintage stereo components and made-in-Montreal custom speakers) cocooned in vibration-absorbing cork panelling. DJs spin seven-hour vinyl-only sets every night, but the bar goes full dance party after 10:30 on weekends. Refuel with Japanese-inspired cocktails and soba from the restaurant upstairs.",
     "ranks": [
       { "year": 2023, "rank_position": 34 },
@@ -447,6 +515,8 @@
     "website": "http://lobbyloungerawbar.com/",
     "address": "https://goo.gl/maps/UNMpXS6gGocoFxZNA",
     "province": "British Columbia",
+    "city": "Vancouver",
+    "province_id": 6,
     "description": "South Beach meets Coal Harbour at the Fairmont Pacific Rim’s buzzy Lobby Lounge and RawBar. At night, beautiful people sway to live music within the gleaming expanse of white marble while crushing Japanese-influenced cocktails paired with platters of superb sushi. Earlier on, it’s an impressive spot to meet up for drinks, be it business or a blind date.",
     "ranks": [
       { "year": 2023, "rank_position": 35 },
@@ -460,6 +530,8 @@
     "website": "http://bettylouslibrary.com/",
     "address": "https://g.page/BettyLouslibrary?share",
     "province": "Alberta",
+    "province_id": 9,
+    "city": "Calgary",
     "description": "Whisper the password into the antique telephone for entry to this intimate speakeasy. Then step inside and luxuriate in a swank Prohibition-era library, replete with velvet brocade seating and wisps of smoke escaping domed cocktails. Drinks are named after famous women of the Jazz Age, along with a rotating Great Gatsby cocktail specials.",
     "ranks": [
       { "year": 2023, "rank_position": 36 },
@@ -473,6 +545,8 @@
     "website": "https://thejameshotel.ca/the-james-lobby-bar/",
     "address": "https://www.google.com/maps/place/The+James+Hotel/@52.1271752,-106.6591741,20.13z/data=!3m1!5s0x5304f6d13e46b463:0xb528e261594e0d90!4m18!1m8!3m7!1s0x5304f6d1408cd683:0xc57261a141dff440!2s620+Spadina+Crescent+E,+Saskatoon,+SK+S7K+3G9!3b1!8m2!3d52.1270342!4d-106.6590881!16s%2Fg%2F11c2f5n2s7!3m8!1s0x5304f6d16caf455d:0x607991a40cf088d8!5m2!4m1!1i2!8m2!3d52.1273765!4d-106.6588268!16s%2Fg%2F1tfcbv3s",
     "province": "Saskatchewan",
+    "province_id": 8,
+    "city": "Saskatoon",
     "description": "A little lounge in the Paris of the Prairies that offers fine wine, good cocktails — with an extensive list of classics and originals — plus spectacular views of beautiful Meewasin Valley. Cozy, yet luxe, with butternut wall panels and an onyx-wrapped fireplace, this is a boutique hotel lobby bar with big-city feel.",
     "ranks": [
       { "year": 2023, "rank_position": 37 },
@@ -486,6 +560,8 @@
     "website": "https://www.barstillwell.com/",
     "address": "https://www.google.com/maps/place/Stillwell/@44.6468677,-63.5766443,17z/data=!3m1!4b1!4m6!3m5!1s0x4b5a23ccdbf90b0d:0xceb2b971bf2e3409!8m2!3d44.6468639!4d-63.5740694!16s%2Fg%2F1yh9tqd6_",
     "province": "Nova Scotia",
+    "province_id": 3,
+    "city": "Halifax",
     "description": "Halifax’s most thoughtfully selected lineup of beers (including a trio of cask-conditioned ales) is complemented by select ciders, natural wines and a small but impressive food menu featuring a famous trio of burgers — Fancy, Diner and Dirty. It’s all served up in a centrally located warehouse-like space with a warm neighbourhood vibe that’s popular with the after-office-hours crowd.",
     "ranks": [
       { "year": 2023, "rank_position": 38 },
@@ -499,6 +575,8 @@
     "website": "https://naramatainn.com/wine-bar/",
     "address": "https://www.google.com/maps/place/Naramata+Inn/@49.5953761,-119.6168978,14.9z/data=!4m9!3m8!1s0x54827b4a2761da75:0x1bc5a02bc0d0e563!5m2!4m1!1i2!8m2!3d49.5974598!4d-119.6035426!16s%2Fg%2F1tdz934q",
     "province": "British Columbia",
+    "province_id": 6,
+    "city": "Naramata",
     "description": "The Okanagan Valley has many great winery bars, but Eliza is its first serious wine bar — one that confidently showcases the region against benchmark international labels. In a cozy brick-lined cellar underneath the heritage Naramata Inn, small-lot rarities from near and far cozy up with local back vintages poured in Time Capsule Flights. A recent example featured 2013 vintages from CedarCreek, Tightrope and Orofino.",
     "ranks": [
       { "year": 2023, "rank_position": 39 },
@@ -512,6 +590,8 @@
     "website": "https://thisisbarsusu.com/",
     "address": "https://www.google.com/maps/place/Bar+Susu/@49.2656011,-123.1027149,17z/data=!3m1!4b1!4m6!3m5!1s0x548671d1285ce50f:0x2d1cafb8a14fcf48!8m2!3d49.2655976!4d-123.10014!16s%2Fg%2F11sqpq7lz7",
     "province": "British Columbia",
+    "province_id": 6,
+    "city": "Vancouver",
     "description": "This funky little wine bar is by no means an extension of its more serious big brother, Published on Main. Much more casual, playful and romantically distressed around the scuffed wooden seams of its historic brick building, it is the place to go for low-intervention rarities and oddities, bottle-aged sakes and inventive cocktails that all incorporate some sort of wine-based spirit, including vermouths, herbal liqueurs and house-blended amari.",
     "ranks": [
       { "year": 2023, "rank_position": 40 },
@@ -525,6 +605,8 @@
     "website": "http://parisparis.ca/",
     "address": "https://g.page/parisparisbar?share",
     "province": "Ontario",
+    "province_id": 1,
+    "city": "Toronto",
     "description": "Expect a bustling Millennial-bohemian vibe that pairs perfectly with a list of no-to-low-sulphite wines in every colour of the rainbow. Alt-wine curious? Servers are fully indoctrinated and excited to guide you. Cocktails are strong. Very good bar food. The enclosed parking-lot patio sizzles in the sun.",
     "ranks": [
       { "year": 2023, "rank_position": 41 },
@@ -538,6 +620,8 @@
     "website": "https://www.citrusandcane.com/",
     "address": "https://www.google.com/maps/place/Citrus+%26+Cane/@48.4314789,-123.3649956,15z/data=!4m6!3m5!1s0x548f756b28d6a4bf:0xf50055033f20d07a!8m2!3d48.4314789!4d-123.3649956!16s%2Fg%2F11jk3nm4hj",
     "province": "British Columbia",
+    "province_id": 6,
+    "city": "Victoria",
     "description": "Citrus & Cane is a lovingly restored retro-’70s tropical lounge with sunken barroom, rattan furniture and brass fixtures galore. On a dodgy stretch of Douglas Street, bartender-owners Tim Siebert and Jessa Gildersleeve aim to modernize tiki cocktails with a list that’s heavy on the rum. Standouts include a Cool Kid Hi-Ball banana liqueur + cane cola and a Boujee Mai Tai with Grand Marnier Cuvée du Centenaire.",
     "ranks": [
       { "year": 2023, "rank_position": 42 },
@@ -551,6 +635,8 @@
     "website": "https://restobarmajestique.com/",
     "address": "https://www.google.com/maps/place/Le+Majestique+Montr%C3%A9al/@45.5155946,-73.5826143,17z/data=!4m6!3m5!1s0x4cc91bcd2a9a3d2b:0xdd93d186b41efb04!8m2!3d45.5175202!4d-73.580316!16s%2Fg%2F1q2wfgby9",
     "province": "Québec",
+    "province_id": 2,
+    "city": "Montréal",
     "description": "The tastefully kitschy 60-seat Le Majestique has a genuinely homey vibe, all wood panelling and vintage souvenir felt pennants. Along with quality beer and classic cocktails, this bar has an ever-changing wine list of mainly private imports. The kitchen, open until 2 a.m., is known for its seafood and 12-inch Gaspor pork hot dog.",
     "ranks": [
       { "year": 2023, "rank_position": 43 },
@@ -564,6 +650,8 @@
     "website": "http://amigoscantina.com/",
     "address": "https://g.page/amigossk?share",
     "province": "Saskatchewan",
+    "province_id": 8,
+    "city": "Saskatoon",
     "description": "Pumping out great Tex-Mex grub and community spirit since 1988, this storied live-music venue is sometimes referred to as the Sneaky Dee’s (née Toronto) of Saskatoon. Musical performances, trivia nights and karaoke fill the main room at night, but this is also the kind of place to take the kids for early dinner. Beer is the main libation. Almond-breaded chicken fingers are the bomb.",
     "ranks": [
       { "year": 2023, "rank_position": 44 },
@@ -577,6 +665,8 @@
     "website": "https://narrowgroup.ca/project/key-party/",
     "address": "https://www.google.com/maps/place/Key+Party/@49.2644356,-123.1033224,17z/data=!3m1!4b1!4m6!3m5!1s0x5486716a12ae3895:0x28ec0e0d027bea1e!8m2!3d49.2644356!4d-123.1011337!16s%2Fg%2F11h3nf9vcw",
     "province": "British Columbia",
+    "province_id": 6,
+    "city": "Vancouver",
     "description": "You might think you’re entering an ordinary accountant’s office, but step inside and you’ll find yourself in a retro swinger’s den, where shag carpeting and double entendres never went out of style. Key Party is an intimate speakeasy that specializes in twists on classics from the 1960s and ’70s. Think Grasshoppers, Dirty-er Martinis, Slippery Nipple shooters, retro snacks and groovy good times.",
     "ranks": [
       { "year": 2023, "rank_position": 45 },
@@ -590,6 +680,8 @@
     "website": "https://www.instagram.com/_papillon.cocktail.bar/",
     "address": "https://www.google.com/maps/place/Papillon+Cocktail+Bar/@47.5658288,-52.7078956,17z/data=!3m1!4b1!4m6!3m5!1s0x4b0ca37496b2ceb1:0x4ce98a8668d40857!8m2!3d47.5658288!4d-52.7057069!16s%2Fg%2F11t3wjrr5y",
     "province": "Newfoundland and Labrador",
+    "province_id": 10,
+    "city": "St. John's",
     "description": "With plenty of green ivy cascading from planters mounted high on the walls that are bathed in a hot-pink glow, Papillon Cocktail Bar — a.k.a Papi’s — feels like a tropical escape. Owner Ricky Lopez moved to St. John’s from Honduras to become a mechanical engineer but decided instead to fill the local need for an intimate craft cocktail bar. Enjoy Mediterranean dips while grooving to ’90s hip hop and sipping classic drinks done right.",
     "ranks": [
       { "year": 2023, "rank_position": 46 },
@@ -603,6 +695,8 @@
     "website": "https://www.raindogbar.com/",
     "address": "https://www.google.com/maps/place/Rain+Dog+Bar/@51.0420216,-114.0380884,17z/data=!3m1!4b1!4m6!3m5!1s0x53717b6db1f1fed9:0x68b46ef014f240e2!8m2!3d51.0420216!4d-114.0358997!16s%2Fg%2F11j7w97_v2",
     "province": "Alberta",
+    "province_id": 9,
+    "city": "Calgary",
     "description": "Beer and food pairings are the specialty at this homey Inglewood loft, appointed with mismatched chinaware and thrift-store chic. Ask owner Bill Bonar (Alberta’s first Certified Cicerone) for suggestions. Or dive right into the Rain Dog Chocolate Bar, designed for IPA. An exceptionally well-curated collection of bottles includes many rarities, such as Tre Fontane Tripel and (the pricey) Cantillon Rosé de Gambrinus.",
     "ranks": [
       { "year": 2023, "rank_position": 47 },
@@ -616,6 +710,8 @@
     "website": "https://www.isledegarde.com/",
     "address": "https://www.google.com/maps/place/Isle+de+Garde+-+Brasserie/@45.5375747,-73.6042361,17z/data=!3m1!4b1!4m6!3m5!1s0x4cc91968550be741:0xd81bda1605b12c97!8m2!3d45.5375747!4d-73.6020474!16s%2Fg%2F1tghp639",
     "province": "Québec",
+    "province_id": 2,
+    "city": "Montréal",
     "description": "The 23 beers on tap are served at 5 ̊, 8 ̊ or 12 ̊C, depending on the style. Such precise attention to detail is the key to success at this multi-purpose tap room (with an adjoining café, ice cream counter and vinyl record shop) that attracts a hip, young crowd in the heart of La Petite-Patrie. Brewer Olivier Dupras is renowned for his open-ferment weissbier, a style rarely found outside Germany.",
     "ranks": [
       { "year": 2023, "rank_position": 48 },
@@ -629,6 +725,8 @@
     "website": "https://www.instagram.com/thenarrowshalifaxpub/",
     "address": "https://goo.gl/maps/8kKzkqFbaQ5w235HA",
     "province": "Nova Scotia",
+    "province_id": 3,
+    "city": "Halifax",
     "description": "After an ambitious eight-year renovation, this heritage house in Halifax’s residential North End opened last spring with lineups at the door. The crowds are still piling in for what feels like a true Nova Scotian kitchen party. In wintertime, the antiques-filled rooms are warmed with wood stoves. On weekends, there are live fiddlers. Join a game of cribbage, dig into a traditional boiled dinner, and make yourself right at home.",
     "ranks": [
       { "year": 2023, "rank_position": 49 },
@@ -642,6 +740,8 @@
     "website": "https://www.instagram.com/justinespeakeasy/",
     "address": "https://www.google.com/maps/place/Justine/@46.814156,-71.2159002,14.85z/data=!4m6!3m5!1s0x4cb895c9e4d44255:0xd5547594317d7ff0!8m2!3d46.8166725!4d-71.2116864!16s%2Fg%2F11rshbtm6g",
     "province": "Québec",
+    "province_id": 2,
+    "city": "Québec City",
     "description": "Steps away from the historic ramparts of Old Quebec is Justine, a Prohibition-themed speakeasy that fully inhabits her old-time character. Candlelight dances off stone walls and old wooden tables in a hushed low-ceilinged room that is well suited for date nights. Period cocktails are supplemented by a nice selection of single malts and local beer. Quebec cheese and charcuterie are presented au guéridon and served by weight.",
     "ranks": [
       { "year": 2023, "rank_position": 50 },
