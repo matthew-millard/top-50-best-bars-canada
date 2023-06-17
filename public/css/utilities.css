@@ -1,0 +1,102 @@
+:root {
+  font-size: 62.5%; /* Set the base font to 10px*/
+
+  /* Colors */
+  --black-color: black;
+  --white-color: white;
+  --light-grey: #efefef;
+  --canada-color: #d80621;
+}
+
+body {
+  font-family: 'aktiv-grotesk', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 4.8rem;
+}
+h2 {
+  font-size: 3.6rem;
+}
+h3 {
+  font-size: 3rem;
+}
+h4 {
+  font-size: 2.2rem;
+}
+
+p,
+li,
+input,
+label,
+textarea,
+option,
+select,
+span {
+  font-size: 1.8rem;
+  color: var(--black-color);
+}
+
+small {
+  font-size: 1.4rem;
+}
+
+a {
+  color: var(--black-color);
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.larger-body-text {
+  font-size: 2.2rem;
+}
+
+.red-hightlight {
+  color: var(--canada-color);
+}
+
+.text-white {
+  color: var(--secondary-color);
+}
+
+/* Error Messages */
+.error-message {
+  font-size: 1.4rem;
+  color: var(--canada-color);
+}
+
+textarea {
+  padding: 1rem;
+}
+
+/* Display None */
+.display-none {
+  display: none;
+}
+
+/* Flexbox */
+.flex {
+  display: flex;
+}
+
+/* icons */
+.fa-solid {
+  font-size: 3rem;
+}
+
+/* Primary Button */
+.primary-button {
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  border: none;
+}
+
+.page-container {
+  flex-direction: column;
+  min-height: 100vh;
+}

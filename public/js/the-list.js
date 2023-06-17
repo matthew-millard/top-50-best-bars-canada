@@ -1,7 +1,6 @@
-const moreInfoBtn = Array.from(document.querySelectorAll('.more-info-btn'));
+const infoBtn = Array.from(document.querySelectorAll('.bar-list__info-button'));
 
-
-moreInfoBtn.forEach((button) => {
+infoBtn.forEach((button) => {
   button.addEventListener('click', async () => {
     const id = button.getAttribute('data-id');
     const url = `/api/bars/${id}`;
