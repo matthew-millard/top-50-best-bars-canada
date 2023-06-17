@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Bars, HistoricalRanks, Provinces, Review } = require('../../models');
+const { Review } = require('../../models');
 const withAuth = require('../../utils/auth');
 
 // Create a new review

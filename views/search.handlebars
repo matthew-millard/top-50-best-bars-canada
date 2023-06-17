@@ -5,7 +5,7 @@
   <div class='search-form'>
     <label for='province'>Province: </label>
     <select id='province' class='search-select'>
-      <option value=''>All</option>
+      <option value='All'>All</option>
       <option value='Alberta'>Alberta</option>
       <option value='British Columbia'>British Columbia</option>
       <option value='Manitoba'>Manitoba</option>
@@ -25,20 +25,20 @@
   <div class='search-form'>
     <label for='city'>City: </label>
     <select id='city' class='search-select' disabled>
-      <option value=''>All</option>
+      <option value='All'>All</option>
     </select>
   </div>
 
   <div class='search-form'>
     <label for='patio'>Patio: </label>
     <select id='patio' class='search-select'>
-      <option value=''>All</option>
-      <option value='yes'>Yes</option>
-      <option value='no'>No</option>
+      <option value='All'>All</option>
+      <option value='Yes'>Yes</option>
+      <option value='No'>No</option>
     </select>
   </div>
 
-  <button id='searchBtn' class='search-button primary-button'>Search</button>
+  <button type="button" id='searchBtn' class='search-button primary-button'>Search</button>
 
   <div id='results' class='search-results'></div>
   {{#if error}}

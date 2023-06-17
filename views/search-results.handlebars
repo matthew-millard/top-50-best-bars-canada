@@ -1,0 +1,15 @@
+<div>
+  <h1>Search Results</h1>
+  <hr />
+</div>
+
+{{#if bars}}
+  {{#each bars}}
+    <div class="search-result-bar" data-bar-id="{{this.id}}">
+      <h3>{{this.id}}. {{this.bar_name}}</h3>
+    </div>
+  {{/each}}
+{{else}}
+  <div class='error-message'>No results found</div>
+{{/if}}
+<script src='/js/search-results.js'></script>
