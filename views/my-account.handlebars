@@ -16,10 +16,10 @@
   <div class='card'>
   <div class='card-body'>
     <h2 class='card-title'>Favorites</h2>
-    {{#if user.favorites.length}}
+    {{#if favs}}
       <ul class='card-text'>
-        {{#each user.favorites}}
-          <li>{{this}}</li>
+        {{#each favs}}
+          <li><a href="{{this.website}}">{{this.bar_name}}</a></li>
         {{/each}}
       </ul>
     {{else}}
@@ -29,10 +29,16 @@
     <div class='card'>
       <div class='card-body'>
         <h2 class='card-title'>Reviews</h2>
-        {{#if user.reviews.length}}
+        {{#if reviews}}
           <ul class='card-text'>
-            {{#each user.reviews}}
-              <li>{{this}}</li>
+            {{#each reviews}}
+              <li>
+                <div class='prev-reviews-content'>
+                  <p>{{this.review_body}}</p>
+                  <small>Bar: {{this.bar_name}}  </small>
+                  <small>Posted: {{formatDate this.createdAt}}</small>
+                </div>
+              </li>
             {{/each}}
           </ul>
         {{else}}
