@@ -33,7 +33,7 @@ const loginFormHandler = async (event) => {
         const data = await response.json();
         displayErrorMessage(data.message);
       } else {
-        document.location.replace('/home');
+        document.location.replace('/my-account');
       }
     }
   } catch (err) {

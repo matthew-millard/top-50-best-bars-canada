@@ -77,17 +77,6 @@ router.get('/register', async (req, res) => {
   }
 });
 
-// GET Home
-router.get('/home', withAuth, async (req, res) => {
-  try {
-    return res.status(200).render('home', { logged_in: req.session.logged_in });
-    ``;
-  } catch (err) {
-    console.error(err);
-    return res.status(500).json({ message: 'Server Error' });
-  }
-});
-
 // GET My account
 router.get('/my-account', withAuth, async (req, res) => {
   try {
@@ -162,8 +151,37 @@ router.get('/the-list', async (req, res) => {
     // Serialize data so the template can read it
     const bars = barData.map((bar) => bar.get({ plain: true }));
     // Pass serialized data and session flag into template
-    console.log(bars);
+
     res.render('the-list', {
+      bars,
+      logged_in: req.session.logged_in,
+    });
+  } catch (err) {
+    console.error(err);
+    return res.status(500).json({ message: 'Server Error' });
+  }
+});
+
+// GET Search
+router.get('/search', async (req, res) => {
+  try {
+    return res.status(200).render('search', {
+      logged_in: req.session.logged_in,
+    });
+  } catch (err) {
+    console.error(err);
+    return res.status(500).json({ message: 'Server Error' });
+  }
+});
+
+// GET Search Results
+router.get('/search-results', async (req, res) => {
+  try {
+    // Retrieve search results from session
+    const bars = req.session.filteredBars;
+
+    // Render search results page
+    return res.status(200).render('search-results', {
       bars,
       logged_in: req.session.logged_in,
     });

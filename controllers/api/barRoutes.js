@@ -48,7 +48,7 @@ router.get('/:id', withAuth, async (req, res) => {
     });
     const reviewsData = reviews.map((review) => review.get({ plain: true }));
     bar.reviews = reviewsData;
-    // console.log(bar);
+
     res.render('more-info', { bar, logged_in: req.session.logged_in });
   } catch (err) {
     console.error(err);
@@ -56,5 +56,44 @@ router.get('/:id', withAuth, async (req, res) => {
   }
 });
 
+// GET all bars
+router.get('/', async (req, res) => {
+  try {
+    const barData = await Bars.findAll({
+      include: [
+        {
+          model: Provinces,
+          attributes: ['province_name'],
+        },
+        {
+          model: HistoricalRanks,
+          attributes: ['rank_position', 'year'],
+        },
+        {
+          model: Image,
+          attributes: ['url'],
+        },
+      ],
+    });
+    const bars = barData.map((bar) => bar.get({ plain: true }));
+    res.status(200).json(bars);
+  } catch (err) {
+    console.error(err);
+    return res.status(500).json({ message: 'Server Error' });
+  }
+});
+
+// POST filtered bars
+router.post('/search', async (req, res) => {
+  try {
+    // Save filtered bars to session
+    req.session.filteredBars = req.body.filteredBars;
+
+    res.status(200).json({ message: 'Success' });
+  } catch (err) {
+    console.error(err);
+    return res.status(500).json({ message: 'Server Error' });
+  }
+});
 // Exports
 module.exports = router;

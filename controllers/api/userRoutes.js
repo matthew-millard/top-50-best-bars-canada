@@ -47,13 +47,12 @@ router.post('/register', async (req, res) => {
         .json({ message: 'Something went wrong, please try again.' });
     }
 
-    req.session.save(() => {
-      req.session.user_id = userData.id;
-      req.session.logged_in = true;
-      return res
-        .status(200)
-        .json({ user: userData, message: 'You are now logged in!' });
-    });
+    // req.session.save(() => {
+    //   req.session.user_id = userData.id;
+    //   req.session.logged_in = true;
+    return res
+      .status(200)
+      .json({ user: userData, message: 'You are now logged in!' });
   } catch (err) {
     console.error(err);
     return res.status(500).json({ message: 'Server Error', err });

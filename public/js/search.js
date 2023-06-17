@@ -1,21 +1,84 @@
 // Get select elements
+const searchButton = document.querySelector('#searchBtn');
 const provinceSelect = document.querySelector('#province');
 const citySelect = document.querySelector('#city');
 const patioSelect = document.querySelector('#patio');
-const searchButton = document.querySelector('#searchBtn');
-const resultsContainer = document.querySelector('#results');
 
-let selectedProvince = '';
-let selectedCity = '';
-let selectedPatio = '';
+// Global variables to store bar data
+let barData;
+let selectedProvince;
+let selectedCity;
+let selectedPatio;
+
+// Search button click event handler
+searchButton.addEventListener('click', async () => {
+  // Get selected province and city
+  selectedProvince = provinceSelect.value;
+  selectedCity = citySelect.value;
+  selectedPatio = patioSelect.value;
+  console.log(selectedPatio);
+
+  // Get all bars from the database
+  const response = await fetch('/api/bars', {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  });
+  barData = await response.json();
+
+  // Filter bars based on the selected province
+  const filteredBarsByProvince = barData.filter((bar) => {
+    if (selectedProvince === 'All') {
+      return true;
+    } else {
+      return bar.Province.province_name === selectedProvince;
+    }
+  });
+
+  console.log(filteredBarsByProvince);
+
+  // Filter bars based on the selected city
+  const filteredBarsByCity = filteredBarsByProvince.filter((bar) => {
+    if (selectedCity === 'All') {
+      return true;
+    } else {
+      return bar.city_name === selectedCity;
+    }
+  });
+  console.log(filteredBarsByCity);
+
+  // Filter bars based on the selected patio
+  const filteredBarsByPatio = filteredBarsByCity.filter((bar) => {
+    if (selectedPatio === 'All') {
+      return true;
+    } else if (selectedPatio === 'Yes') {
+      return bar.patio === true;
+    } else if (selectedPatio === 'No') {
+      return bar.patio === false;
+    }
+  });
+  const filteredBars = filteredBarsByPatio;
+
+  // POST filtered bars to the server
+  const postResponse = await fetch('/api/bars/search', {
+    method: 'POST',
+    body: JSON.stringify({ filteredBars }),
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  });
+  if(!postResponse.ok) {
+    console.error(postResponse.statusText);
+  } else {
+    document.location.replace('/search-results');
+  }
+});
 
 // Province change event handler
 provinceSelect.addEventListener('change', () => {
   // Enable city select
   citySelect.disabled = false;
-
-  // Clear city options
-  citySelect.innerHTML = '<option value="">All</option>';
 
   // Get selected province
   const selectedProvince = provinceSelect.value;
@@ -37,7 +100,7 @@ provinceSelect.addEventListener('change', () => {
     addCityOption('Saint John');
     // Add more large city options for New Brunswick
   } else if (selectedProvince === 'Newfoundland and Labrador') {
-    addCityOption('St. John\'s');
+    addCityOption("St. John's");
     // Add more large city options for Newfoundland and Labrador
   } else if (selectedProvince === 'Nova Scotia') {
     addCityOption('Halifax');
@@ -70,73 +133,3 @@ provinceSelect.addEventListener('change', () => {
     citySelect.appendChild(option);
   }
 });
-
-// City change event handler
-citySelect.addEventListener('change', () => {
-  selectedCity = citySelect.value;
-});
-
-// Patio change event handler
-patioSelect.addEventListener('change', () => {
-  selectedPatio = patioSelect.value;
-});
-
-// Search button click event handler
-searchButton.addEventListener('click', () => {
-  if (selectedCity && selectedPatio) {
-    // Perform a search for bars based on the selected city and patio preference
-    searchBars(selectedCity, selectedPatio);
-  }
-});
-
-// Function to search for bars based on the selected city and patio preference
-function searchBars(city, patio) {
-  // Filter the bars data based on the selected city and patio preference
-  const barsInCity = barsData.filter(bar => bar.city === city && bar.patio === patio);
-
-  // Get the container element where the search results will be displayed
-  const resultsContainer = document.querySelector('#results-container');
-
-  // Clear previous search results
-  resultsContainer.innerHTML = '';
-
-  // Create HTML elements for each matching bar and append them to the results container
-  barsInCity.forEach(bar => {
-    const barElement = createBarElement(bar);
-    resultsContainer.appendChild(barElement);
-  });
-
-  // Update the UI with the search results or take any other required actions
-  console.log(`Found ${barsInCity.length} bars in ${city} with patio=${patio}`);
-}
-
-// Function to create an HTML element representing a bar
-function createBarElement(bar) {
-  const barElement = document.createElement('div');
-  barElement.classList.add('bar');
-
-  // Create an anchor tag for the bar name with the link to the bar details
-  const nameLinkElement = document.createElement('a');
-  nameLinkElement.href = bar.website;
-  nameLinkElement.textContent = bar.bar_name;
-
-  // Create HTML elements for bar details (description, website, address)
-  const descriptionElement = document.createElement('p');
-  descriptionElement.textContent = bar.description;
-
-  const websiteLinkElement = document.createElement('a');
-  websiteLinkElement.href = bar.website;
-  websiteLinkElement.textContent = 'Visit Website';
-
-  const addressLinkElement = document.createElement('a');
-  addressLinkElement.href = bar.address;
-  addressLinkElement.textContent = 'View Address';
-
-  // Append the bar details elements to the bar element
-  barElement.appendChild(nameLinkElement);
-  barElement.appendChild(descriptionElement);
-  barElement.appendChild(websiteLinkElement);
-  barElement.appendChild(addressLinkElement);
-
-  return barElement;
-}

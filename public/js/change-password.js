@@ -23,7 +23,7 @@ const changePasswordHandler = async (event) => {
 
   if (response.status === 200) {
     console.log('Password changed.');
-    return document.location.replace('/account');
+    return document.location.replace('/my-account');
   } else {
     const error = await response.json();
     console.log(error.message);
