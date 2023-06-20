@@ -1,12 +1,5 @@
 const router = require('express').Router();
-const {
-  Bars,
-  HistoricalRanks,
-  Provinces,
-  Review,
-  User,
-  Image,
-} = require('../../models');
+const { Bars, HistoricalRanks, Provinces, Review, User, Image } = require('../../models');
 const withAuth = require('../../utils/auth');
 
 // GET Bar by ID
@@ -33,6 +26,7 @@ router.get('/:id', withAuth, async (req, res) => {
       return res.status(404).json({ message: 'No bar found with this id!' });
     }
     const bar = barData.get({ plain: true });
+    console.log(bar);
 
     // Get reviews
     const reviews = await Review.findAll({

@@ -36,6 +36,10 @@ User.init(
         len: [8],
       },
     },
+    favourites: {
+      type: DataTypes.STRING,
+      defaultValue: '0',
+    },
   },
   {
     hooks: {

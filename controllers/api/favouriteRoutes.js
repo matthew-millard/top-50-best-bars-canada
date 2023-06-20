@@ -1,14 +1,19 @@
 const router = require('express').Router();
-const {
-  Bars,
-  HistoricalRanks,
-  Provinces,
-  Review,
-  User,
-  Image,
-  Favourite,
-} = require('../../models');
+const { Bars, HistoricalRanks, Provinces, Review, User, Image, Favourite } = require('../../models');
 const withAuth = require('../../utils/auth');
+
+router.get('/:id', withAuth, async (req, res) => {
+  try {
+    const fav = await Favourite.findOne({ where: { bar_id: req.params.id } });
+
+    if (fav) {
+      res.status(200).json({ message: 'Found favourite' });
+    }
+  } catch (err) {
+    console.error(err);
+    return res.status(500).json({ message: 'Server Error' });
+  }
+});
 
 router.post('/', withAuth, async (req, res) => {
   try {
@@ -17,10 +22,6 @@ router.post('/', withAuth, async (req, res) => {
     const bar = await Bars.findOne({ where: { id: bar_id } });
     const bar_name = bar.bar_name;
     const website = bar.website;
-    // console.log('post body:', bar_id);
-    // console.log('user:', user_id);
-    // console.log('bar name:', bar_name);
-    // console.log('website:', website);
 
     // Create the favourite in the database
     const newFavourite = await Favourite.create({
@@ -40,6 +41,18 @@ router.post('/', withAuth, async (req, res) => {
   } catch (err) {
     console.error(err);
     return res.status(500).json({ message: 'Server Error' });
+  }
+});
+
+router.delete('/:id', withAuth, async (req, res) => {
+  try {
+    const barID = req.params.id;
+
+    const deletedFavourite = await Favourite.destroy({ where: { bar_id: barID } });
+
+    return res.status(200).json(deletedFavourite);
+  } catch (err) {
+    res.status(500).json({ message: 'Server Error' });
   }
 });
 
