@@ -1,7 +1,7 @@
 const AWS = require('aws-sdk');
 const fs = require('fs');
 const path = require('path');
-const Image = require('../models/image'); 
+const Image = require('../models/image');
 
 // Configure AWS SDK
 AWS.config.update({
