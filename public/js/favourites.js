@@ -13,15 +13,42 @@ const favIconHandler = async (event) => {
   });
 
   if (response.ok) {
-    favIcon.classList.add('display-none');
-    favIconSolid.classList.remove('display-none');
-    console.log('Successful post to favourites');
-    added.setAttribute('style', 'display: block');
+    favIcon.setAttribute('style', 'display: none');
+    favIconSolid.setAttribute('style', 'display: block');
   } else {
     console.log('Error posting to favourites: already added.');
-    added.innerHTML = 'Already added to favourites!';
-    added.setAttribute('style', 'display: block');
   }
 };
 
+const handleDelete = async (event) => {
+  event.preventDefault();
+
+  const response = await fetch('/api/favourites/' + barId, {
+    method: 'DELETE',
+    headers: { 'content-type': 'application/json' },
+  });
+
+  if (response.ok) {
+    favIconSolid.setAttribute('style', 'display: none');
+    favIcon.setAttribute('style', 'display: block');
+  } else {
+    console.log('An error occured removing favourite');
+  }
+};
+
+const onLoad = async () => {
+  const response = await fetch('/api/favourites/' + barId);
+
+  if (response.ok) {
+    favIcon.setAttribute('style', 'display: none');
+    favIconSolid.setAttribute('style', 'display: block');
+  } else {
+    favIconSolid.setAttribute('style', 'display: none');
+    favIcon.setAttribute('style', 'display: block');
+  }
+};
+
+if (window.location.pathname !== '/My-Account') onLoad();
+
 favIcon.addEventListener('click', favIconHandler);
+favIconSolid.addEventListener('click', handleDelete);

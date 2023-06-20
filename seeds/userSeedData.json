@@ -2,11 +2,13 @@
   {
     "username": "MatthewMillard",
     "email": "hello@world.com",
-    "password": "password123456"
+    "password": "password123456",
+    "favourites": []
   },
   {
     "username": "RussellCaballero",
     "email": "hello2@world.com",
-    "password": "password123456222"
+    "password": "password123456222",
+    "favourites": []
   }
 ]
