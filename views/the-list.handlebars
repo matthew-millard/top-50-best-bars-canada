@@ -1,5 +1,5 @@
 <div class="bar--list">
-  <div class="bar-list__header">
+  <div class="bar-list__header flex">
     <h1 class="bar-list__title">The List</h1><span class="bar-list__year">2023</span>
   </div>
   <hr class="bar-list__divider"/>
@@ -14,7 +14,7 @@
           <h2 class="bar-list__info-title"><span class="bar-list__info-id">{{this.id}}.
             </span>{{this.bar_name}}</h2>
           <h3 class="bar-list__info-location">{{this.city_name}}, {{this.Province.province_name}}</h3>
-          <button class="bar-list__info-button" data-id='{{this.id}}'>MORE INFO</button>
+          <button type="button" class="bar-list__info-button primary-button" data-id='{{this.id}}'>MORE INFO</button>
         </div>
       </div>
     {{/each}}

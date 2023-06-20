@@ -11,7 +11,7 @@ router.post('/', withAuth, async (req, res) => {
     // Collect review body and review id from request body
     const { review_body, review_id } = req.body;
 
-    // console.log(review_id);
+    console.log(review_id);
 
     const bar = await Bars.findOne({ where: { id: review_id } });
     const bar_name = bar.bar_name;

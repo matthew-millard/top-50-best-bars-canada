@@ -6,6 +6,8 @@
   --white-color: white;
   --light-grey: #efefef;
   --canada-color: #d80621;
+  --link-color: #3137fd;
+  --success-color: #198754;
 }
 
 body {
@@ -18,6 +20,7 @@ body {
 h1 {
   font-size: 4.8rem;
 }
+
 h2 {
   font-size: 3.6rem;
 }
@@ -46,6 +49,10 @@ small {
 
 a {
   color: var(--black-color);
+}
+
+hr {
+  border-bottom: 2px solid var(--black-color);
 }
 
 .bold {
@@ -84,9 +91,25 @@ textarea {
   display: flex;
 }
 
-/* icons */
-.fa-solid {
-  font-size: 3rem;
+/* Modal Message */
+.modal {
+  visibility: hidden;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  background-color: var(--success-color);
+}
+
+.modal.show {
+  visibility: visible;
+}
+
+
+.modal__message {
+  font-size: 2rem;
+  color: var(--white-color);
+  height: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Primary Button */
@@ -94,9 +117,20 @@ textarea {
   font-size: 2rem;
   padding: 1rem 2rem;
   border: none;
+  cursor: pointer;
 }
 
 .page-container {
   flex-direction: column;
   min-height: 100vh;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3.6rem;
+  }
+  hr {
+    border-bottom: 1px solid var(--black-color);
+  }
 }

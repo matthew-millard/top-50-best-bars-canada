@@ -1,71 +1,77 @@
-<div class='more-info-container'>
-<div class="more-info-image">
-  <img src="{{bar.image.url}}" alt="{{bar.bar_name}}" />
-</div>
-  <div class="more-info-title flex">
-  <div class="left-items flex">
-    <h1 class="more-info-rank-number">{{bar.id}}.</h1>
-    <h2>{{bar.bar_name}}</h2>
+<div class="bar-detail-container">
+  <div class="bar-detail__image-container flex">
+    <h1 class="bar-detail__id">{{bar.id}}.</h1>
+    <img class="bar-detail__image" src="{{bar.image.url}}" alt="{{bar.bar_name}}" />
   </div>
-  <div class="right-item">
-    <i data-id="{{bar.id}}" title="Add to Favorites" class="fa-solid fa-heart"></i>
-    <p class="added" style="display: none;">Added to Favourites!</p>
-  </div>
-</div>
-
-  <div class="address-group flex">
-      <h3>{{bar.city_name}}, {{bar.Province.province_name}}</h3>
-      <a href='{{bar.address}}' target='_blank' title="Map location"><i
-          class='fa-solid fa-location-dot'
-        ></i>
-  </div></a>
-  <p>{{bar.description}}</p>
-  <div class="patio-group flex">
-      <p class="bold larger-text">Patio: </p>
-      {{#if bar.patio}}
-        <i class="fa-solid fa-thumbs-up"></i>
-        {{else}}
-        <i class="fa-solid fa-thumbs-down"></i>
-        {{/if}}
-  </div>
-  <p class="bold larger-text">Website: <a href="{{bar.website}}">{{removeProtocol bar.website}}</a></p>
-    <h4>Previous Rankings</h4>
-  {{#each bar.HistoricalRanks}}
-  {{#unless (eq this.year 2023)}}
-    <div class="rank-group flex">
-      <p class="bold">{{this.year}} - {{this.rank_position}} place</p>
+<div class="bar-detail">
+   <div class="bar-detail__content flex">
+    <div class="bar-detail__header">
+      <h2 class="bar-detail__name">{{bar.bar_name}}</h2>
     </div>
-  {{/unless}}
-{{/each}}
-
-{{!-- Reviews --}}
- {{#if bar.reviews}}
-    <div class='prev-reviews-container'>
-      <hr />
-      <h3>Reviews</h3>
-      {{#each bar.reviews}}
-        <div class='prev-reviews-content'>
-          <p>{{this.review_body}}</p>
-          <small>Posted by: {{this.User.username}}</small>
-          <small>{{formatDate this.createdAt}}</small>
+    <div class="bar-detail__fav-container">
+      <i data-id="{{bar.id}}" title="Add to Favorites" class="fa-solid fa-heart bar-detail__fav-icon--solid display-none"></i>
+      <i data-id="{{bar.id}}" title="Add to Favorites" class="fa-regular fa-heart bar-detail__fav-icon"></i>
+      <p class="bar-detail__fav-message" style="display: none;">Added to Favourites!</p>
+    </div>
+  </div>
+  
+    <div class="bar-detail__location-container flex">
+        <h3 class="bar-detail__location">{{bar.city_name}}, {{bar.Province.province_name}}</h3>
+        <a class="bar-detail__location-link" href='{{bar.address}}' target='_blank' title="Map location">
+          <i
+            class='fa-solid fa-location-dot bar-detail__location-icon'>
+          </i>
+    </div></a>
+    <p class="bar-detail__description">{{bar.description}}</p>
+    <div class="bar-detail__patio-container flex">
+        <p class="bar-detail__patio-text">Patio: </p>
+        {{#if bar.patio}}
+          <i class="fa-solid fa-thumbs-up bar-detail__patio-icon--yes"></i>
+          {{else}}
+          <i class="fa-solid fa-thumbs-down bar-detail__patio-icon--no"></i>
+          {{/if}}
+    </div>
+    <p class="bar-detail__website">Website: <a href="{{bar.website}}" target="_blank">{{removeProtocol bar.website}}</a></p>
+      <div class="bar-detail__prev-ranks-container">
+        <h4 class="bar-detail__prev-ranks-title">Previous Rankings</h4>
+            {{#each bar.HistoricalRanks}}
+            {{#unless (eq this.year 2023)}}
+        <div class="bar-detail__prev-ranks-item">
+          <p class="bar-detail__prev-rank">{{this.year}} - {{this.rank_position}} place</p>
         </div>
-      {{/each}}
-    </div>
-  {{else}}
-    <div class='prev-reviews-container'>
-      <hr />
-      <h3>Reviews</h3>
-      <div class='prev-reviews-content'>
-        <p>No reviews yet!</p>
+            {{/unless}}
+          {{/each}}
       </div>
-    </div>
-  {{/if}}
-
-  <form class='review-container review-form flex' data-id={{bar.id}}>
-    <textarea class='review-textarea' name='review_body' required></textarea>
-    <div class='error-message-container'></div>
-    <button class='primary-button review-button' type='submit'>Leave Review</button>
-  </form>
+  
+  {{!-- Reviews --}}
+   {{#if bar.reviews}}
+      <div class="bar-detail__reviews-container">
+        <hr class="bar-detail__reviews-divider"/>
+        <h3 class="bar-detail__reviews-title">Reviews</h3>
+        {{#each bar.reviews}}
+          <div class="bar-detail__review">
+            <p class="bar-detail__review-body">{{this.review_body}}</p>
+            <small class="bar-detail__review-author">Posted by: {{this.User.username}}</small>
+            <small class="bar-detail__review-date">{{formatDate this.createdAt}}</small>
+          </div>
+        {{/each}}
+      </div>
+    {{else}}
+      <div class="bar-detail__no-reviews">
+        <hr class="bar-detail__no-reviews-divider"/>
+        <h3 class="bar-detail__no-reviews-title">Reviews</h3>
+        <div class="bar-detail__no-reviews-message-container">
+          <p class="bar-detail__no-reviews-message">No reviews yet!</p>
+        </div>
+      </div>
+    {{/if}}
+  
+    <form class="bar-detail__review-form" data-id={{bar.id}}>
+      <textarea class="bar-detail__review-input" name='review_body' required></textarea>
+      <div class="bar-detail__review-input-error-message" ></div>
+      <button class="bar-detail__review-submit primary-button" type='submit'>Leave Review</button>
+    </form>
+</div>
 </div>
 <script src="/js/reviews.js"></script>
 <script src="/js/favourites.js"></script>

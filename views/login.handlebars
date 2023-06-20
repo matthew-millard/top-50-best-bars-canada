@@ -1,20 +1,32 @@
-<div class='login-container'>
-  <h1>Login to your account</h1>
-  <hr />
-  <form class='loginForm' autocomplete='off'>
-    <div class='form-group'>
-      <label for='username'>Username: </label>
-      <input type='text' id='username' name='username' />
+<div class='login-container flex'>
+  <div class='login'>
+    <h1 class='login__title'>Login to your account</h1>
+    <hr class='login__divider' />
+    <form class='login__form' autocomplete='off'>
+      <div class="login__control-container">
+        <div class='login__control flex'>
+          <label class='login__label' for='username'>Username: </label>
+          <input class='login__input' type='text' id='username' name='username' />
+        </div>
+        <div class='login__control flex'>
+          <label class='login__label' for='password'>Password: </label>
+          <input class='login__input' type='password' id='password' name='password' />
+        </div>
+      </div>
+      <div class="login__submit-container flex">
+        <button class='login__submit primary-button' type='submit'>Login</button>
+        <a class="login__submit-register-link" href="/register">Not a member yet? Sign up.</a>
+      </div>
+    </form>
+    {{#if error}}
+      <div class='login__error error-message'>{{error}}</div>
+    {{/if}}
+    <div class='login__error-notice'></div>
+    <div id='modal' class='modal'>
+      <div class='modal__content'>
+        <p id='modal-message' class='modal__message flex'>{{modalMessage}}</p>
+      </div>
     </div>
-    <div class='form-group'>
-      <label for='password'>Password: </label>
-      <input type='password' id='password' name='password' />
-    </div>
-    <button class='primary-button' type='submit'>Login</button>
-  </form>
-  {{#if error}}
-    <div class='error-message'>{{error}}</div>
-  {{/if}}
-  <div class='login-error'></div>
+  </div>
 </div>
 <script src='/js/login.js'></script>

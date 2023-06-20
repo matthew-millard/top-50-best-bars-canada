@@ -1,4 +1,4 @@
-const registerForm = document.querySelector('.registerForm');
+const registerForm = document.querySelector('.register__form-container');
 const usernameEl = registerForm.querySelector('#username');
 const emailEl = registerForm.querySelector('#email');
 const passwordEl = registerForm.querySelector('#password');
@@ -6,7 +6,7 @@ const confirmPasswordEl = registerForm.querySelector('#confirmPassword');
 
 // Show Error Messages Function
 function displayErrorMessage(errorMessage) {
-  const errorMessageContainer = document.querySelector('.register-error');
+  const errorMessageContainer = document.querySelector('.register__error-message');
   errorMessageContainer.innerHTML = '';
   const errorMessageElement = document.createElement('p');
 
@@ -39,9 +39,40 @@ const signupFormHandler = async (event) => {
       const data = await response.json();
       displayErrorMessage(data.message);
     } else {
-      return document.location.replace('login');
+      showModal('Registration successful! Redirecting to login...');
+      setTimeout(() => {
+        document.location.replace('login');
+      }, 2000); // Redirect after 2 seconds
     }
   }
 };
+
+// Function to display the pop-up modal with the specified message
+function showModal(message) {
+  const modal = document.getElementById('modal');
+  const modalMessage = document.getElementById('modal-message');
+
+  // Set the message
+  modalMessage.textContent = message;
+
+  // Display the modal
+  modal.style.display = 'block';
+
+  // Automatically hide the modal after 3 seconds
+  setTimeout(() => {
+    closeModal();
+  }, 2000); // Redirect after 2 seconds
+}
+
+// Function to close the pop-up modal
+function closeModal() {
+  const modal = document.getElementById('modal');
+  modal.style.display = 'none';
+}
+
+// Attach click event listener to the close button
+const closeButton = document.querySelector('.modal__close');
+closeButton.addEventListener('click', closeModal);
+
 
 registerForm.addEventListener('submit', signupFormHandler);

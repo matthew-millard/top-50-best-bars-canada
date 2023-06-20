@@ -13,6 +13,13 @@
     <link rel='stylesheet' href='/css/welcome-section.css' />
     <link rel='stylesheet' href='/css/main.css' />
     <link rel='stylesheet' href='/css/the-list.css' />
+    <link rel='stylesheet' href='/css/more-info.css' />
+    <link rel='stylesheet' href='/css/search.css' />
+    <link rel='stylesheet' href='/css/login.css' />
+    <link rel='stylesheet' href='/css/register.css' />
+    <link rel='stylesheet' href='/css/my-account.css' />
+    <link rel='stylesheet' href='/css/search-results.css' />
+    <link rel='stylesheet' href='/css/change-password.css' />
     {{! JavaScript }}
     <script src='/js/main.js' defer></script>
 
@@ -28,11 +35,11 @@
       <nav class='header__nav'>
         <ul class='header__nav-list flex' id='header__nav-list' data-visible='false'>
           {{#if logged_in}}
-            <li class='header__nav-item'><a class='header__nav-link' href='/the-list'>The List</a></li>
             <li class='header__nav-item'><a class='header__nav-link' href='/'>Home</a></li>
+            <li class='header__nav-item'><a class='header__nav-link' href='/the-list'>The List</a></li>
+            <li class='header__nav-item'><a class='header__nav-link' href='/search'>Search</a></li>
             <li class='header__nav-item'><a class='header__nav-link' href='/My-Account'>My Account</a></li>
             <li class='header__nav-item'><a class='header__nav-link' href='/logout'>Logout</a></li>
-            <li class='header__nav-item'><a class='header__nav-link' href='/search'>Search</a></li>
           {{else}}
             <li class='header__nav-item'><a class='header__nav-link' href='/'>Home</a></li>
             <li class='header__nav-item'><a class='header__nav-link' href='/the-list'>The List</a></li>

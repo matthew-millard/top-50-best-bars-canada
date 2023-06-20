@@ -1,0 +1,88 @@
+.login-container {
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.login {
+  width: 80%;
+  max-width: 700px;
+  padding: 4rem;
+}
+
+
+.login__title {
+  line-height: 1;
+}
+
+.login__divider {
+  margin-bottom: 4rem;
+}
+
+.login__control-container {
+  width: 80%;
+  margin-bottom: 4rem;
+}
+
+.login__control {
+  margin-bottom: 2rem;
+}
+
+.login__label {
+  flex: 1;
+  margin-right: 2rem;
+}
+
+.login__input {
+  flex: 4;
+}
+
+.login__submit-container {
+  align-items: center;
+  gap: 2rem;
+}
+
+.login__submit-register-link {
+  justify-self: center;
+  font-size: 1.4rem;
+  color: var(--link-color);
+}
+
+.login__error {
+  font-size: 1.4rem;
+}
+
+
+
+
+
+
+
+
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+  .login {
+    padding: 0;
+  }
+
+  .login__control-container {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .login__label {
+    flex: 1;
+    margin-right: 0;
+  }
+
+  .login__input {
+    flex: 1;
+  }
+
+  .login__control {
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+}

@@ -1,4 +1,4 @@
-const bars = Array.from(document.querySelectorAll('.search-result-bar'));
+const bars = Array.from(document.querySelectorAll('.search-results__bar'));
 
 bars.forEach((bar) => {
   bar.addEventListener('click', (event) => {

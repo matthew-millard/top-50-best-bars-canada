@@ -1,0 +1,104 @@
+.register-container {
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.register {
+  width: 80%;
+  max-width: 700px;
+  padding: 4rem;
+}
+
+.register__title {
+  line-height: 1;
+}
+
+.register__divider {
+  margin-bottom: 4rem;
+}
+
+.register__form-container {
+  width: 80%;
+  margin-bottom: 4rem;
+}
+
+.register__control {
+  margin-bottom: 2rem;
+}
+
+.register__label {
+  flex: 1;
+  margin-right: 2rem;
+}
+
+.register__label--confirm-password {
+  width: 300px;
+}
+
+.register__input {
+  flex: 2;
+}
+
+.register__input--confirm-password {
+  flex: 2;
+}
+
+.register__submit-container {
+  align-items: center;
+  gap: 2rem;
+}
+
+.register__submit-login-link {
+  justify-self: center;
+  font-size: 1.4rem;
+  color: var(--link-color);
+}
+
+.register__error-message {
+  font-size: 1.4rem;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+  .register-container {
+    margin-top: 6rem;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .register {
+    padding: 0;
+  }
+
+  .register__form-container {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .register__label {
+    flex: 1;
+    margin-right: 0;
+  }
+
+  .register__input {
+    flex: 1;
+  }
+
+  .register__control {
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+
+  .register__control--confirm-password {
+    margin-bottom: 4rem;
+  }
+
+  .register__submit-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+}

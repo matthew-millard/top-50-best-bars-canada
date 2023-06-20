@@ -1,15 +1,20 @@
-<div>
-  <h1>Search Results</h1>
-  <hr />
-</div>
+<div class='search-results-container flex'>
+  <div class='search-results'>
+    <h1 class='search-results__title'>Search Results</h1>
+    <hr class='search-results__divider' />
 
-{{#if bars}}
-  {{#each bars}}
-    <div class="search-result-bar" data-bar-id="{{this.id}}">
-      <h3>{{this.id}}. {{this.bar_name}}</h3>
-    </div>
-  {{/each}}
-{{else}}
-  <div class='error-message'>No results found</div>
-{{/if}}
+    {{#if bars}}
+      {{#each bars}}
+        <div data-bar-id='{{this.id}}' class='search-results__bar flex'>
+          <h3 class='search-results__bar-id'>{{this.id}}. <span class="search-results__bar-name">{{this.bar_name}}</span></h3>
+        </div>
+      {{/each}}
+    {{else}}
+      <div class='search-results__error-message'>No results found</div>
+    {{/if}}
+  </div>
+  <div>
+    <a class="search-results__back" href="/search">Back</a>
+  </div>
+</div>
 <script src='/js/search-results.js'></script>
