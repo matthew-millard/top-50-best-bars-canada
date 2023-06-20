@@ -1,0 +1,60 @@
+.search {
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.search-container {
+  width: 90%;
+  max-width: 700px;
+  padding: 4rem;
+}
+
+.search__title {
+  line-height: 1;
+}
+
+.search__divider {
+  margin-bottom: 4rem;
+}
+
+.search__control-container {
+  margin-bottom: 4rem;
+}
+
+.search__control {
+  margin-bottom: 2rem;
+}
+
+.search__label {
+  flex: 1;
+  margin-right: 2rem;
+}
+
+.search__select {
+  flex: 2;
+}
+
+.search__results {
+  margin-bottom: 2rem;
+}
+
+.search__error-message {
+  color: var(--canada-color);
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+  .search-container {
+    padding: 0;
+  }
+
+  .search__label {
+    margin-right: 0;
+  }
+
+  .search__title {
+    font-size: 3.6rem;
+  }
+}

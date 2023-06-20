@@ -1,0 +1,115 @@
+.my-account-container {
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.my-account {
+  position: relative;
+  width: 80%;
+  max-width: 700px;
+  padding: 4rem;
+}
+
+.my-account__title {
+  line-height: 1;
+}
+
+.my-account__divider {
+  margin-bottom: 4rem;
+}
+
+.my-account__username,
+.my-account__email {
+  padding-bottom: 1rem;
+}
+
+.my-account__history {
+  padding-bottom: 2rem;
+}
+
+.my-account__modal {
+  display: none;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  padding: 4rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--white-color);
+  background-color: var(--canada-color);
+  border-radius: 0.5rem;
+}
+
+/* Show modal */
+.my-account__modal.show {
+  display: block;
+}
+
+.my-account__buttons {
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.my-account__button {
+  width: 100%;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  border: none;
+}
+
+.my-account__modal-message {
+  justify-content: center;
+  width: 100%;
+  font-size: 2rem;
+  color: var(--white-color);
+  padding-bottom: 2rem;
+}
+
+.my-account__button--delete {
+  background-color: var(--canada-color);
+  color: var(--white-color);
+}
+
+.my-account__modal-buttons {
+  gap: 2rem;
+}
+
+.my-account__modal-button {
+  padding: 0.7rem 2rem;
+  width: 50%;
+  font-size: 1.8rem;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .my-account-container {
+    margin-top: 2rem;
+  }
+  .my-account {
+    position: relative;
+    width: 80%;
+    max-width: 700px;
+    padding: 0rem;
+  }
+
+  .my-account__divider {
+    margin-bottom: 2rem;
+  }
+
+  .my-account__subtitle,
+  .my-account__favorites-title,
+  .my-account__reviews-title,
+  .my-account__history-title {
+    font-size: 2.8rem;
+  }
+
+  .my-account__buttons {
+    max-width: 30rem;
+    flex-direction: column;
+  }
+}

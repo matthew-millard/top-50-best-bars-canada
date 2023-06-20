@@ -1,28 +1,52 @@
-<div class='register-container'>
-  <div class='register-title'>
-    <h1>Register an Account</h1>
-    <hr />
-  </div>
-  <form class='registerForm' autocomplete='off'>
-    <div class='form-group'>
-      <label for='username'>Username: </label>
-      <input type='text' id='username' name='username' />
+<div class='register-container flex'>
+  <div class='register'>
+    <div class='register__header'>
+      <h1 class='register__title'>Register an Account</h1>
+      <hr class='register__divider' />
     </div>
-    <div class='form-group'>
-      <label for='email'>Email: </label>
-      <input type='email' id='email' name='email' />
-    </div>
-    <div class='form-group'>
-      <label for='password'>Password: </label>
-      <input type='password' id='password' name='password' />
-    </div>
-    <div class='form-group form-group-confirm-password'>
-      <label for='confirmPassword'>Confirm Password: </label>
-      <input type='password' id='confirmPassword' name='confirmPassword' />
-    </div>
-    <button class='primary-button' type='submit'>Register</button>
-  </form>
-  <div class='error-message register-error'></div>
 
+    <form autocomplete='off' class='register__form-container'>
+      <div class='register__control flex'>
+        <label for='username' class='register__label'>Username: </label>
+        <input type='text' id='username' name='username' class='register__input' />
+      </div>
+
+      <div class='register__control flex'>
+        <label for='email' class='register__label'>Email: </label>
+        <input type='email' id='email' name='email' class='register__input' />
+      </div>
+
+      <div class='register__control flex'>
+        <label for='password' class='register__label'>Password: </label>
+        <input type='password' id='password' name='password' class='register__input' />
+      </div>
+
+      <div class='register__control  register__control--confirm-password flex'>
+        <label for='confirmPassword' class='register__label register__label--confirm-password'>Confirm Password:
+        </label>
+        <input
+          type='password'
+          id='confirmPassword'
+          name='confirmPassword'
+          class='register__input register__input--confirm-password'
+        />
+      </div>
+
+      <div class='register__submit-container flex'>
+        <button type='submit' class='register__submit primary-button'>Register</button>
+        <a class='register__submit-login-link' href='/login'>Already have an account? Log in.</a>
+      </div>
+    </form>
+
+    <div class='register__error-message'></div>
+
+    <div id='modal' class='modal register__modal'>
+      <div class='modal__content'>
+        <span class='modal__close'>&times;</span>
+        <p id='modal-message' class='modal__message'></p>
+      </div>
+    </div>
+  </div>
 </div>
+
 <script src='/js/register.js'></script>

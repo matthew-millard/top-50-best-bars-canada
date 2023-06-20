@@ -1,67 +1,74 @@
-<div class='my-account-container'>
-  <h1>My Account</h1>
-  <hr />
+<div class='my-account-container flex'>
+  <div class='my-account'>
+    <h1 class='my-account__title'>My Account</h1>
+    <hr class='my-account__divider' />
 
-  <h2>Profile Information</h2>
-  <p id='userId' data-id='{{user.id}}'>Username: {{user.username}}</p>
-  <p>Email: {{user.email}}</p>
-
-  <div>
-    <button class='primary-button red-hightlight' id='delete-account-btn'>Delete
-      Account</button>
-    <button class='primary-button' id='change-password-btn'>Change Password</button>
-  </div>
-  <div class=".delete-account-error"></div>
-
-  <div class='card'>
-  <div class='card-body'>
-    <h2 class='card-title'>Favorites</h2>
-    {{#if favs}}
-      <ul class='card-text'>
-        {{#each favs}}
-          <li><a href="{{this.website}}">{{this.bar_name}}</a></li>
-        {{/each}}
-      </ul>
-    {{else}}
-      <p>No favorites found.</p>
-    {{/if}}
-
-    <div class='card'>
-      <div class='card-body'>
-        <h2 class='card-title'>Reviews</h2>
-        {{#if reviews}}
-          <ul class='card-text'>
-            {{#each reviews}}
-              <li>
-                <div class='prev-reviews-content'>
-                  <p>{{this.review_body}}</p>
-                  <small>Bar: {{this.bar_name}}  </small>
-                  <small>Posted: {{formatDate this.createdAt}}</small>
-                </div>
-              </li>
-            {{/each}}
-          </ul>
-        {{else}}
-          <p>No reviews found.</p>
-        {{/if}}
-      </div>
+    <div class='my-account__profile-container'>
+      <h2 class='my-account__subtitle'>Profile Information</h2>
+      <p id='userId' data-id='{{user.id}}' class='my-account__username'>Username: {{user.username}}</p>
+      <p class='my-account__email'>Email: {{user.email}}</p>
     </div>
 
-    <div class='col'>
-      <div class='card'>
-        <div class='card-body'>
-          <h2 class='card-title'>Search History</h2>
-          {{#if user.history.length}}
-            <ul class='card-text'>
-              {{#each user.history}}
-                <li>{{this}}</li>
-              {{/each}}
-            </ul>
-          {{else}}
-            <p>No search history found.</p>
-          {{/if}}
+    <div class='my-account__favorites'>
+      <h2 class='my-account__favorites-title'>Favorites</h2>
+      {{#if favs}}
+        <ul class='my-account__favorites-list'>
+          {{#each favs}}
+            <li class='my-account__favorites-item'><a
+                href='{{this.website}}'
+                class='my-account__favorites-link'
+              >{{this.bar_name}}</a></li>
+          {{/each}}
+        </ul>
+      {{else}}
+        <p class='my-account__favorites-empty'>No favorites found.</p>
+      {{/if}}
+    </div>
+
+    <div class='my-account__reviews'>
+      <h2 class='my-account__reviews-title'>Reviews</h2>
+      {{#if reviews}}
+        <ul class='my-account__reviews-list'>
+          {{#each reviews}}
+            <li class='my-account__reviews-item'>
+              <div class='my-account__reviews-content'>
+                <p class='my-account__reviews-text'>{{this.review_body}}</p>
+                <small class='my-account__reviews-bar'>Bar: {{this.bar_name}}</small>
+                <small class='my-account__reviews-date'>Posted: {{formatDate this.createdAt}}</small>
+              </div>
+            </li>
+          {{/each}}
+        </ul>
+      {{else}}
+        <p class='my-account__reviews-empty'>No reviews found.</p>
+      {{/if}}
+    </div>
+
+    <div class='my-account__history'>
+      <h2 class='my-account__history-title'>Search History</h2>
+      {{#if user.history.length}}
+        <ul class='my-account__history-list'>
+          {{#each user.history}}
+            <li class='my-account__history-item'>{{this}}</li>
+          {{/each}}
+        </ul>
+      {{else}}
+        <p class='my-account__history-empty'>No search history found.</p>
+      {{/if}}
+    </div>
+
+    <div id='modal' class='my-account__modal flex'>
+      <div class='my-account__modal-content'>
+        <p class='my-account__modal-message'></p>
+        <div class='my-account__modal-buttons flex'>
+          <button class='my-account__modal-button my-account__modal-button--confirm'>Yes</button>
+          <button class='my-account__modal-button my-account__modal-button--cancel'>No</button>
         </div>
       </div>
+    </div>
+    <div class='my-account__buttons flex'>
+      <button id='delete-account-btn' class='my-account__button my-account__button--delete'>Delete Account</button>
+      <button id='change-password-btn' class='my-account__button'>Change Password</button>
     </div>
   </div>
 </div>

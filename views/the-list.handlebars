@@ -1,23 +1,20 @@
-<div class='the-list-container'>
-  <div class='the-list-title flex'>
-    <h1>The List</h1><span class='the-list-title--year'>2023</span>
+<div class="bar--list">
+  <div class="bar-list__header flex">
+    <h1 class="bar-list__title">The List</h1><span class="bar-list__year">2023</span>
   </div>
-    <hr />
+  <hr class="bar-list__divider"/>
 
-  <div class='the-list-item'>
+  <div class="bar-list__container">
     {{#each bars}}
-      <div class='bar-card'>
-        <div class='bar-card-image'>
-          <img src='{{this.image.url}}' alt='{{this.bar_name}}' />
+      <div class="bar-list__item">
+        <div class="bar-list__image-container">
+          <img class="bar-list__image" src='{{this.image.url}}' alt='{{this.bar_name}}' />
         </div>
-        <div class='bar-card-content'>
-          <h2 class="the-list-bar-name"><span class='the-list--rank-number text-white'>{{this.id}}.
+        <div class="bar-list__info">
+          <h2 class="bar-list__info-title"><span class="bar-list__info-id">{{this.id}}.
             </span>{{this.bar_name}}</h2>
-          <h3 class="the-list-city-province">{{this.city_name}}, {{this.Province.province_name}}</h3>
-          <button
-            class='primary-button more-info-btn'
-            data-id='{{this.id}}'
-          >MORE INFO</button>
+          <h3 class="bar-list__info-location">{{this.city_name}}, {{this.Province.province_name}}</h3>
+          <button type="button" class="bar-list__info-button primary-button" data-id='{{this.id}}'>MORE INFO</button>
         </div>
       </div>
     {{/each}}

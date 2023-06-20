@@ -1,49 +1,50 @@
-<div class='search-container'>
+<div class='search flex'>
   <div class='search-container'>
-  <h1>Search for the Best Bars in Your Area</h1>
-  <hr />
-  <div class='search-form'>
-    <label for='province'>Province: </label>
-    <select id='province' class='search-select'>
-      <option value='All'>All</option>
-      <option value='Alberta'>Alberta</option>
-      <option value='British Columbia'>British Columbia</option>
-      <option value='Manitoba'>Manitoba</option>
-      <option value='New Brunswick'>New Brunswick</option>
-      <option value='Newfoundland and Labrador'>Newfoundland and Labrador</option>
-      <option value='Northwest Territories'>Northwest Territories</option>
-      <option value='Nova Scotia'>Nova Scotia</option>
-      <option value='Nunavut'>Nunavut</option>
-      <option value='Ontario'>Ontario</option>
-      <option value='Prince Edward Island'>Prince Edward Island</option>
-      <option value='Quebec'>Québec</option>
-      <option value='Saskatchewan'>Saskatchewan</option>
-      <option value='Yukon'>Yukon</option>
-    </select>
+    <h1 class='search__title'>Discover Bars In Your Area</h1>
+    <hr class='search__divider' />
+    <div class='search__control-container'>
+      <div class='search__control flex'>
+        <label for='province' class='search__label'>Prov: </label>
+        <select id='province' class='search__select'>
+          <option value='All'>All</option>
+          <option value='Alberta'>Alberta</option>
+          <option value='British Columbia'>British Columbia</option>
+          <option value='Manitoba'>Manitoba</option>
+          <option value='New Brunswick'>New Brunswick</option>
+          <option value='Newfoundland and Labrador'>Newfoundland and Labrador</option>
+          <option value='Northwest Territories'>Northwest Territories</option>
+          <option value='Nova Scotia'>Nova Scotia</option>
+          <option value='Nunavut'>Nunavut</option>
+          <option value='Ontario'>Ontario</option>
+          <option value='Prince Edward Island'>Prince Edward Island</option>
+          <option value='Quebec'>Québec</option>
+          <option value='Saskatchewan'>Saskatchewan</option>
+          <option value='Yukon'>Yukon</option>
+        </select>
+      </div>
+      <div class='search__control flex'>
+        <label for='city' class='search__label'>City: </label>
+        <select id='city' class='search__select' disabled>
+          <option value='All'>All</option>
+        </select>
+      </div>
+      <div class='search__control flex'>
+        <label for='patio' class='search__label'>Patio: </label>
+        <select id='patio' class='search__select'>
+          <option value='All'>All</option>
+          <option value='Yes'>Yes</option>
+          <option value='No'>No</option>
+        </select>
+      </div>
+    </div>
+    <button class='search__button primary-button' type='button' id='searchBtn'>Search</button>
+
+    <div id='results' class='search__results'></div>
+    {{#if error}}
+      <div class='search__error-message'>{{error}}</div>
+    {{/if}}
+    <div class='search__login-error'></div>
   </div>
-
-  <div class='search-form'>
-    <label for='city'>City: </label>
-    <select id='city' class='search-select' disabled>
-      <option value='All'>All</option>
-    </select>
-  </div>
-
-  <div class='search-form'>
-    <label for='patio'>Patio: </label>
-    <select id='patio' class='search-select'>
-      <option value='All'>All</option>
-      <option value='Yes'>Yes</option>
-      <option value='No'>No</option>
-    </select>
-  </div>
-
-  <button type="button" id='searchBtn' class='search-button primary-button'>Search</button>
-
-  <div id='results' class='search-results'></div>
-  {{#if error}}
-    <div class='error-message'>{{error}}</div>
-  {{/if}}
-  <div class='login-error'></div>
 </div>
-<script src="/js/search.js"></script>
+
+<script src='/js/search.js'></script>

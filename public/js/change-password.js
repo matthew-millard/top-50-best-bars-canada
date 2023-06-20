@@ -1,5 +1,5 @@
-const changePasswordForm = document.querySelector('.change-password-form');
-const currentPasswordEl = document.querySelector('#oldPassword');
+const changePasswordForm = document.querySelector('.password-change-form');
+const currentPasswordEl = document.querySelector('#currentPassword');
 const newPasswordEl = document.querySelector('#newPassword');
 const checkPasswordEl = document.querySelector('#confirmPassword');
 

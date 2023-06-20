@@ -1,8 +1,9 @@
-const favIcon = document.querySelector('.fa-heart');
+const favIcon = document.querySelector('.bar-detail__fav-icon');
+const favIconSolid = document.querySelector('.bar-detail__fav-icon--solid');
 const barId = favIcon.getAttribute('data-id');
-const added = document.querySelector('.added');
+const added = document.querySelector('.bar-detail__fav-message');
 
-const handleClick = async (event) => {
+const favIconHandler = async (event) => {
   event.preventDefault();
 
   const response = await fetch('/api/favourites', {
@@ -12,6 +13,8 @@ const handleClick = async (event) => {
   });
 
   if (response.ok) {
+    favIcon.classList.add('display-none');
+    favIconSolid.classList.remove('display-none');
     console.log('Successful post to favourites');
     added.setAttribute('style', 'display: block');
   } else {
@@ -21,4 +24,4 @@ const handleClick = async (event) => {
   }
 };
 
-favIcon.addEventListener('click', handleClick);
+favIcon.addEventListener('click', favIconHandler);
