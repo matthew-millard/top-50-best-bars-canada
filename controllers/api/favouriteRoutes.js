@@ -2,6 +2,7 @@ const router = require('express').Router();
 const { Bars, HistoricalRanks, Provinces, Review, User, Image, Favourite } = require('../../models');
 const withAuth = require('../../utils/auth');
 
+// Get Favourite by bar ID
 router.get('/:id', withAuth, async (req, res) => {
   try {
     const fav = await Favourite.findOne({ where: { bar_id: req.params.id } });
@@ -15,6 +16,7 @@ router.get('/:id', withAuth, async (req, res) => {
   }
 });
 
+// Create a Favourite
 router.post('/', withAuth, async (req, res) => {
   try {
     const user_id = req.session.user_id;
@@ -44,6 +46,7 @@ router.post('/', withAuth, async (req, res) => {
   }
 });
 
+// Delete a Favourite by bar ID
 router.delete('/:id', withAuth, async (req, res) => {
   try {
     const barID = req.params.id;

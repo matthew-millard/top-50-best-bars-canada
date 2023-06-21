@@ -48,7 +48,7 @@ const onLoad = async () => {
   }
 };
 
-if (window.location.pathname !== '/My-Account') onLoad();
+onLoad();
 
 favIcon.addEventListener('click', favIconHandler);
 favIconSolid.addEventListener('click', handleDelete);

@@ -10,11 +10,13 @@ const changePasswordHandler = async (event) => {
   const newPassword = newPasswordEl.value.trim();
   const confirmPassword = checkPasswordEl.value.trim();
 
+  // If passwords don't match, inform the user
   if (newPassword !== confirmPassword) {
     console.log('New password and confirm password must match.');
     return;
   }
 
+  // Update new password
   const response = await fetch('/api/users/change-password', {
     method: 'PUT',
     body: JSON.stringify({ currentPassword, newPassword }),
